@@ -1,0 +1,211 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2020 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# Strided Array Native Add-ons
+
+> C APIs for creating N-API strided array native add-ons.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+This package exposes an absolute file path for the directory containing header files for various C APIs. The various C APIs facilitate the creation of N-API strided array native add-ons.
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var headerDir = require( '@stdlib/strided/napi' );
+```
+
+#### headerDir
+
+Absolute file path for the directory containing header files for C APIs.
+
+```javascript
+var dir = headerDir;
+// returns <string>
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+```javascript
+var headerDir = require( '@stdlib/strided/napi' );
+
+console.log( headerDir );
+// => <string>
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+This package exposes various C APIs to facilitate the creation of N-API strided array native add-ons. The included C APIs are the APIs implemented in the following packages:
+
+<!-- NOTE: please keep in alphabetical order -->
+
+-   [`@stdlib/strided/base/binary`][@stdlib/strided/base/binary]: https://github.com/stdlib-js/strided/tree/main/base/binary`][@stdlib/strided/base/binary
+-   [`@stdlib/strided/base/dmap`][@stdlib/strided/base/dmap]: https://github.com/stdlib-js/strided/tree/main/base/dmap`][@stdlib/strided/base/dmap
+-   [`@stdlib/strided/base/dmskmap`][@stdlib/strided/base/dmskmap]: https://github.com/stdlib-js/strided/tree/main/base/dmskmap`][@stdlib/strided/base/dmskmap
+-   [`@stdlib/strided/base/function-object`][@stdlib/strided/base/function-object]: https://github.com/stdlib-js/strided/tree/main/base/function-object`][@stdlib/strided/base/function-object
+-   [`@stdlib/strided/base/mskunary`][@stdlib/strided/base/mskunary]: https://github.com/stdlib-js/strided/tree/main/base/mskunary`][@stdlib/strided/base/mskunary
+-   [`@stdlib/strided/base/smap`][@stdlib/strided/base/smap]: https://github.com/stdlib-js/strided/tree/main/base/smap`][@stdlib/strided/base/smap
+-   [`@stdlib/strided/base/smskmap`][@stdlib/strided/base/smskmap]: https://github.com/stdlib-js/strided/tree/main/base/smskmap`][@stdlib/strided/base/smskmap
+-   [`@stdlib/strided/base/unary`][@stdlib/strided/base/unary]: https://github.com/stdlib-js/strided/tree/main/base/unary`][@stdlib/strided/base/unary
+-   [`@stdlib/strided/dtypes`][@stdlib/strided/dtypes]: https://github.com/stdlib-js/strided/tree/main/dtypes`][@stdlib/strided/dtypes
+-   [`@stdlib/strided/napi/dmap`][@stdlib/strided/napi/dmap]: https://github.com/stdlib-js/strided/tree/main/napi/dmap`][@stdlib/strided/napi/dmap
+-   [`@stdlib/strided/napi/dmskmap`][@stdlib/strided/napi/dmskmap]: https://github.com/stdlib-js/strided/tree/main/napi/dmskmap`][@stdlib/strided/napi/dmskmap
+-   [`@stdlib/strided/napi/mskunary`][@stdlib/strided/napi/mskunary]: https://github.com/stdlib-js/strided/tree/main/napi/mskunary`][@stdlib/strided/napi/mskunary
+-   [`@stdlib/strided/napi/smap`][@stdlib/strided/napi/smap]: https://github.com/stdlib-js/strided/tree/main/napi/smap`][@stdlib/strided/napi/smap
+-   [`@stdlib/strided/napi/smskmap`][@stdlib/strided/napi/smskmap]: https://github.com/stdlib-js/strided/tree/main/napi/smskmap`][@stdlib/strided/napi/smskmap
+-   [`@stdlib/strided/napi/unary`][@stdlib/strided/napi/unary]: https://github.com/stdlib-js/strided/tree/main/napi/unary`][@stdlib/strided/napi/unary
+
+For API documentation, consult the individual packages.
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/strided/napi.h"
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/strided/napi.h"
+
+static double identity( const double x ) {
+    return x;
+}
+
+STDLIB_STRIDED_NAPI_MODULE_DMAP( identity )
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[@stdlib/strided/base/binary]: https://github.com/stdlib-js/strided/tree/main/base/binary
+
+[@stdlib/strided/base/dmap]: https://github.com/stdlib-js/strided/tree/main/base/dmap
+
+[@stdlib/strided/base/dmskmap]: https://github.com/stdlib-js/strided/tree/main/base/dmskmap
+
+[@stdlib/strided/base/function-object]: https://github.com/stdlib-js/strided/tree/main/base/function-object
+
+[@stdlib/strided/base/mskunary]: https://github.com/stdlib-js/strided/tree/main/base/mskunary
+
+[@stdlib/strided/base/smap]: https://github.com/stdlib-js/strided/tree/main/base/smap
+
+[@stdlib/strided/base/smskmap]: https://github.com/stdlib-js/strided/tree/main/base/smskmap
+
+[@stdlib/strided/base/unary]: https://github.com/stdlib-js/strided/tree/main/base/unary
+
+[@stdlib/strided/dtypes]: https://github.com/stdlib-js/strided/tree/main/dtypes
+
+[@stdlib/strided/napi/dmap]: https://github.com/stdlib-js/strided/tree/main/napi/dmap
+
+[@stdlib/strided/napi/dmskmap]: https://github.com/stdlib-js/strided/tree/main/napi/dmskmap
+
+[@stdlib/strided/napi/mskunary]: https://github.com/stdlib-js/strided/tree/main/napi/mskunary
+
+[@stdlib/strided/napi/smap]: https://github.com/stdlib-js/strided/tree/main/napi/smap
+
+[@stdlib/strided/napi/smskmap]: https://github.com/stdlib-js/strided/tree/main/napi/smskmap
+
+[@stdlib/strided/napi/unary]: https://github.com/stdlib-js/strided/tree/main/napi/unary
+
+</section>
+
+<!-- /.links -->
