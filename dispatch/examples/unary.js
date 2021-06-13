@@ -18,7 +18,7 @@
 
 'use strict';
 
-var unary = require( '@stdlib/strided/base/unary' ).ndarray;
+var unary = require( './../../base/unary' ).ndarray;
 var abs = require( '@stdlib/math/base/special/abs' );
 var Float64Array = require( '@stdlib/array/float64' );
 var dispatch = require( './../lib' );

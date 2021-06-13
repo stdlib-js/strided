@@ -23,7 +23,7 @@
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var pow = require( '@stdlib/math/base/special/pow' );
-var unary = require( '@stdlib/strided/base/unary' );
+var unary = require( './../../base/unary' );
 var Float64Array = require( '@stdlib/array/float64' );
 var pkg = require( './../package.json' ).name;
 var dispatch = require( './../lib/main.js' );

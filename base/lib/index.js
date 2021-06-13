@@ -43,7 +43,7 @@ var ns = {};
 * @type {Function}
 * @see {@link module:@stdlib/strided/base/binary}
 */
-setReadOnly( ns, 'binary', require( '@stdlib/strided/base/binary' ) );
+setReadOnly( ns, 'binary', require( './../../base/binary' ) );
 
 /**
 * @name dmap
@@ -52,7 +52,7 @@ setReadOnly( ns, 'binary', require( '@stdlib/strided/base/binary' ) );
 * @type {Function}
 * @see {@link module:@stdlib/strided/base/dmap}
 */
-setReadOnly( ns, 'dmap', require( '@stdlib/strided/base/dmap' ) );
+setReadOnly( ns, 'dmap', require( './../../base/dmap' ) );
 
 /**
 * @name dmskmap
@@ -61,7 +61,7 @@ setReadOnly( ns, 'dmap', require( '@stdlib/strided/base/dmap' ) );
 * @type {Function}
 * @see {@link module:@stdlib/strided/base/dmskmap}
 */
-setReadOnly( ns, 'dmskmap', require( '@stdlib/strided/base/dmskmap' ) );
+setReadOnly( ns, 'dmskmap', require( './../../base/dmskmap' ) );
 
 /**
 * @name mapBy
@@ -70,7 +70,7 @@ setReadOnly( ns, 'dmskmap', require( '@stdlib/strided/base/dmskmap' ) );
 * @type {Function}
 * @see {@link module:@stdlib/strided/base/map-by}
 */
-setReadOnly( ns, 'mapBy', require( '@stdlib/strided/base/map-by' ) );
+setReadOnly( ns, 'mapBy', require( './../../base/map-by' ) );
 
 /**
 * @name mskunary
@@ -79,7 +79,7 @@ setReadOnly( ns, 'mapBy', require( '@stdlib/strided/base/map-by' ) );
 * @type {Function}
 * @see {@link module:@stdlib/strided/base/mskunary}
 */
-setReadOnly( ns, 'mskunary', require( '@stdlib/strided/base/mskunary' ) );
+setReadOnly( ns, 'mskunary', require( './../../base/mskunary' ) );
 
 /**
 * @name nullary
@@ -88,7 +88,7 @@ setReadOnly( ns, 'mskunary', require( '@stdlib/strided/base/mskunary' ) );
 * @type {Function}
 * @see {@link module:@stdlib/strided/base/nullary}
 */
-setReadOnly( ns, 'nullary', require( '@stdlib/strided/base/nullary' ) );
+setReadOnly( ns, 'nullary', require( './../../base/nullary' ) );
 
 /**
 * @name quaternary
@@ -97,7 +97,7 @@ setReadOnly( ns, 'nullary', require( '@stdlib/strided/base/nullary' ) );
 * @type {Function}
 * @see {@link module:@stdlib/strided/base/quaternary}
 */
-setReadOnly( ns, 'quaternary', require( '@stdlib/strided/base/quaternary' ) );
+setReadOnly( ns, 'quaternary', require( './../../base/quaternary' ) );
 
 /**
 * @name quinary
@@ -106,7 +106,7 @@ setReadOnly( ns, 'quaternary', require( '@stdlib/strided/base/quaternary' ) );
 * @type {Function}
 * @see {@link module:@stdlib/strided/base/quinary}
 */
-setReadOnly( ns, 'quinary', require( '@stdlib/strided/base/quinary' ) );
+setReadOnly( ns, 'quinary', require( './../../base/quinary' ) );
 
 /**
 * @name smap
@@ -115,7 +115,7 @@ setReadOnly( ns, 'quinary', require( '@stdlib/strided/base/quinary' ) );
 * @type {Function}
 * @see {@link module:@stdlib/strided/base/smap}
 */
-setReadOnly( ns, 'smap', require( '@stdlib/strided/base/smap' ) );
+setReadOnly( ns, 'smap', require( './../../base/smap' ) );
 
 /**
 * @name smskmap
@@ -124,7 +124,7 @@ setReadOnly( ns, 'smap', require( '@stdlib/strided/base/smap' ) );
 * @type {Function}
 * @see {@link module:@stdlib/strided/base/smskmap}
 */
-setReadOnly( ns, 'smskmap', require( '@stdlib/strided/base/smskmap' ) );
+setReadOnly( ns, 'smskmap', require( './../../base/smskmap' ) );
 
 /**
 * @name ternary
@@ -133,7 +133,7 @@ setReadOnly( ns, 'smskmap', require( '@stdlib/strided/base/smskmap' ) );
 * @type {Function}
 * @see {@link module:@stdlib/strided/base/ternary}
 */
-setReadOnly( ns, 'ternary', require( '@stdlib/strided/base/ternary' ) );
+setReadOnly( ns, 'ternary', require( './../../base/ternary' ) );
 
 /**
 * @name unary
@@ -142,7 +142,7 @@ setReadOnly( ns, 'ternary', require( '@stdlib/strided/base/ternary' ) );
 * @type {Function}
 * @see {@link module:@stdlib/strided/base/unary}
 */
-setReadOnly( ns, 'unary', require( '@stdlib/strided/base/unary' ) );
+setReadOnly( ns, 'unary', require( './../../base/unary' ) );
 
 
 // EXPORTS //

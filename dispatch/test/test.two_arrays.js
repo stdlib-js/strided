@@ -23,7 +23,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var unary = require( '@stdlib/strided/base/unary' );
+var unary = require( './../../base/unary' );
 var abs = require( '@stdlib/math/base/special/abs' );
 var Float64Array = require( '@stdlib/array/float64' );
 var Float32Array = require( '@stdlib/array/float32' );

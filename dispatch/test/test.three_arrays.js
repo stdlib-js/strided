@@ -23,7 +23,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var binary = require( '@stdlib/strided/base/binary' );
+var binary = require( './../../base/binary' );
 var Float64Array = require( '@stdlib/array/float64' );
 var Float32Array = require( '@stdlib/array/float32' );
 var Int32Array = require( '@stdlib/array/int32' );

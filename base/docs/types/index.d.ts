@@ -21,18 +21,18 @@
 /* tslint:disable:max-line-length */
 /* tslint:disable:max-file-line-count */
 
-import binary = require( '@stdlib/strided/base/binary' );
-import dmap = require( '@stdlib/strided/base/dmap' );
-import dmskmap = require( '@stdlib/strided/base/dmskmap' );
-import mapBy = require( '@stdlib/strided/base/map-by' );
-import mskunary = require( '@stdlib/strided/base/mskunary' );
-import nullary = require( '@stdlib/strided/base/nullary' );
-import quaternary = require( '@stdlib/strided/base/quaternary' );
-import quinary = require( '@stdlib/strided/base/quinary' );
-import smap = require( '@stdlib/strided/base/smap' );
-import smskmap = require( '@stdlib/strided/base/smskmap' );
-import ternary = require( '@stdlib/strided/base/ternary' );
-import unary = require( '@stdlib/strided/base/unary' );
+import binary = require( './../../../base/binary' );
+import dmap = require( './../../../base/dmap' );
+import dmskmap = require( './../../../base/dmskmap' );
+import mapBy = require( './../../../base/map-by' );
+import mskunary = require( './../../../base/mskunary' );
+import nullary = require( './../../../base/nullary' );
+import quaternary = require( './../../../base/quaternary' );
+import quinary = require( './../../../base/quinary' );
+import smap = require( './../../../base/smap' );
+import smskmap = require( './../../../base/smskmap' );
+import ternary = require( './../../../base/ternary' );
+import unary = require( './../../../base/unary' );
 
 /**
 * Interface describing the `base` namespace.

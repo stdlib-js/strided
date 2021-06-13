@@ -23,7 +23,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var ternary = require( '@stdlib/strided/base/ternary' ).ndarray;
+var ternary = require( './../../base/ternary' ).ndarray;
 var Float64Array = require( '@stdlib/array/float64' );
 var Float32Array = require( '@stdlib/array/float32' );
 var Int32Array = require( '@stdlib/array/int32' );
