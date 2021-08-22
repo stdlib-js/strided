@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/strided",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Strided.",
   "license": "Apache-2.0",
   "author": {
@@ -15,6 +15,7 @@
   ],
   "main": "./lib",
   "directories": {
+    "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",
     "test": "./test"
@@ -34,11 +35,11 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert": "github:stdlib-js/assert",
-    "@stdlib/math": "github:stdlib-js/math",
-    "@stdlib/ndarray": "github:stdlib-js/ndarray",
-    "@stdlib/types": "github:stdlib-js/types",
-    "@stdlib/utils": "github:stdlib-js/utils"
+    "@stdlib/assert": "github:stdlib-js/assert#main",
+    "@stdlib/math": "github:stdlib-js/math#main",
+    "@stdlib/ndarray": "github:stdlib-js/ndarray#main",
+    "@stdlib/types": "github:stdlib-js/types#main",
+    "@stdlib/utils": "github:stdlib-js/utils#main"
   },
   "devDependencies": {
     "@stdlib/array": "github:stdlib-js/array",
