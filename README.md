@@ -55,6 +55,11 @@ The namespace contains the following:
 
 <!-- <toc pattern="*"> -->
 
+<div class="namespace-toc">
+
+
+</div>
+
 <!-- </toc> -->
 
 </section>
