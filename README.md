@@ -57,6 +57,9 @@ The namespace contains the following:
 
 <div class="namespace-toc">
 
+-   <span class="signature">[`base`][@stdlib/strided/base]</span><span class="delimiter">: </span><span class="description">base strided.</span>
+-   <span class="signature">[`dispatch( fcns, types, data, nargs, nin, nout )`][@stdlib/strided/dispatch]</span><span class="delimiter">: </span><span class="description">create a strided array function interface which performs multiple dispatch.</span>
+-   <span class="signature">[`dtypes()`][@stdlib/strided/dtypes]</span><span class="delimiter">: </span><span class="description">list of strided array data types.</span>
 
 </div>
 
@@ -141,6 +144,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/strided/main/LICENSE
 
 <!-- <toc-links> -->
+
+[@stdlib/strided/base]: https://github.com/stdlib-js/strided/tree/main/base
+
+[@stdlib/strided/dispatch]: https://github.com/stdlib-js/strided/tree/main/dispatch
+
+[@stdlib/strided/dtypes]: https://github.com/stdlib-js/strided/tree/main/dtypes
 
 <!-- </toc-links> -->
 
