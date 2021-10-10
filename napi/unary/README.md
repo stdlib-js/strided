@@ -180,8 +180,10 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 -   The function expects that the callback `info` argument provides access to the following JavaScript arguments:
 
     -   `N`: number of indexed elements.
+    -   `dtypeX`: `X` data type (enumerated integer).
     -   `X`: input [typed array][mdn-typed-array].
     -   `strideX`: `X` stride length.
+    -   `dtypeY`: `Y`  data type (enumerated integer).
     -   `Y`: destination [typed array][mdn-typed-array].
     -   `strideY`: `Y` stride length.
 
@@ -208,6 +210,14 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 </section>
 
 <!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
 
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

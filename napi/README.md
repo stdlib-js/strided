@@ -96,21 +96,21 @@ This package exposes various C APIs to facilitate the creation of Node-API strid
 
 <!-- NOTE: please keep in alphabetical order -->
 
--   [`@stdlib/strided/base/binary`][@stdlib/strided/base/binary]: https://github.com/stdlib-js/strided/tree/main/base/binary`][@stdlib/strided/base/binary
--   [`@stdlib/strided/base/dmap`][@stdlib/strided/base/dmap]: https://github.com/stdlib-js/strided/tree/main/base/dmap`][@stdlib/strided/base/dmap
--   [`@stdlib/strided/base/dmskmap`][@stdlib/strided/base/dmskmap]: https://github.com/stdlib-js/strided/tree/main/base/dmskmap`][@stdlib/strided/base/dmskmap
--   [`@stdlib/strided/base/function-object`][@stdlib/strided/base/function-object]: https://github.com/stdlib-js/strided/tree/main/base/function-object`][@stdlib/strided/base/function-object
--   [`@stdlib/strided/base/mskunary`][@stdlib/strided/base/mskunary]: https://github.com/stdlib-js/strided/tree/main/base/mskunary`][@stdlib/strided/base/mskunary
--   [`@stdlib/strided/base/smap`][@stdlib/strided/base/smap]: https://github.com/stdlib-js/strided/tree/main/base/smap`][@stdlib/strided/base/smap
--   [`@stdlib/strided/base/smskmap`][@stdlib/strided/base/smskmap]: https://github.com/stdlib-js/strided/tree/main/base/smskmap`][@stdlib/strided/base/smskmap
--   [`@stdlib/strided/base/unary`][@stdlib/strided/base/unary]: https://github.com/stdlib-js/strided/tree/main/base/unary`][@stdlib/strided/base/unary
--   [`@stdlib/strided/dtypes`][@stdlib/strided/dtypes]: https://github.com/stdlib-js/strided/tree/main/dtypes`][@stdlib/strided/dtypes
--   [`@stdlib/strided/napi/dmap`][@stdlib/strided/napi/dmap]: https://github.com/stdlib-js/strided/tree/main/napi/dmap`][@stdlib/strided/napi/dmap
--   [`@stdlib/strided/napi/dmskmap`][@stdlib/strided/napi/dmskmap]: https://github.com/stdlib-js/strided/tree/main/napi/dmskmap`][@stdlib/strided/napi/dmskmap
--   [`@stdlib/strided/napi/mskunary`][@stdlib/strided/napi/mskunary]: https://github.com/stdlib-js/strided/tree/main/napi/mskunary`][@stdlib/strided/napi/mskunary
--   [`@stdlib/strided/napi/smap`][@stdlib/strided/napi/smap]: https://github.com/stdlib-js/strided/tree/main/napi/smap`][@stdlib/strided/napi/smap
--   [`@stdlib/strided/napi/smskmap`][@stdlib/strided/napi/smskmap]: https://github.com/stdlib-js/strided/tree/main/napi/smskmap`][@stdlib/strided/napi/smskmap
--   [`@stdlib/strided/napi/unary`][@stdlib/strided/napi/unary]: https://github.com/stdlib-js/strided/tree/main/napi/unary`][@stdlib/strided/napi/unary
+-   [`@stdlib/strided/base/binary`][@stdlib/strided/base/binary]: strided array loops for operating on two input strided arrays and one or more output strided arrays. 
+-   [`@stdlib/strided/base/dmap`][@stdlib/strided/base/dmap]: double-precision floating-point strided array interface for applying a unary callback to a single input strided array. 
+-   [`@stdlib/strided/base/dmskmap`][@stdlib/strided/base/dmskmap]: double-precision floating-point strided array interface for applying a unary callback to a single input strided array according to a mask strided array.
+-   [`@stdlib/strided/base/function-object`][@stdlib/strided/base/function-object]: strided array function object.
+-   [`@stdlib/strided/base/mskunary`][@stdlib/strided/base/mskunary]: strided array loops for operating on a single input strided array, a mask strided array, and one or more output strided arrays. 
+-   [`@stdlib/strided/base/smap`][@stdlib/strided/base/smap]: single-precision floating-point strided array interface for applying a unary callback to a single input strided array.
+-   [`@stdlib/strided/base/smskmap`][@stdlib/strided/base/smskmap]: single-precision floating-point strided array interface for applying a unary callback to a single input strided array according to a mask strided array.
+-   [`@stdlib/strided/base/unary`][@stdlib/strided/base/unary]: strided array loops for operating on a single input strided array and one or more output strided arrays. 
+-   [`@stdlib/strided/dtypes`][@stdlib/strided/dtypes]: supported strided array data types.
+-   [`@stdlib/strided/napi/dmap`][@stdlib/strided/napi/dmap]: Node-API interfaces and macros for registering a [`@stdlib/strided/base/dmap`][@stdlib/strided/base/dmap] function.
+-   [`@stdlib/strided/napi/dmskmap`][@stdlib/strided/napi/dmskmap]: Node-API interfaces and macros for registering a [`@stdlib/strided/base/dmskmap`][@stdlib/strided/base/dmskmap] function.
+-   [`@stdlib/strided/napi/mskunary`][@stdlib/strided/napi/mskunary]: Node-API interfaces and macros for registering one or more [`@stdlib/strided/base/mskunary`][@stdlib/strided/base/mskunary] interfaces with support for multiple dispatch.
+-   [`@stdlib/strided/napi/smap`][@stdlib/strided/napi/smap]: Node-API interfaces and macros for registering a [`@stdlib/strided/base/smap`][@stdlib/strided/base/smap] function.
+-   [`@stdlib/strided/napi/smskmap`][@stdlib/strided/napi/smskmap]: Node-API interfaces and macros for registering a [`@stdlib/strided/base/smskmap`][@stdlib/strided/base/smskmap] function.
+-   [`@stdlib/strided/napi/unary`][@stdlib/strided/napi/unary]: Node-API interfaces and macros for registering one or more [`@stdlib/strided/base/unary`][@stdlib/strided/base/unary] interfaces with support for multiple dispatch.
 
 For API documentation, consult the individual packages.
 
@@ -171,6 +171,14 @@ STDLIB_STRIDED_NAPI_MODULE_DMAP( identity )
 </section>
 
 <!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
 
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
