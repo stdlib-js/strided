@@ -20,36 +20,36 @@
 
 // MODULES //
 
-var dtypes = require( './enum.js' );
+var enumeration = require( './../../../dtypes' ).enum;
 
 
 // VARIABLES //
 
-var dt = dtypes();
+var ENUM = enumeration();
 
 
 // MAIN //
 
 /**
-* Returns the integer value associated with a supported dtype for purposes of C inter-operation.
+* Returns the enumeration constant associated with a strided array data type string.
 *
 * ## Notes
 *
 * -   Downstream consumers of this function should **not** rely on specific integer values (e.g., `INT8 == 0`). Instead, the function should be used in an opaque manner.
-* -   The main purpose of this function is JavaScript and C inter-operation of strided arrays.
 *
-* @param {string} dtype - data type
-* @returns {(integer|void)} integer value or undefined
+* @param {string} dtype - data type string
+* @returns {(integer|null)} integer value or null
 *
 * @example
-* var v = enumerate( 'int8' );
+* var v = str2enum( 'int8' );
 * // returns <number>
 */
-function enumerate( dtype ) {
-	return dt[ dtype ];
+function str2enum( dtype ) {
+	var v = ENUM[ dtype ];
+	return ( typeof v === 'number' ) ? v : null; // note: we include this guard to prevent walking the prototype chain
 }
 
 
 // EXPORTS //
 
-module.exports = enumerate;
+module.exports = str2enum;

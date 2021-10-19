@@ -22,7 +22,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
 
-> Standard library strided.
+> Strided array functionality.
 
 <section class="installation">
 
@@ -44,7 +44,7 @@ var ns = require( '@stdlib/strided' );
 
 #### ns
 
-Standard library strided.
+Namespace containing strided array functionality.
 
 ```javascript
 var o = ns;

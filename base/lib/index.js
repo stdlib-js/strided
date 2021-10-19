@@ -64,6 +64,33 @@ setReadOnly( ns, 'dmap', require( './../../base/dmap' ) );
 setReadOnly( ns, 'dmskmap', require( './../../base/dmskmap' ) );
 
 /**
+* @name dtypeEnum2Str
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/dtype-enum2str}
+*/
+setReadOnly( ns, 'dtypeEnum2Str', require( './../../base/dtype-enum2str' ) );
+
+/**
+* @name dtypeResolveEnum
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/dtype-resolve-enum}
+*/
+setReadOnly( ns, 'dtypeResolveEnum', require( './../../base/dtype-resolve-enum' ) );
+
+/**
+* @name dtypeStr2Enum
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/dtype-str2enum}
+*/
+setReadOnly( ns, 'dtypeStr2Enum', require( './../../base/dtype-str2enum' ) );
+
+/**
 * @name mapBy
 * @memberof ns
 * @readonly
@@ -71,6 +98,15 @@ setReadOnly( ns, 'dmskmap', require( './../../base/dmskmap' ) );
 * @see {@link module:@stdlib/strided/base/map-by}
 */
 setReadOnly( ns, 'mapBy', require( './../../base/map-by' ) );
+
+/**
+* @name metaDataProps
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/meta-data-props}
+*/
+setReadOnly( ns, 'metaDataProps', require( './../../base/meta-data-props' ) );
 
 /**
 * @name mskunary

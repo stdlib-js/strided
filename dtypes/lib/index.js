@@ -28,6 +28,12 @@
 *
 * var list = dtypes();
 * // returns [...]
+*
+* @example
+* var enumeration = require( '@stdlib/strided/dtypes' ).enum;
+*
+* var table = enumeration();
+* // returns {...}
 */
 
 // MODULES //
@@ -35,13 +41,13 @@
 var setReadOnly = require( '@stdlib/utils/define-nonenumerable-read-only-property' );
 var dtypes = require( './main.js' );
 var enumeration = require( './enum.js' );
-var enumerate = require( './enumerate.js' );
+var assign = require( './assign.js' );
 
 
 // MAIN //
 
 setReadOnly( dtypes, 'enum', enumeration );
-setReadOnly( dtypes, 'enumerate', enumerate );
+assign( dtypes, enumeration() );
 
 
 // EXPORTS //
