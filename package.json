@@ -45,7 +45,6 @@
   "devDependencies": {
     "@stdlib/array": "github:stdlib-js/array",
     "@stdlib/bench": "github:stdlib-js/bench",
-    "@stdlib/blas": "github:stdlib-js/blas",
     "@stdlib/fs": "github:stdlib-js/fs",
     "@stdlib/process": "github:stdlib-js/process",
     "@stdlib/random": "github:stdlib-js/random",
