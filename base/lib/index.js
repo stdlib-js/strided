@@ -46,6 +46,15 @@ var ns = {};
 setReadOnly( ns, 'binary', require( './../../base/binary' ) );
 
 /**
+* @name binaryAddonDispatch
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/binary-addon-dispatch}
+*/
+setReadOnly( ns, 'binaryAddonDispatch', require( './../../base/binary-addon-dispatch' ) );
+
+/**
 * @name dmap
 * @memberof ns
 * @readonly
@@ -179,6 +188,15 @@ setReadOnly( ns, 'ternary', require( './../../base/ternary' ) );
 * @see {@link module:@stdlib/strided/base/unary}
 */
 setReadOnly( ns, 'unary', require( './../../base/unary' ) );
+
+/**
+* @name unaryAddonDispatch
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/unary-addon-dispatch}
+*/
+setReadOnly( ns, 'unaryAddonDispatch', require( './../../base/unary-addon-dispatch' ) );
 
 
 // EXPORTS //
