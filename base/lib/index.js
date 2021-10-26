@@ -64,6 +64,15 @@ setReadOnly( ns, 'binaryAddonDispatch', require( './../../base/binary-addon-disp
 setReadOnly( ns, 'dmap', require( './../../base/dmap' ) );
 
 /**
+* @name dmap2
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/dmap2}
+*/
+setReadOnly( ns, 'dmap2', require( './../../base/dmap2' ) );
+
+/**
 * @name dmskmap
 * @memberof ns
 * @readonly
