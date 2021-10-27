@@ -21,35 +21,35 @@
 // MAIN //
 
 /**
-* Applies a binary function accepting and returning double-precision floating-point numbers to corresponding elements in two double-precision floating-point strided input arrays and assigns each result to an element in a double-precision floating-point strided output array.
+* Applies a binary function accepting and returning single-precision floating-point numbers to corresponding elements in two single-precision floating-point strided input arrays and assigns each result to an element in a single-precision floating-point strided output array.
 *
 * @param {NonNegativeInteger} N - number of indexed elements
-* @param {Float64Array} x - input array
+* @param {Float32Array} x - input array
 * @param {integer} strideX - `x` stride length
 * @param {NonNegativeInteger} offsetX - starting `x` index
-* @param {Float64Array} y - input array
+* @param {Float32Array} y - input array
 * @param {integer} strideY - `y` stride length
 * @param {NonNegativeInteger} offsetY - starting `y` index
-* @param {Float64Array} z - destination array
+* @param {Float32Array} z - destination array
 * @param {integer} strideZ - `z` stride length
 * @param {NonNegativeInteger} offsetZ - starting `z` index
 * @param {Function} fcn - binary function to apply
-* @returns {Float64Array} `z`
+* @returns {Float32Array} `z`
 *
 * @example
-* var Float64Array = require( '@stdlib/array/float64' );
-* var add = require( '@stdlib/math/base/ops/add' );
+* var Float32Array = require( '@stdlib/array/float32' );
+* var addf = require( '@stdlib/math/base/ops/addf' );
 *
-* var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
-* var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
-* var z = new Float64Array( x.length );
+* var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+* var y = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+* var z = new Float32Array( x.length );
 *
-* dmap2( x.length, x, 1, 0, y, 1, 0, z, 1, 0, add );
+* smap2( x.length, x, 1, 0, y, 1, 0, z, 1, 0, addf );
 *
 * console.log( z );
-* // => <Float64Array>[ 2.0, 4.0, 6.0, 8.0, 10.0 ]
+* // => <Float32Array>[ 2.0, 4.0, 6.0, 8.0, 10.0 ]
 */
-function dmap2( N, x, strideX, offsetX, y, strideY, offsetY, z, strideZ, offsetZ, fcn ) { // eslint-disable-line max-len, max-params
+function smap2( N, x, strideX, offsetX, y, strideY, offsetY, z, strideZ, offsetZ, fcn ) { // eslint-disable-line max-len, max-params
 	var ix;
 	var iy;
 	var iz;
@@ -72,4 +72,4 @@ function dmap2( N, x, strideX, offsetX, y, strideY, offsetY, z, strideZ, offsetZ
 
 // EXPORTS //
 
-module.exports = dmap2;
+module.exports = smap2;

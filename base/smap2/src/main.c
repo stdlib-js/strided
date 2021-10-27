@@ -16,11 +16,11 @@
 * limitations under the License.
 */
 
-#include "stdlib/strided/base/dmap2.h"
+#include "stdlib/strided/base/smap2.h"
 #include <stdint.h>
 
 /**
-* Applies a binary function accepting and returning double-precision floating-point numbers to corresponding elements in two double-precision floating-point strided input arrays and assigns each result to an element in a double-precision floating-point strided output array.
+* Applies a binary function accepting and returning single-precision floating-point numbers to corresponding elements in two single-precision floating-point strided input arrays and assigns each result to an element in a single-precision floating-point strided output array.
 *
 * @param N        number of indexed elements
 * @param X        input array
@@ -32,22 +32,22 @@
 * @param fcn      binary function to apply
 *
 * @example
-* #include "stdlib/strided/base/dmap2.h"
+* #include "stdlib/strided/base/smap2.h"
 * #include <stdint.h>
 *
-* static double add( const double x, const double y ) {
+* static float addf( const float x, const float y ) {
 *     return x + y;
 * }
 *
-* double X[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 };
-* double Z[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 };
-* double Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+* float X[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f };
+* float Z[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f };
+* float Y[] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
 *
 * int64_t N = 6;
 *
-* stdlib_strided_dmap2( N, X, 1, Y, 1, Z, 1, add );
+* stdlib_strided_smap2( N, X, 1, Y, 1, Z, 1, addf );
 */
-void stdlib_strided_dmap2( const int64_t N, const double *X, const int64_t strideX, const double *Y, const int64_t strideY, double *Z, const int64_t strideZ, double (*fcn)( double, double ) ) {
+void stdlib_strided_smap2( const int64_t N, const float *X, const int64_t strideX, const float *Y, const int64_t strideY, float *Z, const int64_t strideZ, float (*fcn)( float, float ) ) {
 	int64_t ix;
 	int64_t iy;
 	int64_t iz;

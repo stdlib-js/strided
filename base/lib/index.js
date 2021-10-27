@@ -172,6 +172,15 @@ setReadOnly( ns, 'quinary', require( './../../base/quinary' ) );
 setReadOnly( ns, 'smap', require( './../../base/smap' ) );
 
 /**
+* @name smap2
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/smap2}
+*/
+setReadOnly( ns, 'smap2', require( './../../base/smap2' ) );
+
+/**
 * @name smskmap
 * @memberof ns
 * @readonly
