@@ -199,6 +199,15 @@ setReadOnly( ns, 'smap2', require( './../../base/smap2' ) );
 setReadOnly( ns, 'smskmap', require( './../../base/smskmap' ) );
 
 /**
+* @name smskmap2
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/smskmap2}
+*/
+setReadOnly( ns, 'smskmap2', require( './../../base/smskmap2' ) );
+
+/**
 * @name ternary
 * @memberof ns
 * @readonly
