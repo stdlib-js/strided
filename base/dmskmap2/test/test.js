@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,16 +18,21 @@
 
 'use strict';
 
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filledarray = require( '@stdlib/array/filled' );
-var nullary = require( './../lib' );
+// MODULES //
 
-var x = filledarray( 0.0, 10, 'generic' );
-console.log( x );
+var tape = require( 'tape' );
+var dmskmap2 = require( './../lib' );
 
-var shape = [ x.length ];
-var strides = [ 1 ];
-var offsets = [ 0 ];
 
-nullary.ndarray( [ x ], shape, strides, offsets, discreteUniform( -100, 100 ) );
-console.log( x );
+// TESTS //
+
+tape( 'main export is a function', function test( t ) {
+	t.ok( true, __filename );
+	t.strictEqual( typeof dmskmap2, 'function', 'main export is a function' );
+	t.end();
+});
+
+tape( 'attached to the main export is a method providing an ndarray interface', function test( t ) {
+	t.strictEqual( typeof dmskmap2.ndarray, 'function', 'method is a function' );
+	t.end();
+});

@@ -82,6 +82,15 @@ setReadOnly( ns, 'dmap2', require( './../../base/dmap2' ) );
 setReadOnly( ns, 'dmskmap', require( './../../base/dmskmap' ) );
 
 /**
+* @name dmskmap2
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/dmskmap2}
+*/
+setReadOnly( ns, 'dmskmap2', require( './../../base/dmskmap2' ) );
+
+/**
 * @name dtypeEnum2Str
 * @memberof ns
 * @readonly
