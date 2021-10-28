@@ -51,59 +51,59 @@ type BinaryCallback = ( value: any, idx: number ) => any;
 *
 * @param value - array element
 * @param idx - iteration index
-* @param xi - strided index (offsetX + idx*strideX)
+* @param ix - strided index (offsetX + idx*strideX)
 * @returns accessed value
 */
-type TertiaryCallback = ( value: any, idx: number, xi: number ) => any;
+type TernaryCallback = ( value: any, idx: number, ix: number ) => any;
 
 /**
 * Returns an accessed value.
 *
 * @param value - array element
 * @param idx - iteration index
-* @param xi - strided index (offsetX + idx*strideX)
-* @param yi - strided index (offsetY + idx*strideY)
+* @param ix - strided index (offsetX + idx*strideX)
+* @param iy - strided index (offsetY + idx*strideY)
 * @returns accessed value
 */
-type QuaternaryCallback = ( value: any, idx: number, xi: number, yi: number ) => any; // tslint-disable-line max-line-length
+type QuaternaryCallback = ( value: any, idx: number, ix: number, iy: number ) => any; // tslint-disable-line max-line-length
 
 /**
 * Returns an accessed value.
 *
 * @param value - array element
 * @param idx - iteration index
-* @param xi - strided index (offsetX + idx*strideX)
-* @param yi - strided index (offsetY + idx*strideY)
+* @param ix - strided index (offsetX + idx*strideX)
+* @param iy - strided index (offsetY + idx*strideY)
 * @param x - input array
 * @returns accessed value
 */
-type QuinaryCallback = ( value: any, idx: number, xi: number, yi: number, x: Collection ) => any; // tslint-disable-line max-line-length
+type QuinaryCallback = ( value: any, idx: number, ix: number, iy: number, x: Collection ) => any; // tslint-disable-line max-line-length
 
 /**
 * Returns an accessed value.
 *
 * @param value - array element
 * @param idx - iteration index
-* @param xi - strided index (offsetX + idx*strideX)
-* @param yi - strided index (offsetY + idx*strideY)
-* @param x - input array
-* @param y - output array
-* @returns accessed value
-*/
-type SenaryCallback = ( value: any, idx: number, xi: number, yi: number, x: Collection, y: Collection ) => any; // tslint-disable-line max-line-length
-
-/**
-* Returns an accessed value.
-*
-* @param value - array element
-* @param idx - iteration index
-* @param xi - strided index (offsetX + idx*strideX)
-* @param yi - strided index (offsetY + idx*strideY)
+* @param ix - strided index (offsetX + idx*strideX)
+* @param iy - strided index (offsetY + idx*strideY)
 * @param x - input array
 * @param y - output array
 * @returns accessed value
 */
-type Callback = NullaryCallback | UnaryCallback | BinaryCallback | TertiaryCallback | QuaternaryCallback | QuinaryCallback | SenaryCallback; // tslint-disable-line max-line-length
+type SenaryCallback = ( value: any, idx: number, ix: number, iy: number, x: Collection, y: Collection ) => any; // tslint-disable-line max-line-length
+
+/**
+* Returns an accessed value.
+*
+* @param value - array element
+* @param idx - iteration index
+* @param ix - strided index (offsetX + idx*strideX)
+* @param iy - strided index (offsetY + idx*strideY)
+* @param x - input array
+* @param y - output array
+* @returns accessed value
+*/
+type Callback = NullaryCallback | UnaryCallback | BinaryCallback | TernaryCallback | QuaternaryCallback | QuinaryCallback | SenaryCallback; // tslint-disable-line max-line-length
 
 /**
 * Callback invoked for each indexed strided array element retrieved via a callback function.
@@ -111,7 +111,7 @@ type Callback = NullaryCallback | UnaryCallback | BinaryCallback | TertiaryCallb
 * @param value - strided array element
 * @returns result
 */
-type Unary = ( value: number ) => number;
+type Unary = ( value: any ) => any;
 
 /**
 * Interface describing `mapBy`.

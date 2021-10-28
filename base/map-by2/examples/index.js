@@ -21,22 +21,25 @@
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filledarray = require( '@stdlib/array/filled' );
 var filledarrayBy = require( '@stdlib/array/filled-by' );
-var abs = require( '@stdlib/math/base/special/abs' );
-var mapBy = require( './../lib' );
+var add = require( '@stdlib/math/base/ops/add' );
+var mapBy2 = require( './../lib' );
 
-function accessor( v, i ) {
+function accessor( vx, vy, i ) {
 	if ( (i%3) === 0 ) {
 		// Simulate a "missing" value...
 		return;
 	}
-	return v;
+	return [ vx, vy ];
 }
 
 var x = filledarrayBy( 10, 'generic', discreteUniform( -100, 100 ) );
 console.log( x );
 
-var y = filledarray( null, 10, 'generic' );
+var y = filledarrayBy( 10, 'generic', discreteUniform( -100, 100 ) );
 console.log( y );
 
-mapBy.ndarray( x.length, x, 1, 0, y, -1, y.length-1, abs, accessor );
-console.log( y );
+var z = filledarray( null, 10, 'generic' );
+console.log( z );
+
+mapBy2.ndarray( x.length, x, 1, 0, y, -1, y.length-1, z, 1, 0, add, accessor );
+console.log( z );

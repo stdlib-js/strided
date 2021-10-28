@@ -127,6 +127,15 @@ setReadOnly( ns, 'dtypeStr2Enum', require( './../../base/dtype-str2enum' ) );
 setReadOnly( ns, 'mapBy', require( './../../base/map-by' ) );
 
 /**
+* @name mapBy2
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/map-by2}
+*/
+setReadOnly( ns, 'mapBy2', require( './../../base/map-by2' ) );
+
+/**
 * @name metaDataProps
 * @memberof ns
 * @readonly
