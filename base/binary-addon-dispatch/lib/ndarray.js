@@ -26,6 +26,16 @@ var isFunction = require( '@stdlib/assert/is-function' );
 var isTypedArrayLike = require( '@stdlib/assert/is-typed-array-like' );
 var isNonNegativeInteger = require( '@stdlib/assert/is-nonnegative-integer' ).isPrimitive;
 var resolve = require( './../../../base/dtype-resolve-enum' );
+var reinterpretComplex64 = require( './../../../base/reinterpret-complex64' );
+var reinterpretComplex128 = require( './../../../base/reinterpret-complex128' );
+var offsetView = require( './../../../base/offset-view' );
+var minViewBufferIndex = require( './../../../base/min-view-buffer-index' );
+
+
+// VARIABLES //
+
+var COMPLEX64 = resolve( 'complex64' );
+var COMPLEX128 = resolve( 'complex128' );
 
 
 // MAIN //
@@ -182,18 +192,30 @@ function dispatch( addon, fallback ) {
 		if ( !isNonNegativeInteger( offsetZ ) ) {
 			throw new TypeError( 'invalid argument. Output array offset argument must be a nonnegative integer.' );
 		}
-		if ( strideX < 0 ) {
-			offsetX += (N-1) * strideX;
+		offsetX = minViewBufferIndex( N, strideX, offsetX );
+		offsetY = minViewBufferIndex( N, strideY, offsetY );
+		offsetZ = minViewBufferIndex( N, strideZ, offsetZ );
+		if ( dtypeX === COMPLEX64 ) {
+			viewX = reinterpretComplex64( x, offsetX );
+		} else if ( dtypeX === COMPLEX128 ) {
+			viewX = reinterpretComplex128( x, offsetX );
+		} else {
+			viewX = offsetView( x, offsetX );
 		}
-		if ( strideY < 0 ) {
-			offsetY += (N-1) * strideY;
+		if ( dtypeY === COMPLEX64 ) {
+			viewY = reinterpretComplex64( y, offsetY );
+		} else if ( dtypeY === COMPLEX128 ) {
+			viewY = reinterpretComplex128( y, offsetY );
+		} else {
+			viewY = offsetView( y, offsetY );
 		}
-		if ( strideZ < 0 ) {
-			offsetZ += (N-1) * strideZ;
+		if ( dtypeZ === COMPLEX64 ) {
+			viewZ = reinterpretComplex64( z, offsetZ );
+		} else if ( dtypeZ === COMPLEX128 ) {
+			viewZ = reinterpretComplex128( z, offsetZ );
+		} else {
+			viewZ = offsetView( z, offsetZ );
 		}
-		viewX = new x.constructor( x.buffer, x.byteOffset+(x.BYTES_PER_ELEMENT*offsetX), x.length-offsetX );
-		viewY = new y.constructor( y.buffer, y.byteOffset+(y.BYTES_PER_ELEMENT*offsetY), y.length-offsetY );
-		viewZ = new z.constructor( z.buffer, z.byteOffset+(z.BYTES_PER_ELEMENT*offsetZ), z.length-offsetZ );
 
 		addon( N, dtypeX, viewX, strideX, dtypeY, viewY, strideY, dtypeZ, viewZ, strideZ );
 		return z;

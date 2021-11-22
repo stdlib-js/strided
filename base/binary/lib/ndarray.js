@@ -18,6 +18,16 @@
 
 'use strict';
 
+// MODULES //
+
+var strided = require( './binary.ndarray.js' );
+var accessors = require( './accessors.ndarray.js' );
+var getIndexed = require( './getter.js' );
+var getAccessor = require( './getter.accessor.js' );
+var setIndexed = require( './setter.js' );
+var setAccessor = require( './setter.accessor.js' );
+
+
 // MAIN //
 
 /**
@@ -48,37 +58,33 @@
 * // => <Float64Array>[ 2.0, 4.0, 6.0, 8.0, 10.0 ]
 */
 function binary( arrays, shape, strides, offsets, fcn ) {
-	var sx;
-	var sy;
-	var sz;
-	var ix;
-	var iy;
-	var iz;
+	var xget;
+	var yget;
+	var zset;
 	var x;
 	var y;
 	var z;
-	var N;
-	var i;
 
-	N = shape[ 0 ];
-	if ( N <= 0 ) {
-		return;
-	}
-	ix = offsets[ 0 ];
-	iy = offsets[ 1 ];
-	iz = offsets[ 2 ];
-	sx = strides[ 0 ];
-	sy = strides[ 1 ];
-	sz = strides[ 2 ];
+	// Note: we intentionally use weak checks for accessors and do not explicitly check for functions for (perhaps marginally) better performance...
 	x = arrays[ 0 ];
-	y = arrays[ 1 ];
-	z = arrays[ 2 ];
-	for ( i = 0; i < N; i++ ) {
-		z[ iz ] = fcn( x[ ix ], y[ iy ] );
-		ix += sx;
-		iy += sy;
-		iz += sz;
+	if ( x.get && x.set ) {
+		xget = getAccessor;
 	}
+	y = arrays[ 1 ];
+	if ( y.get && y.set ) {
+		yget = getAccessor;
+	}
+	z = arrays[ 2 ];
+	if ( z.get && z.set ) {
+		zset = setAccessor;
+	}
+	if ( xget || yget || zset ) {
+		xget = xget || getIndexed;
+		yget = yget || getIndexed;
+		zset = zset || setIndexed;
+		return accessors( arrays, shape, strides, offsets, [ xget, yget, zset ], fcn ); // eslint-disable-line max-len
+	}
+	return strided( arrays, shape, strides, offsets, fcn );
 }
 
 

@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,18 +21,18 @@
 // MAIN //
 
 /**
-* Returns the sum.
+* Returns a strided array element using an accessor method.
 *
 * @private
-* @param {number} x - value
-* @param {number} y - value
-* @returns {number} sum
+* @param {Collection} x - strided array
+* @param {NonNegativeInteger} idx - element index
+* @returns {*} element
 */
-function add( x, y ) {
-	return x + y;
+function getter( x, idx ) {
+	return x.get( idx );
 }
 
 
 // EXPORTS //
 
-module.exports = add;
+module.exports = getter;

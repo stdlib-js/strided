@@ -18,6 +18,16 @@
 
 'use strict';
 
+// MODULES //
+
+var strided = require( './unary.js' );
+var accessors = require( './accessors.js' );
+var getIndexed = require( './getter.js' );
+var getAccessor = require( './getter.accessor.js' );
+var setIndexed = require( './setter.js' );
+var setAccessor = require( './setter.accessor.js' );
+
+
 // MAIN //
 
 /**
@@ -48,38 +58,26 @@
 * // => <Float64Array>[ 10.0, 20.0, 30.0, 40.0, 50.0 ]
 */
 function unary( arrays, shape, strides, fcn ) {
-	var sx;
-	var sy;
-	var ix;
-	var iy;
+	var xget;
+	var yset;
 	var x;
 	var y;
-	var N;
-	var i;
 
-	N = shape[ 0 ];
-	if ( N <= 0 ) {
-		return;
-	}
-	sx = strides[ 0 ];
-	sy = strides[ 1 ];
-	if ( sx < 0 ) {
-		ix = (1-N) * sx;
-	} else {
-		ix = 0;
-	}
-	if ( sy < 0 ) {
-		iy = (1-N) * sy;
-	} else {
-		iy = 0;
-	}
+	// Note: we intentionally use weak checks for accessors and do not explicitly check for functions for (perhaps marginally) better performance...
 	x = arrays[ 0 ];
-	y = arrays[ 1 ];
-	for ( i = 0; i < N; i++ ) {
-		y[ iy ] = fcn( x[ ix ] );
-		ix += sx;
-		iy += sy;
+	if ( x.get && x.set ) {
+		xget = getAccessor;
 	}
+	y = arrays[ 1 ];
+	if ( y.get && y.set ) {
+		yset = setAccessor;
+	}
+	if ( xget || yset ) {
+		xget = xget || getIndexed;
+		yset = yset || setIndexed;
+		return accessors( arrays, shape, strides, [ xget, yset ], fcn );
+	}
+	return strided( arrays, shape, strides, fcn );
 }
 
 

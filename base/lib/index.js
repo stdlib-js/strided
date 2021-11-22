@@ -55,6 +55,15 @@ setReadOnly( ns, 'binary', require( './../../base/binary' ) );
 setReadOnly( ns, 'binaryAddonDispatch', require( './../../base/binary-addon-dispatch' ) );
 
 /**
+* @name cmap
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/cmap}
+*/
+setReadOnly( ns, 'cmap', require( './../../base/cmap' ) );
+
+/**
 * @name dmap
 * @memberof ns
 * @readonly
@@ -109,6 +118,15 @@ setReadOnly( ns, 'dtypeEnum2Str', require( './../../base/dtype-enum2str' ) );
 setReadOnly( ns, 'dtypeResolveEnum', require( './../../base/dtype-resolve-enum' ) );
 
 /**
+* @name dtypeResolveStr
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/dtype-resolve-str}
+*/
+setReadOnly( ns, 'dtypeResolveStr', require( './../../base/dtype-resolve-str' ) );
+
+/**
 * @name dtypeStr2Enum
 * @memberof ns
 * @readonly
@@ -136,6 +154,15 @@ setReadOnly( ns, 'mapBy', require( './../../base/map-by' ) );
 setReadOnly( ns, 'mapBy2', require( './../../base/map-by2' ) );
 
 /**
+* @name maxViewBufferIndex
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/max-view-buffer-index}
+*/
+setReadOnly( ns, 'maxViewBufferIndex', require( './../../base/max-view-buffer-index' ) );
+
+/**
 * @name metaDataProps
 * @memberof ns
 * @readonly
@@ -143,6 +170,15 @@ setReadOnly( ns, 'mapBy2', require( './../../base/map-by2' ) );
 * @see {@link module:@stdlib/strided/base/meta-data-props}
 */
 setReadOnly( ns, 'metaDataProps', require( './../../base/meta-data-props' ) );
+
+/**
+* @name minViewBufferIndex
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/min-view-buffer-index}
+*/
+setReadOnly( ns, 'minViewBufferIndex', require( './../../base/min-view-buffer-index' ) );
 
 /**
 * @name mskunary
@@ -163,6 +199,15 @@ setReadOnly( ns, 'mskunary', require( './../../base/mskunary' ) );
 setReadOnly( ns, 'nullary', require( './../../base/nullary' ) );
 
 /**
+* @name offsetView
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/offset-view}
+*/
+setReadOnly( ns, 'offsetView', require( './../../base/offset-view' ) );
+
+/**
 * @name quaternary
 * @memberof ns
 * @readonly
@@ -179,6 +224,24 @@ setReadOnly( ns, 'quaternary', require( './../../base/quaternary' ) );
 * @see {@link module:@stdlib/strided/base/quinary}
 */
 setReadOnly( ns, 'quinary', require( './../../base/quinary' ) );
+
+/**
+* @name reinterpretComplex64
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/reinterpret-complex64}
+*/
+setReadOnly( ns, 'reinterpretComplex64', require( './../../base/reinterpret-complex64' ) );
+
+/**
+* @name reinterpretComplex128
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/reinterpret-complex128}
+*/
+setReadOnly( ns, 'reinterpretComplex128', require( './../../base/reinterpret-complex128' ) );
 
 /**
 * @name smap
@@ -242,6 +305,15 @@ setReadOnly( ns, 'unary', require( './../../base/unary' ) );
 * @see {@link module:@stdlib/strided/base/unary-addon-dispatch}
 */
 setReadOnly( ns, 'unaryAddonDispatch', require( './../../base/unary-addon-dispatch' ) );
+
+/**
+* @name zmap
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/zmap}
+*/
+setReadOnly( ns, 'zmap', require( './../../base/zmap' ) );
 
 
 // EXPORTS //
