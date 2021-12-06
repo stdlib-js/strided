@@ -55,6 +55,24 @@ setReadOnly( ns, 'binary', require( './../../base/binary' ) );
 setReadOnly( ns, 'binaryAddonDispatch', require( './../../base/binary-addon-dispatch' ) );
 
 /**
+* @name binaryDtypeSignatures
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/binary-dtype-signatures}
+*/
+setReadOnly( ns, 'binaryDtypeSignatures', require( './../../base/binary-dtype-signatures' ) );
+
+/**
+* @name binarySignatureCallbacks
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/binary-signature-callbacks}
+*/
+setReadOnly( ns, 'binarySignatureCallbacks', require( './../../base/binary-signature-callbacks' ) );
+
+/**
 * @name cmap
 * @memberof ns
 * @readonly
