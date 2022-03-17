@@ -41,6 +41,7 @@
     "@stdlib/complex": "github:stdlib-js/complex#main",
     "@stdlib/math": "github:stdlib-js/math#main",
     "@stdlib/ndarray": "github:stdlib-js/ndarray#main",
+    "@stdlib/string": "github:stdlib-js/string#main",
     "@stdlib/types": "github:stdlib-js/types#main",
     "@stdlib/utils": "github:stdlib-js/utils#main"
   },
@@ -49,7 +50,6 @@
     "@stdlib/fs": "github:stdlib-js/fs",
     "@stdlib/process": "github:stdlib-js/process",
     "@stdlib/random": "github:stdlib-js/random",
-    "@stdlib/string": "github:stdlib-js/string",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-spec": "5.x.x"
