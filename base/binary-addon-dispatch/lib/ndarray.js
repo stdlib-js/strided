@@ -30,6 +30,7 @@ var reinterpretComplex64 = require( './../../../base/reinterpret-complex64' );
 var reinterpretComplex128 = require( './../../../base/reinterpret-complex128' );
 var offsetView = require( './../../../base/offset-view' );
 var minViewBufferIndex = require( './../../../base/min-view-buffer-index' );
+var format = require( '@stdlib/string/format' );
 
 
 // VARIABLES //
@@ -133,10 +134,10 @@ var COMPLEX128 = resolve( 'complex128' );
 */
 function dispatch( addon, fallback ) {
 	if ( !isFunction( addon ) ) {
-		throw new TypeError( 'invalid argument. First argument must be a function. Value: `' + addon + '`.' );
+		throw new TypeError( format( 'invalid argument. First argument must be a function. Value: `%s`.', addon ) );
 	}
 	if ( !isFunction( fallback ) ) {
-		throw new TypeError( 'invalid argument. Second argument must be a function. Value: `' + fallback + '`.' );
+		throw new TypeError( format( 'invalid argument. Second argument must be a function. Value: `%s`.', fallback ) );
 	}
 	return dispatcher;
 
