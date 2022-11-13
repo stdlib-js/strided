@@ -221,6 +221,15 @@ setReadOnly( ns, 'mskunary', require( './../../base/mskunary' ) );
 setReadOnly( ns, 'nullary', require( './../../base/nullary' ) );
 
 /**
+* @name nullaryAddonDispatch
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/nullary-addon-dispatch}
+*/
+setReadOnly( ns, 'nullaryAddonDispatch', require( './../../base/nullary-addon-dispatch' ) );
+
+/**
 * @name offsetView
 * @memberof ns
 * @readonly
