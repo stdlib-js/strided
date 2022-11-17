@@ -1,6 +1,6 @@
 
 {{alias}}( table, signatures )
-    Assigns callbacks to binary interfaces according to type promotion rules.
+    Assigns callbacks to unary interfaces according to type promotion rules.
 
     Parameters
     ----------
@@ -19,7 +19,7 @@
         complex floating-point numbers.
 
     signatures: ArrayLike<any>
-        Strided array containing binary interface signatures.
+        Strided array containing unary interface signatures.
 
     Returns
     -------
@@ -29,11 +29,11 @@
     Examples
     --------
     > var dt = {{alias:@stdlib/strided/dtypes}}();
-    > var sigs = {{alias:@stdlib/strided/base/binary-dtype-signatures}}( dt, dt, dt );
+    > var sigs = {{alias:@stdlib/strided/base/unary-dtype-signatures}}( dt, dt );
     > var t = {
-    ...     'default': {{alias:@stdlib/math/base/ops/add}},
-    ...     'complex64': {{alias:@stdlib/math/base/ops/caddf}},
-    ...     'complex128': {{alias:@stdlib/math/base/ops/cadd}}
+    ...     'default': {{alias:@stdlib/math/base/special/identity}},
+    ...     'complex64': {{alias:@stdlib/math/base/special/cidentityf}},
+    ...     'complex128': {{alias:@stdlib/math/base/special/cidentity}}
     ... };
     > var out = {{alias}}( t, sigs )
     [...]

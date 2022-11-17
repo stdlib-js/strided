@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,7 +20,6 @@
 
 // MODULES //
 
-var promotionRules = require( '@stdlib/ndarray/promotion-rules' );
 var safeCasts = require( '@stdlib/ndarray/safe-casts' );
 var resolveEnum = require( './../../../base/dtype-resolve-enum' );
 var resolveStr = require( './../../../base/dtype-resolve-str' );
@@ -101,43 +100,24 @@ function resolve( dtypes ) {
 	return out;
 }
 
-/**
-* Tests whether a provided array contains a specified value.
-*
-* @private
-* @param {Array} arr - input array
-* @param {*} value - search value
-* @returns {boolean} boolean indicating whether a provided array contains a specified value
-*/
-function contains( arr, value ) {
-	var i;
-	for ( i = 0; i < arr.length; i++ ) {
-		if ( arr[ i ] === value ) {
-			return true;
-		}
-	}
-	return false;
-}
-
 
 // MAIN //
 
 /**
-* Generates a list of binary interface signatures from strided array data types.
+* Generates a list of unary interface signatures from strided array data types.
 *
 * ## Notes
 *
-* -   The function returns a strided array having a stride length of `3` (i.e., every `3` elements define a binary interface signature).
-* -   For each signature (i.e., set of three consecutive non-overlapping strided array elements), the first two elements are the input data types and the third element is the return data type.
+* -   The function returns a strided array having a stride length of `2` (i.e., every `2` elements define a unary interface signature).
+* -   For each signature (i.e., set of two consecutive non-overlapping strided array elements), the first element is the input data types and the second element is the return data type.
 * -   All signatures follow type promotion rules.
 *
 * @param {Array} dtypes1 - list of supported data types for the first argument
-* @param {Array} dtypes2 - list of supported data types for the second argument
-* @param {Array} dtypes3 - list of supported data types for the output
+* @param {Array} dtypes2 - list of supported data types for the output argument
 * @param {Options} [options] - options
 * @param {boolean} [options.enums=false] - boolean flag indicating whether to return signatures as a list of enumeration constants
 * @throws {TypeError} must provide recognized data types
-* @returns {Array} strided array containing binary interface signatures
+* @returns {Array} strided array containing unary interface signatures
 *
 * @example
 * var dtypes = [
@@ -147,29 +127,22 @@ function contains( arr, value ) {
 *     'uint8'
 * ];
 *
-* var sigs = signatures( dtypes, dtypes, dtypes );
-* // returns [ 'float32', 'float32', 'float32', ... ]
+* var sigs = signatures( dtypes, dtypes );
+* // e.g., returns [ 'float32', 'float32', ... ]
 */
-function signatures( dtypes1, dtypes2, dtypes3, options ) {
-	var cache;
+function signatures( dtypes1, dtypes2, options ) {
 	var casts;
 	var opts;
 	var tmp;
 	var out;
 	var dt1;
 	var dt2;
-	var dt3;
 	var t1;
-	var t2;
-	var t3;
-	var t4;
 	var M;
-	var N;
 	var i;
 	var j;
-	var k;
 
-	if ( arguments.length > 3 ) {
+	if ( arguments.length > 2 ) {
 		opts = options;
 	} else {
 		opts = {};
@@ -187,64 +160,26 @@ function signatures( dtypes1, dtypes2, dtypes3, options ) {
 			throw dt2;
 		}
 	}
-	if ( dtypes3 === dtypes1 ) { // don't do work if we don't need to
-		dt3 = dt1;
-	} else if ( dtypes3 === dtypes2 ) {
-		dt3 = dt2;
-	} else {
-		dt3 = resolve( dtypes3 );
-		if ( dt3 instanceof Error ) {
-			throw dt3;
-		}
-	}
 	// Sort the list of return dtypes:
-	dt3.sort();
-
-	// Initialize a cache for storing the safe casts for promoted dtypes:
-	cache = {};
+	dt2.sort();
 
 	// Generate the list of signatures...
 	M = dt1.length;
-	N = dt2.length;
 	out = [];
 	for ( i = 0; i < M; i++ ) {
 		t1 = dt1[ i ];
-		for ( j = 0; j < N; j++ ) {
-			t2 = dt2[ j ];
 
-			// Resolve the promoted dtype for the current dtype pair:
-			t3 = promotionRules( t1, t2 );
+		// Resolve the list of safe casts for the input dtype:
+		casts = safeCasts( t1 );
+		if ( casts === null ) {
+			continue;
+		}
+		// Remove safe casts which are not among the supported output dtypes:
+		casts = intersection( dt2, casts.sort() );
 
-			// Check whether the dtype pair promotes...
-			if ( t3 === -1 || t3 === null ) {
-				// The dtype pair does not promote:
-				continue;
-			}
-			// Check whether the promoted dtype is in our list of output dtypes...
-			if ( contains( dt3, t3 ) ) {
-				out.push( t1, t2, t3 );
-			}
-			// Retrieve the allowed casts for the promoted dtype:
-			casts = cache[ t3 ];
-
-			// If a list of allowed casts is not in the cache, we need to resolve them...
-			if ( casts === void 0 ) {
-				// Resolve the list of safe casts for the promoted dtype:
-				casts = safeCasts( t3 );
-
-				// Remove safe casts which are not among the supported output dtypes:
-				casts = intersection( dt3, casts.sort() );
-
-				// Store the list of safe casts in the cache:
-				cache[ t3 ] = casts;
-			}
-			// Generate signatures for allowed casts...
-			for ( k = 0; k < casts.length; k++ ) {
-				t4 = casts[ k ];
-				if ( t4 !== t3 ) {
-					out.push( t1, t2, t4 );
-				}
-			}
+		// Generate signatures for allowed casts...
+		for ( j = 0; j < casts.length; j++ ) {
+			out.push( t1, casts[ j ] );
 		}
 	}
 	if ( opts.enums ) {

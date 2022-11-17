@@ -338,6 +338,24 @@ setReadOnly( ns, 'unary', require( './../../base/unary' ) );
 setReadOnly( ns, 'unaryAddonDispatch', require( './../../base/unary-addon-dispatch' ) );
 
 /**
+* @name unaryDtypeSignatures
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/unary-dtype-signatures}
+*/
+setReadOnly( ns, 'unaryDtypeSignatures', require( './../../base/unary-dtype-signatures' ) );
+
+/**
+* @name unarySignatureCallbacks
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/unary-signature-callbacks}
+*/
+setReadOnly( ns, 'unarySignatureCallbacks', require( './../../base/unary-signature-callbacks' ) );
+
+/**
 * @name zmap
 * @memberof ns
 * @readonly
