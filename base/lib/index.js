@@ -221,6 +221,24 @@ setReadOnly( ns, 'mskunary', require( './../../base/mskunary' ) );
 setReadOnly( ns, 'mskunaryAddonDispatch', require( './../../base/mskunary-addon-dispatch' ) );
 
 /**
+* @name mskunaryDtypeSignatures
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/mskunary-dtype-signatures}
+*/
+setReadOnly( ns, 'mskunaryDtypeSignatures', require( './../../base/mskunary-dtype-signatures' ) );
+
+/**
+* @name mskunarySignatureCallbacks
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/mskunary-signature-callbacks}
+*/
+setReadOnly( ns, 'mskunarySignatureCallbacks', require( './../../base/mskunary-signature-callbacks' ) );
+
+/**
 * @name nullary
 * @memberof ns
 * @readonly

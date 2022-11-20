@@ -1,16 +1,18 @@
 
 {{alias}}( dtypes1, dtypes2[, options] )
-    Generates a list of unary interface signatures from strided array data
-    types.
+    Generates a list of masked unary interface signatures from strided array
+    data types.
 
-    The function returns a strided array having a stride length of two (i.e.,
-    every two elements define a unary interface signature).
+    The function returns a strided array having a stride length of three (i.e.,
+    every three elements define a masked unary interface signature).
 
-    For each signature (i.e., set of two consecutive non-overlapping strided
-    array elements), the first element is the input data type and the second
-    element is the return data type.
+    For each signature (i.e., set of three consecutive non-overlapping strided
+    array elements), the first element is the input data type, the second
+    element is the mask data type, and the last element is the return data type.
 
     All signatures follow type promotion rules.
+
+    The mask array data type is always `uint8`.
 
     Parameters
     ----------
@@ -30,7 +32,7 @@
     Returns
     -------
     out: Array
-        Strided array containing unary interface signatures.
+        Strided array containing masked unary interface signatures.
 
     Examples
     --------

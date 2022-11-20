@@ -104,20 +104,21 @@ function resolve( dtypes ) {
 // MAIN //
 
 /**
-* Generates a list of unary interface signatures from strided array data types.
+* Generates a list of masked unary interface signatures from strided array data types.
 *
 * ## Notes
 *
-* -   The function returns a strided array having a stride length of `2` (i.e., every `2` elements define a unary interface signature).
-* -   For each signature (i.e., set of two consecutive non-overlapping strided array elements), the first element is the input data type and the second element is the return data type.
+* -   The function returns a strided array having a stride length of `3` (i.e., every `3` elements define a masked unary interface signature).
+* -   For each signature (i.e., set of three consecutive non-overlapping strided array elements), the first element is the input data type, the second element is the mask data type, and the last element is the return data type.
 * -   All signatures follow type promotion rules.
+* -   The mask array data type is always `uint8`.
 *
 * @param {Array} dtypes1 - list of supported data types for the first argument
 * @param {Array} dtypes2 - list of supported data types for the output argument
 * @param {Options} [options] - options
 * @param {boolean} [options.enums=false] - boolean flag indicating whether to return signatures as a list of enumeration constants
 * @throws {TypeError} must provide recognized data types
-* @returns {Array} strided array containing unary interface signatures
+* @returns {Array} strided array containing masked unary interface signatures
 *
 * @example
 * var dtypes = [
@@ -128,7 +129,7 @@ function resolve( dtypes ) {
 * ];
 *
 * var sigs = signatures( dtypes, dtypes );
-* // e.g., returns [ 'float32', 'float32', ... ]
+* // e.g., returns [ 'float32', 'uint8', 'float32', ... ]
 */
 function signatures( dtypes1, dtypes2, options ) {
 	var casts;
@@ -179,7 +180,7 @@ function signatures( dtypes1, dtypes2, options ) {
 
 		// Generate signatures for allowed casts...
 		for ( j = 0; j < casts.length; j++ ) {
-			out.push( t1, casts[ j ] );
+			out.push( t1, 'uint8', casts[ j ] );
 		}
 	}
 	if ( opts.enums ) {

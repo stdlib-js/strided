@@ -95,15 +95,15 @@ function resolveCallback( table, t1, t2 ) {
 // MAIN //
 
 /**
-* Assigns callbacks to unary interfaces according to type promotion rules.
+* Assigns callbacks to masked unary interfaces according to type promotion rules.
 *
 * ## Notes
 *
 * -   The function assumes that the provided signature array has the following properties:
 *
-*     -   a strided array having a stride length of `2` (i.e., every `2` elements define a unary interface signature).
-*     -   for each signature (i.e., set of two consecutive non-overlapping strided array elements), the first element is the input data type and the second element is the return data type.
-*     -   all signatures follow type promotion rules.
+*     -   a strided array having a stride length of `3` (i.e., every `3` elements define a masked unary interface signature).
+*     -   for each signature (i.e., set of three consecutive non-overlapping strided array elements), the first element is the input data type, the second element is the mask data type, and the last element is the return data type.
+*     -   all signatures (excluding the mask data type) follow type promotion rules.
 *
 * -   Based on type promotion rules, we can simply use the callback for `float64` (i.e., the assumed "default") for all interfaces not involving complex numbers, even for `float32`, as we shouldn't need to explicitly downcast strided array values. The only time we need to return `float32` values is when input arrays are already `float32` or of a type which can be safely represented in `float32` without concern for truncation.
 *
@@ -111,11 +111,11 @@ function resolveCallback( table, t1, t2 ) {
 * @param {Function} table.default - default callback
 * @param {Function} table.complex64 - callback for single-precision complex floating-point numbers
 * @param {Function} table.complex128 - callback for double-precision complex floating-point numbers
-* @param {ArrayLikeObject} signatures - strided array containing unary interface signatures
+* @param {ArrayLikeObject} signatures - strided array containing masked unary interface signatures
 * @returns {Array<Function>} list of callbacks
 *
 * @example
-* var signatures = require( '@stdlib/strided/base/unary-dtype-signatures' );
+* var signatures = require( '@stdlib/strided/base/mskunary-dtype-signatures' );
 * var identity = require( '@stdlib/math/base/special/identity' );
 * var cidentity = require( '@stdlib/math/base/special/cidentity' );
 * var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
@@ -146,9 +146,9 @@ function callbacks( table, signatures ) {
 	var i;
 
 	out = [];
-	for ( i = 0; i < signatures.length; i += 2 ) {
+	for ( i = 0; i < signatures.length; i += 3 ) {
 		t1 = resolve( signatures[ i ] );
-		t2 = resolve( signatures[ i+1 ] );
+		t2 = resolve( signatures[ i+2 ] );
 		out.push( resolveCallback( table, t1, t2 ) );
 	}
 	return out;
