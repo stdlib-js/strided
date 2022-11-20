@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -17,10 +17,10 @@
 */
 
 /**
-* Header file containing strided array macros for loops involving "nullary" functions or expressions.
+* Header file containing strided array macros.
 */
-#ifndef STDLIB_STRIDED_COMMON_NULLARY_MACROS_H
-#define STDLIB_STRIDED_COMMON_NULLARY_MACROS_H
+#ifndef STDLIB_STRIDED_BASE_NULLARY_MACROS_H
+#define STDLIB_STRIDED_BASE_NULLARY_MACROS_H
 
 #include <stdint.h>
 
@@ -28,11 +28,11 @@
 * Macro containing the preamble for a loop which updates a strided output array.
 *
 * @example
-* STDLIB_NULLARY_LOOP_PREMABLE {
+* STDLIB_STRIDED_NULLARY_LOOP_PREMABLE {
 *     // Loop body...
 * }
 */
-#define STDLIB_NULLARY_LOOP_PREAMBLE                       \
+#define STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE               \
 	uint8_t *op1 = arrays[ 0 ];                            \
 	int64_t os1 = strides[ 0 ];                            \
 	int64_t n = shape[ 0 ];                                \
@@ -49,11 +49,11 @@
 * Macro containing the preamble for a loop which updates two strided output arrays.
 *
 * @example
-* STDLIB_NULLARY_LOOP_TWO_OUT_PREMABLE {
+* STDLIB_STRIDED_NULLARY_LOOP_TWO_OUT_PREMABLE {
 *     // Loop body...
 * }
 */
-#define STDLIB_NULLARY_LOOP_TWO_OUT_PREAMBLE               \
+#define STDLIB_STRIDED_NULLARY_LOOP_TWO_OUT_PREAMBLE       \
 	uint8_t *op1 = arrays[ 0 ];                            \
 	uint8_t *op2 = arrays[ 1 ];                            \
 	int64_t os1 = strides[ 0 ];                            \
@@ -83,10 +83,10 @@
 * @param expr  expression to inline
 *
 * @example
-* STDLIB_NULLARY_LOOP_INLINE( double, *out = (double)1.0 )
+* STDLIB_STRIDED_NULLARY_LOOP_INLINE( double, *out = (double)1.0 )
 */
-#define STDLIB_NULLARY_LOOP_INLINE( tout, expr )           \
-	STDLIB_NULLARY_LOOP_PREAMBLE {                         \
+#define STDLIB_STRIDED_NULLARY_LOOP_INLINE( tout, expr )   \
+	STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE {                 \
 		tout *out = (tout *)op1;                           \
 		expr;                                              \
 	}
@@ -102,11 +102,52 @@
 * @param tout  output type
 *
 * @example
-* STDLIB_NULLARY_LOOP_CLBK( double )
+* STDLIB_STRIDED_NULLARY_LOOP_CLBK( double )
 */
-#define STDLIB_NULLARY_LOOP_CLBK( tout )                   \
-	STDLIB_NULLARY_LOOP_PREAMBLE {                         \
+#define STDLIB_STRIDED_NULLARY_LOOP_CLBK( tout )           \
+	STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE {                 \
 		*(tout *)op1 = (tout)f();                          \
 	}
 
-#endif // !STDLIB_STRIDED_COMMON_NULLARY_MACROS_H
+/**
+* Macro for a nullary loop which invokes a callback which returns a non-scalar value (e.g., a `struct`).
+*
+* ## Notes
+*
+* -   Stores the result in an output strided array of type `tout` via the pointer `op1`.
+*
+* @param tout  output type
+*
+* @example
+* #include "stdlib/complex/float64.h"
+*
+* STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NONSCALAR( stdlib_complex128_t )
+*/
+#define STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NONSCALAR( tout )                 \
+	STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE {                                     \
+		*(tout *)op1 = f();                                                    \
+	}
+
+/**
+* Macro for a nullary loop which invokes a callback whose return values should be cast to a different type via casting functions.
+*
+* ## Notes
+*
+* -   Explicitly casts each function `f` invocation result via `cout`.
+* -   Stores the result in an output strided array of type `tout` via the pointer `op1`.
+*
+* @param tout  output type
+* @param cout  output casting function
+*
+* @example
+* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/float64.h"
+*
+* STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_CAST_FCN( stdlib_complex64_t, stdlib_complex128_to_complex64 )
+*/
+#define STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_CAST_FCN( tout, cout )            \
+	STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE {                                     \
+		*(tout *)op1 = cout( f() );                                            \
+	}
+
+#endif // !STDLIB_STRIDED_BASE_NULLARY_MACROS_H

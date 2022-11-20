@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,18 +16,18 @@
 * limitations under the License.
 */
 
-#include "stdlib/strided/common/nullary.h"
+#include "stdlib/strided/base/nullary.h"
 #include <stdint.h>
 #include <stdio.h>
 #include <inttypes.h>
 
 // Define a callback:
-static double ones() {
-	return 1.0;
+static double fill() {
+	return 10.0;
 }
 
 int main() {
-	// Create a zeroed underlying byte array:
+	// Create underlying byte arrays:
 	uint8_t out[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
 	// Define a pointer to an array containing pointers to strided arrays:
@@ -39,8 +39,8 @@ int main() {
 	// Define the number of elements over which to iterate:
 	int64_t shape[] = { 3 };
 
-	// Fill the output array with ones:
-	stdlib_strided_d( arrays, shape, strides, (void *)ones );
+	// Apply the callback:
+	stdlib_strided_d( arrays, shape, strides, (void *)fill );
 
 	// Print the contents of the output array:
 	uint8_t *op1 = out;
