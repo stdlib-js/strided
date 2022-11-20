@@ -212,6 +212,15 @@ setReadOnly( ns, 'minViewBufferIndex', require( './../../base/min-view-buffer-in
 setReadOnly( ns, 'mskunary', require( './../../base/mskunary' ) );
 
 /**
+* @name mskunaryAddonDispatch
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/mskunary-addon-dispatch}
+*/
+setReadOnly( ns, 'mskunaryAddonDispatch', require( './../../base/mskunary-addon-dispatch' ) );
+
+/**
 * @name nullary
 * @memberof ns
 * @readonly
