@@ -365,6 +365,15 @@ setReadOnly( ns, 'unary', require( './../../base/unary' ) );
 setReadOnly( ns, 'unaryAddonDispatch', require( './../../base/unary-addon-dispatch' ) );
 
 /**
+* @name unaryBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/unary-by}
+*/
+setReadOnly( ns, 'unaryBy', require( './../../base/unary-by' ) );
+
+/**
 * @name unaryDtypeSignatures
 * @memberof ns
 * @readonly

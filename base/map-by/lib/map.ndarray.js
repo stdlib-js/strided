@@ -23,6 +23,7 @@
 /**
 * Applies a unary function to each element retrieved from a strided input array according to a callback function and assigns results to a strided output array.
 *
+* @private
 * @param {NonNegativeInteger} N - number of indexed elements
 * @param {Collection} x - input array/collection
 * @param {integer} strideX - `x` stride length
@@ -62,7 +63,7 @@ function mapBy( N, x, strideX, offsetX, y, strideY, offsetY, fcn, clbk, thisArg 
 	ix = offsetX;
 	iy = offsetY;
 	for ( i = 0; i < N; i++ ) {
-		v = clbk.call( thisArg, x[ ix ], i, ix, iy, x, y );
+		v = clbk.call( thisArg, x[ ix ], i, [ ix, iy ], [ x, y ] );
 		if ( v !== void 0 ) {
 			y[ iy ] = fcn( v );
 		}

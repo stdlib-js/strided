@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -24,61 +24,85 @@
 * Applies a unary function to each element retrieved from a strided input array according to a callback function and assigns results to a strided output array.
 *
 * @private
-* @param {NonNegativeInteger} N - number of indexed elements
-* @param {Collection} x - input array/collection
-* @param {integer} strideX - `x` stride length
-* @param {Collection} y - destination array/collection
-* @param {integer} strideY - `y` stride length
+* @param {ArrayLikeObject<Collection>} arrays - array-like object containing one input array and one output array
+* @param {NonNegativeIntegerArray} shape - array-like object containing a single element, the number of indexed elements
+* @param {IntegerArray} strides - array-like object containing the stride lengths for the input and output arrays
+* @param {ArrayLikeObject<Function>} accessors - array-like object containing accessors for the input and output arrays
 * @param {Function} fcn - unary function to apply to callback return values
 * @param {Callback} clbk - callback
 * @param {*} [thisArg] - callback execution context
-* @returns {Collection} `y`
+* @returns {void}
 *
 * @example
 * var abs = require( '@stdlib/math/base/special/abs' );
 *
 * function accessor( v ) {
-*     return v * 2.0;
+*     return v;
+* }
+*
+* function xget( buf, idx ) {
+*     return buf[ idx ] * 2.0;
+* }
+*
+* function yset( buf, idx, value ) {
+*     buf[ idx ] = value;
 * }
 *
 * var x = [ 1.0, -2.0, 3.0, -4.0, 5.0 ];
 * var y = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
 *
-* mapBy( x.length, x, 1, y, 1, abs, accessor );
+* var shape = [ x.length ];
+* var strides = [ 1, 1 ];
+*
+* unaryBy( [ x, y ], shape, strides, [ xget, yset ], abs, accessor );
 *
 * console.log( y );
 * // => [ 2.0, 4.0, 6.0, 8.0, 10.0 ]
 */
-function mapBy( N, x, strideX, y, strideY, fcn, clbk, thisArg ) {
+function unaryBy( arrays, shape, strides, accessors, fcn, clbk, thisArg ) {
+	var xget;
+	var yset;
+	var sx;
+	var sy;
 	var ix;
 	var iy;
+	var x;
+	var y;
+	var N;
 	var v;
 	var i;
+
+	N = shape[ 0 ];
 	if ( N <= 0 ) {
-		return y;
+		return;
 	}
-	if ( strideX < 0 ) {
-		ix = (1-N) * strideX;
+	sx = strides[ 0 ];
+	sy = strides[ 1 ];
+	if ( sx < 0 ) {
+		ix = (1-N) * sx;
 	} else {
 		ix = 0;
 	}
-	if ( strideY < 0 ) {
-		iy = (1-N) * strideY;
+	if ( sy < 0 ) {
+		iy = (1-N) * sy;
 	} else {
 		iy = 0;
 	}
+	x = arrays[ 0 ];
+	y = arrays[ 1 ];
+	xget = accessors[ 0 ];
+	yset = accessors[ 1 ];
 	for ( i = 0; i < N; i++ ) {
-		v = clbk.call( thisArg, x[ ix ], i, [ ix, iy ], [ x, y ] );
+		v = clbk.call( thisArg, xget( x, ix ), i, [ ix, iy ], [ x, y ] );
 		if ( v !== void 0 ) {
-			y[ iy ] = fcn( v );
+			yset( y, iy, fcn( v ) );
 		}
-		ix += strideX;
-		iy += strideY;
+		ix += sx;
+		iy += sy;
 	}
-	return y;
 }
 
 
 // EXPORTS //
 
-module.exports = mapBy;
+module.exports = unaryBy;
