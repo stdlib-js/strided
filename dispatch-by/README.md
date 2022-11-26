@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2020 The Stdlib Authors.
+Copyright (c) 2022 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# dispatch
+# dispatchBy
 
-> Create a strided array function interface which performs multiple dispatch.
+> Create a strided array function interface which accepts a callback function and performs multiple dispatch.
 
 <section class="intro">
 
@@ -33,17 +33,17 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var dispatch = require( '@stdlib/strided/dispatch' );
+var dispatchBy = require( '@stdlib/strided/dispatch-by' );
 ```
 
-#### dispatch( fcns, types, data, nargs, nin, nout )
+#### dispatchBy( fcns, types, data, nargs, nin, nout )
 
-Returns a strided array function interface which performs multiple dispatch.
+Returns a strided array function interface which accepts a callback function and performs multiple dispatch.
 
 <!-- eslint-disable array-element-newline -->
 
 ```javascript
-var unary = require( '@stdlib/strided/base/unary' );
+var unaryBy = require( '@stdlib/strided/base/unary-by' );
 var Float64Array = require( '@stdlib/array/float64' );
 var Float32Array = require( '@stdlib/array/float32' );
 
@@ -57,8 +57,8 @@ function bar( x ) {
 
 // Define a list of strided array functions for applying a unary callback:
 var fcns = [
-    unary,
-    unary
+    unaryBy,
+    unaryBy
 ];
 
 // Define a one-dimensional list of input and output array types:
@@ -74,7 +74,7 @@ var data = [
 ];
 
 // Define the total number of input arguments:
-var nargs = 7; // N + input_array_dtype + input_array + input_array_stride + output_array_dtype + output_array + output_array_stride
+var nargs = 8; // N + input_array_dtype + input_array + input_array_stride + output_array_dtype + output_array + output_array_stride + callback
 
 // Define the number of input strided arrays:
 var nin = 1;
@@ -83,21 +83,25 @@ var nin = 1;
 var nout = 1;
 
 // Create a strided array function interface:
-var strided = dispatch( fcns, types, data, nargs, nin, nout );
+var strided = dispatchBy( fcns, types, data, nargs, nin, nout );
 
 // ...
+
+function accessor( v ) {
+    return v * 2.0;
+}
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 var y = new Float64Array( x.length );
 
-strided( x.length, 'float64', x, 1, 'float64', y, 1 );
-// y => <Float64Array>[ 10.0, 20.0, 30.0 ]
+strided( x.length, 'float64', x, 1, 'float64', y, 1, accessor );
+// y => <Float64Array>[ 20.0, 40.0, 60.0 ]
 
 x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 y = new Float32Array( x.length );
 
-strided( x.length, 'float32', x, 1, 'float32', y, 1 );
-// y => <Float32Array>[ 5.0, 10.0, 15.0 ]
+strided( x.length, 'float32', x, 1, 'float32', y, 1, accessor );
+// y => <Float32Array>[ 10.0, 20.0, 30.0 ]
 ```
 
 The function accepts the following arguments:
@@ -105,7 +109,7 @@ The function accepts the following arguments:
 -   **fcns**: list of strided array functions.
 -   **types**: one-dimensional list of strided array argument [data types][@stdlib/strided/dtypes]. The length of `types` must be the number of strided array functions multiplied by `nin+nout`. If `fcns` is a function, rather than a list, the number of strided array functions is computed as `types.length / (nin+nout)`.
 -   **data**: strided array function data (e.g., callbacks). If a list, the length of `data` must equal the number of strided array functions. If `null`, a returned strided array function interface does **not** provide a `data` argument to an invoked strided array function.
--   **nargs**: total number of strided array function interface arguments (including data types, strides, and offsets).
+-   **nargs**: total number of strided array function interface arguments (including data types, strides, offsets, and the callback function).
 -   **nin**: number of input strided arrays.
 -   **nout**: number of output strided arrays.
 
@@ -120,7 +124,7 @@ The function accepts the following arguments:
 -   Without offsets, a returned strided array function interface has the following signature:
 
     ```text
-    f( N, dtypeX, x, strideX, dtypeY, y, strideY, ... )
+    f( N, dtypeX, x, strideX, dtypeY, y, strideY, ..., clbk[, thisArg] )
     ```
 
     where
@@ -133,25 +137,27 @@ The function accepts the following arguments:
     -   **y**: strided array.
     -   **strideY**: index increment for `y`.
     -   **...**: additional strided arrays and associated [data types][@stdlib/strided/dtypes] and strides.
+    -   **clbk**: callback function.
+    -   **thisArg**: callback function execution context.
 
 -   The number of strided array function interface parameters is derived from `nargs`, the number of input strided arrays is derived from `nin`, and the number of output strided arrays is derived from `nout`.
 
 -   Without offsets, the number of parameters must obey the following relation:
 
     ```text
-    nargs = 3*(nout+nin) + 1
+    nargs = 3*(nout+nin) + 2
     ```
 
 -   With offsets, the number of parameters must obey the following relation:
 
     ```text
-    nargs = 4*(nout+nin) + 1
+    nargs = 4*(nout+nin) + 2
     ```
 
 -   With offsets, a returned strided array function interface has the following signature:
 
     ```text
-    f( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY, ... )
+    f( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY, ..., clbk[, thisArg] )
     ```
 
     where
@@ -166,13 +172,15 @@ The function accepts the following arguments:
     -   **strideY**: index increment for `y`.
     -   **offsetY**: starting index for `y`.
     -   **...**: additional strided arrays and associated [data types][@stdlib/strided/dtypes], strides, and offsets.
+    -   **clbk**: callback function.
+    -   **thisArg**: callback function execution context.
 
     The choice of which strided array function interface to return depends on the use case. The former is suitable for typed array views; while the latter affords alternative indexing semantics more suitable for n-dimensional arrays (ndarrays).
 
 -   Without offsets, a strided array function (i.e., a value provided for the `fcns` argument) should have the following signature:
 
     ```text
-    f( arrays, shape, strides[, data] )
+    f( arrays, shape, strides, [data, ]clbk[, thisArg] )
     ```
 
     where
@@ -181,11 +189,13 @@ The function accepts the following arguments:
     -   **shape**: array containing a single element, the number of indexed elements.
     -   **strides**: array containing the stride lengths for the strided input and output arrays.
     -   **data**: strided array function data (e.g., a callback).
+    -   **clbk**: callback function.
+    -   **thisArg**: callback function execution context.
 
 -   With offsets, a strided array function should have the following signature:
 
     ```text
-    f( arrays, shape, strides, offsets[, data] )
+    f( arrays, shape, strides, offsets, [data, ]clbk[, thisArg] )
     ```
 
     where
@@ -197,7 +207,7 @@ The function accepts the following arguments:
     <!-- eslint-disable array-element-newline -->
 
     ```javascript
-    var unary = require( '@stdlib/strided/base/unary' );
+    var unaryBy = require( '@stdlib/strided/base/unary-by' );
     
     function foo( x ) {
         return x * 10.0;
@@ -207,9 +217,13 @@ The function accepts the following arguments:
         return x * 5.0;
     }
 
+    function accessor( v ) {
+        return v;
+    }
+
     var fcns = [
-        unary,
-        unary
+        unaryBy,
+        unaryBy
     ];
     var types = [
         'float64', 'float64',
@@ -220,7 +234,7 @@ The function accepts the following arguments:
         bar
     ];
 
-    var strided = dispatch( fcns, types, data, 7, 1, 1 );
+    var strided = dispatchBy( fcns, types, data, 8, 1, 1 );
     ```
 
     is equivalent to
@@ -228,7 +242,7 @@ The function accepts the following arguments:
     <!-- eslint-disable array-element-newline -->
 
     ```javascript
-    var unary = require( '@stdlib/strided/base/unary' );
+    var unaryBy = require( '@stdlib/strided/base/unary-by' );
     
     function foo( x ) {
         return x * 10.0;
@@ -236,6 +250,10 @@ The function accepts the following arguments:
 
     function bar( x ) {
         return x * 5.0;
+    }
+
+    function accessor( v ) {
+        return v;
     }
 
     var types = [
@@ -247,7 +265,7 @@ The function accepts the following arguments:
         bar
     ];
 
-    var strided = dispatch( unary, types, data, 7, 1, 1 );
+    var strided = dispatchBy( unaryBy, types, data, 8, 1, 1 );
     ```
 
 </section>
@@ -261,10 +279,11 @@ The function accepts the following arguments:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var unary = require( '@stdlib/strided/base/unary' ).ndarray;
+var unaryBy = require( '@stdlib/strided/base/unary-by' ).ndarray;
 var abs = require( '@stdlib/math/base/special/abs' );
+var identity = require( '@stdlib/math/base/special/identity' );
 var Float64Array = require( '@stdlib/array/float64' );
-var dispatch = require( '@stdlib/strided/dispatch' );
+var dispatchBy = require( '@stdlib/strided/dispatch-by' );
 
 var types = [ 'float64', 'float64' ];
 
@@ -272,12 +291,12 @@ var data = [
     abs
 ];
 
-var strided = dispatch( unary, types, data, 9, 1, 1 );
+var strided = dispatchBy( unaryBy, types, data, 10, 1, 1 );
 
 var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
-strided( 3, 'float64', x, 1, 2, 'float64', y, 1, 2 );
+strided( 3, 'float64', x, 1, 2, 'float64', y, 1, 2, identity );
 console.log( y );
 // => <Float64Array>[ 0.0, 0.0, 3.0, 4.0, 5.0 ]
 ```
