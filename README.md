@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided@deno/mod.js';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided@v0.1.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { base, dispatch, dtypes } from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided@deno/mod.js';
+import { base, dispatch, dtypes } from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided@v0.1.1-deno/mod.js';
 ```
 
 #### ns
@@ -88,7 +88,7 @@ The namespace contains the following:
 
 ```javascript
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided@deno/mod.js';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided@v0.1.1-deno/mod.js';
 
 console.log( objectKeys( ns ) );
 ```
