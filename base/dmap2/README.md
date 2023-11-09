@@ -303,6 +303,13 @@ int main( void ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/strided/base/smap2`][@stdlib/strided/base/smap2]</span><span class="delimiter">: </span><span class="description">apply a binary function to single-precision floating-point strided input arrays and assign results to a single-precision floating-point strided output array.</span>
+-   <span class="package-name">[`@stdlib/strided/base/binary`][@stdlib/strided/base/binary]</span><span class="delimiter">: </span><span class="description">apply a binary callback to elements in strided input arrays and assign results to elements in a strided output array.</span>
+
 </section>
 
 <!-- /.related -->
@@ -312,6 +319,14 @@ int main( void ) {
 <section class="links">
 
 [@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
+
+<!-- <related-links> -->
+
+[@stdlib/strided/base/smap2]: https://github.com/stdlib-js/strided/tree/main/base/smap2
+
+[@stdlib/strided/base/binary]: https://github.com/stdlib-js/strided/tree/main/base/binary
+
+<!-- </related-links> -->
 
 </section>
 

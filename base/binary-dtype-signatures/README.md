@@ -142,6 +142,12 @@ console.log( str );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/strided/base/binary-signature-callbacks`][@stdlib/strided/base/binary-signature-callbacks]</span><span class="delimiter">: </span><span class="description">assign callbacks to binary interfaces according to type promotion rules.</span>
+
 </section>
 
 <!-- /.related -->
@@ -152,7 +158,13 @@ console.log( str );
 
 [@stdlib/strided/dtypes]: https://github.com/stdlib-js/strided/tree/main/dtypes
 
-[@stdlib/ndarray/promotion-rules]: https://github.com/stdlib-js/stdlib
+[@stdlib/ndarray/promotion-rules]: https://github.com/stdlib-js/ndarray-promotion-rules
+
+<!-- <related-links> -->
+
+[@stdlib/strided/base/binary-signature-callbacks]: https://github.com/stdlib-js/strided/tree/main/base/binary-signature-callbacks
+
+<!-- </related-links> -->
 
 </section>
 

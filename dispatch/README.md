@@ -198,7 +198,7 @@ The function accepts the following arguments:
 
     ```javascript
     var unary = require( '@stdlib/strided/base/unary' );
-    
+
     function foo( x ) {
         return x * 10.0;
     }
@@ -229,7 +229,7 @@ The function accepts the following arguments:
 
     ```javascript
     var unary = require( '@stdlib/strided/base/unary' );
-    
+
     function foo( x ) {
         return x * 10.0;
     }

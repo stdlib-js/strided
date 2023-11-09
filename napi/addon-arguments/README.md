@@ -106,7 +106,7 @@ console.log( headerDir );
 
 <!-- lint disable maximum-heading-length -->
 
-#### stdlib_strided_napi_addon_arguments( env, argv, nargs, nin, \*arrays[], \*shape, \*strides, \*types, \*err )
+#### stdlib_strided_napi_addon_arguments( env, argv, nargs, nin, \*arrays\[], \*shape, \*strides, \*types, \*err )
 
 Validates, extracts, and transforms (to native C types) function arguments provided to a strided array Node-API add-on interface.
 
