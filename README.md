@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided@esm/index.mjs';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided@v0.2.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { base, dispatch, dtypes } from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided@esm/index.mjs';
+import { base, dispatch, dtypes } from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided@v0.2.1-esm/index.mjs';
 ```
 
 #### ns
@@ -93,7 +93,7 @@ The namespace contains the following:
 <script type="module">
 
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided@esm/index.mjs';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided@v0.2.1-esm/index.mjs';
 
 console.log( objectKeys( ns ) );
 
