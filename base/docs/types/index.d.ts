@@ -47,6 +47,7 @@ import nullaryAddonDispatch = require( './../../../base/nullary-addon-dispatch' 
 import offsetView = require( './../../../base/offset-view' );
 import quaternary = require( './../../../base/quaternary' );
 import quinary = require( './../../../base/quinary' );
+import reinterpretComplex = require( './../../../base/reinterpret-complex' );
 import reinterpretComplex64 = require( './../../../base/reinterpret-complex64' );
 import reinterpretComplex128 = require( './../../../base/reinterpret-complex128' );
 import smap = require( './../../../base/smap' );
@@ -1046,6 +1047,25 @@ interface Namespace {
 	* // => <Float64Array>[ 5.0, 10.0, 15.0, 20.0, 25.0 ]
 	*/
 	quinary: typeof quinary;
+
+	/**
+	* Reinterprets a `Complex128Array` as a `Float64Array`.
+	*
+	* @param x - input array
+	* @param offset - starting index
+	* @returns `Float64Array` view
+	*
+	* @example
+	* var Complex128Array = require( '@stdlib/array/complex128' );
+	*
+	* var x = new Complex128Array( 10 );
+	*
+	* var out = ns.reinterpretComplex( x, 0 );
+	* // returns <Float64Array>
+	*
+	* var bool = ( out.buffer === x.buffer );
+	*/
+	reinterpretComplex: typeof reinterpretComplex;
 
 	/**
 	* Reinterprets a `Complex64Array` as a `Float32Array`.

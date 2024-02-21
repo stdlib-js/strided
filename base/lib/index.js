@@ -284,6 +284,15 @@ setReadOnly( ns, 'quaternary', require( './../../base/quaternary' ) );
 setReadOnly( ns, 'quinary', require( './../../base/quinary' ) );
 
 /**
+* @name reinterpretComplex
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/reinterpret-complex}
+*/
+setReadOnly( ns, 'reinterpretComplex', require( './../../base/reinterpret-complex' ) );
+
+/**
 * @name reinterpretComplex64
 * @memberof ns
 * @readonly
