@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-05)
+## Unreleased (2024-06-12)
 
 <section class="packages">
 
@@ -49,6 +49,28 @@
 </section>
 
 <!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="strided-base-dtype-resolve-str-unreleased">
+
+#### [@stdlib/strided/base/dtype-resolve-str](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/dtype-resolve-str)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`a96a408`](https://github.com/stdlib-js/stdlib/commit/a96a408fec1b83def148098dc9cf8a233e071526) - accommodate enum values equal to `0`
+
+</section>
+
+<!-- /.bug-fixes -->
 
 </details>
 
@@ -202,6 +224,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`a96a408`](https://github.com/stdlib-js/stdlib/commit/a96a408fec1b83def148098dc9cf8a233e071526) - **fix:** accommodate enum values equal to `0` _(by Athan Reines)_
 -   [`1d52f5a`](https://github.com/stdlib-js/stdlib/commit/1d52f5a23cae38bee1ffa324459c4c7eb3c91a06) - **feat:** add `strided/base/reinterpret-boolean` [(#2297)](https://github.com/stdlib-js/stdlib/pull/2297) _(by Jaysukh Makvana, Athan Reines)_
 -   [`cf3f92e`](https://github.com/stdlib-js/stdlib/commit/cf3f92eddd20ec1a4106c8a34f7d7705a9a99dbc) - **fix:** update include paths _(by Athan Reines)_
 -   [`75d4f83`](https://github.com/stdlib-js/stdlib/commit/75d4f83cb85610d23a04dc21a03f8075f6d3665f) - **refactor:** update require and include paths _(by Athan Reines)_
