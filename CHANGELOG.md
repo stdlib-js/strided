@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-12)
+## Unreleased (2024-07-01)
 
 <section class="packages">
 
@@ -166,6 +166,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="strided-base-stride2offset-unreleased">
+
+#### [@stdlib/strided/base/stride2offset](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/stride2offset)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`cb53df7`](https://github.com/stdlib-js/stdlib/commit/cb53df70e2afc7c11aabf3846db305424d012150) - add `strided/base/stride2offset`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="strided-base-unary-unreleased">
 
 #### [@stdlib/strided/base/unary](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/unary)
@@ -224,6 +246,8 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`11ad206`](https://github.com/stdlib-js/stdlib/commit/11ad206dbf92e0a1827ccdf5aa8f4c58bf82ed2a) - **bench:** fix function name _(by Athan Reines)_
+-   [`cb53df7`](https://github.com/stdlib-js/stdlib/commit/cb53df70e2afc7c11aabf3846db305424d012150) - **feat:** add `strided/base/stride2offset` _(by Athan Reines)_
 -   [`a96a408`](https://github.com/stdlib-js/stdlib/commit/a96a408fec1b83def148098dc9cf8a233e071526) - **fix:** accommodate enum values equal to `0` _(by Athan Reines)_
 -   [`1d52f5a`](https://github.com/stdlib-js/stdlib/commit/1d52f5a23cae38bee1ffa324459c4c7eb3c91a06) - **feat:** add `strided/base/reinterpret-boolean` [(#2297)](https://github.com/stdlib-js/stdlib/pull/2297) _(by Jaysukh Makvana, Athan Reines)_
 -   [`cf3f92e`](https://github.com/stdlib-js/stdlib/commit/cf3f92eddd20ec1a4106c8a34f7d7705a9a99dbc) - **fix:** update include paths _(by Athan Reines)_
