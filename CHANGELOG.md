@@ -20,6 +20,8 @@
 
 ##### Features
 
+-   [`cc63b8b`](https://github.com/stdlib-js/stdlib/commit/cc63b8b462d786b370c07c7c68aad6a4b491c900) - add `reinterpretBoolean` to namespace
+-   [`adba03d`](https://github.com/stdlib-js/stdlib/commit/adba03dafef68163b55f1578802dc7ba87fbceb8) - add `stride2offset` to namespace
 -   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb) - update namespace TypeScript declarations [(#1340)](https://github.com/stdlib-js/stdlib/pull/1340)
 -   [`862cd8f`](https://github.com/stdlib-js/stdlib/commit/862cd8fb848fb40521acfb563e40242b8a3762a6) - add `reinterpretComplex` to namespace
 
@@ -246,6 +248,8 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`cc63b8b`](https://github.com/stdlib-js/stdlib/commit/cc63b8b462d786b370c07c7c68aad6a4b491c900) - **feat:** add `reinterpretBoolean` to namespace _(by Athan Reines)_
+-   [`adba03d`](https://github.com/stdlib-js/stdlib/commit/adba03dafef68163b55f1578802dc7ba87fbceb8) - **feat:** add `stride2offset` to namespace _(by Athan Reines)_
 -   [`11ad206`](https://github.com/stdlib-js/stdlib/commit/11ad206dbf92e0a1827ccdf5aa8f4c58bf82ed2a) - **bench:** fix function name _(by Athan Reines)_
 -   [`cb53df7`](https://github.com/stdlib-js/stdlib/commit/cb53df70e2afc7c11aabf3846db305424d012150) - **feat:** add `strided/base/stride2offset` _(by Athan Reines)_
 -   [`a96a408`](https://github.com/stdlib-js/stdlib/commit/a96a408fec1b83def148098dc9cf8a233e071526) - **fix:** accommodate enum values equal to `0` _(by Athan Reines)_

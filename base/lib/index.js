@@ -284,6 +284,15 @@ setReadOnly( ns, 'quaternary', require( './../../base/quaternary' ) );
 setReadOnly( ns, 'quinary', require( './../../base/quinary' ) );
 
 /**
+* @name reinterpretBoolean
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/reinterpret-boolean}
+*/
+setReadOnly( ns, 'reinterpretBoolean', require( './../../base/reinterpret-boolean' ) );
+
+/**
 * @name reinterpretComplex
 * @memberof ns
 * @readonly
@@ -345,6 +354,15 @@ setReadOnly( ns, 'smskmap', require( './../../base/smskmap' ) );
 * @see {@link module:@stdlib/strided/base/smskmap2}
 */
 setReadOnly( ns, 'smskmap2', require( './../../base/smskmap2' ) );
+
+/**
+* @name stride2offset
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/stride2offset}
+*/
+setReadOnly( ns, 'stride2offset', require( './../../base/stride2offset' ) );
 
 /**
 * @name ternary
