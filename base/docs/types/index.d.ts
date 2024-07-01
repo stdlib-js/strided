@@ -47,6 +47,7 @@ import nullaryAddonDispatch = require( './../../../base/nullary-addon-dispatch' 
 import offsetView = require( './../../../base/offset-view' );
 import quaternary = require( './../../../base/quaternary' );
 import quinary = require( './../../../base/quinary' );
+import reinterpretBoolean = require( './../../../base/reinterpret-boolean' );
 import reinterpretComplex = require( './../../../base/reinterpret-complex' );
 import reinterpretComplex64 = require( './../../../base/reinterpret-complex64' );
 import reinterpretComplex128 = require( './../../../base/reinterpret-complex128' );
@@ -54,6 +55,7 @@ import smap = require( './../../../base/smap' );
 import smap2 = require( './../../../base/smap2' );
 import smskmap = require( './../../../base/smskmap' );
 import smskmap2 = require( './../../../base/smskmap2' );
+import stride2offset = require( './../../../base/stride2offset' );
 import ternary = require( './../../../base/ternary' );
 import unary = require( './../../../base/unary' );
 import unaryAddonDispatch = require( './../../../base/unary-addon-dispatch' );
@@ -1049,6 +1051,26 @@ interface Namespace {
 	quinary: typeof quinary;
 
 	/**
+	* Reinterprets a `BooleanArray` as a `Uint8Array`.
+	*
+	* @param x - input array
+	* @param offset - starting index
+	* @returns `Uint8Array` view
+	*
+	* @example
+	* var BooleanArray = require( '@stdlib/array/bool' );
+	*
+	* var x = new BooleanArray( 10 );
+	*
+	* var out = ns.reinterpretBoolean( x, 0 );
+	* // returns <Uint8Array>
+	*
+	* var bool = ( out.buffer === x.buffer );
+	* // returns true
+	*/
+	reinterpretBoolean: typeof reinterpretBoolean;
+
+	/**
 	* Reinterprets a `Complex128Array` as a `Float64Array`.
 	*
 	* @param x - input array
@@ -1268,6 +1290,19 @@ interface Namespace {
 	* // z => <Float32Array>[ 2.0, 4.0, 0.0, 8.0, 10.0 ]
 	*/
 	smskmap2: typeof smskmap2;
+
+	/**
+	* Returns the index offset which specifies the location of the first indexed value in a strided array.
+	*
+	* @param N - number of indexed elements
+	* @param stride - index increment
+	* @returns offset
+	*
+	* @example
+	* var offset = ns.stride2offset( 10, -10 );
+	* // returns 90
+	*/
+	stride2offset: typeof stride2offset;
 
 	/**
 	* Applies a ternary callback to strided input array elements and assigns results to elements in a strided output array.
