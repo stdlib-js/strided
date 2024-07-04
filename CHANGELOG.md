@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-01)
+## Unreleased (2024-07-04)
 
 <section class="packages">
 
@@ -213,6 +213,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="strided-dtypes-unreleased">
+
+#### [@stdlib/strided/dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/dtypes)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`f1b5bc9`](https://github.com/stdlib-js/stdlib/commit/f1b5bc9416184b49492ffb07dbff9a5ee27313c1) - add boolean dtype support to `strided/dtypes` [(#2508)](https://github.com/stdlib-js/stdlib/pull/2508)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -249,6 +271,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`f1b5bc9`](https://github.com/stdlib-js/stdlib/commit/f1b5bc9416184b49492ffb07dbff9a5ee27313c1) - **feat:** add boolean dtype support to `strided/dtypes` [(#2508)](https://github.com/stdlib-js/stdlib/pull/2508) _(by Jaysukh Makvana, Athan Reines)_
 -   [`ccaf9fe`](https://github.com/stdlib-js/stdlib/commit/ccaf9fe07622dcbb1816e8678a8de685c075b4e6) - **feat:** update namespace TypeScript declarations [(#2490)](https://github.com/stdlib-js/stdlib/pull/2490) _(by stdlib-bot, Athan Reines)_
 -   [`cc63b8b`](https://github.com/stdlib-js/stdlib/commit/cc63b8b462d786b370c07c7c68aad6a4b491c900) - **feat:** add `reinterpretBoolean` to namespace _(by Athan Reines)_
 -   [`adba03d`](https://github.com/stdlib-js/stdlib/commit/adba03dafef68163b55f1578802dc7ba87fbceb8) - **feat:** add `stride2offset` to namespace _(by Athan Reines)_
