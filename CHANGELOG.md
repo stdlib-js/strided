@@ -87,6 +87,16 @@
 
 <details>
 
+<section class="features">
+
+##### Features
+
+-   [`dc36936`](https://github.com/stdlib-js/stdlib/commit/dc369364ee617f8f62b40d951a0f0d34f795da6e) - add boolean dtype support to `strided/base/mskunary` [(#2520)](https://github.com/stdlib-js/stdlib/pull/2520)
+
+</section>
+
+<!-- /.features -->
+
 <section class="bug-fixes">
 
 ##### Bug Fixes
@@ -357,6 +367,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`dc36936`](https://github.com/stdlib-js/stdlib/commit/dc369364ee617f8f62b40d951a0f0d34f795da6e) - **feat:** add boolean dtype support to `strided/base/mskunary` [(#2520)](https://github.com/stdlib-js/stdlib/pull/2520) _(by Jaysukh Makvana)_
 -   [`441d61c`](https://github.com/stdlib-js/stdlib/commit/441d61c7abef39ebb7bd9b2ce99a2300aa27cbfd) - **feat:** add boolean dtype support to `strided/base/unary` [(#2519)](https://github.com/stdlib-js/stdlib/pull/2519) _(by Jaysukh Makvana)_
 -   [`f5ee96c`](https://github.com/stdlib-js/stdlib/commit/f5ee96c41495ce92c5d75ed0a2934ae9f92cf46c) - **feat:** add boolean dtype support to `strided/base/mskunary-addon-dispatch` [(#2523)](https://github.com/stdlib-js/stdlib/pull/2523) _(by Jaysukh Makvana)_
 -   [`867c4e2`](https://github.com/stdlib-js/stdlib/commit/867c4e221e2320d37c0f99dd47e19ab523c56c56) - **feat:** add boolean dtype support to `strided/base/unary-addon-dispatch` [(#2522)](https://github.com/stdlib-js/stdlib/pull/2522) _(by Jaysukh Makvana)_
