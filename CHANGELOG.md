@@ -251,6 +251,16 @@
 
 <details>
 
+<section class="features">
+
+##### Features
+
+-   [`441d61c`](https://github.com/stdlib-js/stdlib/commit/441d61c7abef39ebb7bd9b2ce99a2300aa27cbfd) - add boolean dtype support to `strided/base/unary` [(#2519)](https://github.com/stdlib-js/stdlib/pull/2519)
+
+</section>
+
+<!-- /.features -->
+
 <section class="bug-fixes">
 
 ##### Bug Fixes
@@ -347,6 +357,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`441d61c`](https://github.com/stdlib-js/stdlib/commit/441d61c7abef39ebb7bd9b2ce99a2300aa27cbfd) - **feat:** add boolean dtype support to `strided/base/unary` [(#2519)](https://github.com/stdlib-js/stdlib/pull/2519) _(by Jaysukh Makvana)_
 -   [`f5ee96c`](https://github.com/stdlib-js/stdlib/commit/f5ee96c41495ce92c5d75ed0a2934ae9f92cf46c) - **feat:** add boolean dtype support to `strided/base/mskunary-addon-dispatch` [(#2523)](https://github.com/stdlib-js/stdlib/pull/2523) _(by Jaysukh Makvana)_
 -   [`867c4e2`](https://github.com/stdlib-js/stdlib/commit/867c4e221e2320d37c0f99dd47e19ab523c56c56) - **feat:** add boolean dtype support to `strided/base/unary-addon-dispatch` [(#2522)](https://github.com/stdlib-js/stdlib/pull/2522) _(by Jaysukh Makvana)_
 -   [`8831e32`](https://github.com/stdlib-js/stdlib/commit/8831e321bcf7a46141f66a9756f67dcc8d277ccc) - **feat:** add boolean dtype support to `strided/base/nullary-addon-dispatch` [(#2521)](https://github.com/stdlib-js/stdlib/pull/2521) _(by Jaysukh Makvana)_
