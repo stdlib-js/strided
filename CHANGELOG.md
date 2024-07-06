@@ -369,6 +369,13 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`1600510`](https://github.com/stdlib-js/stdlib/commit/1600510d9214b9a33dc4dffa26762c78a1fa88e2) - **refactor:** reduce code duplication _(by Athan Reines)_
+-   [`223ff4e`](https://github.com/stdlib-js/stdlib/commit/223ff4e67a753e7707d9aac41d01905c17c434ed) - **refactor:** reduce code duplication _(by Athan Reines)_
+-   [`abffdf1`](https://github.com/stdlib-js/stdlib/commit/abffdf1ac7615c960b4b496dfb7936f6f243d6d4) - **refactor:** reduce code duplication _(by Athan Reines)_
+-   [`341533b`](https://github.com/stdlib-js/stdlib/commit/341533b52c5ed1a389655f411fb897376b7c72ca) - **refactor:** use utility to resolve offset _(by Athan Reines)_
+-   [`9bd72c5`](https://github.com/stdlib-js/stdlib/commit/9bd72c5900e083c88b4b0525359a627d25839ba0) - **refactor:** use utility to resolve stride _(by Athan Reines)_
+-   [`c1da2d5`](https://github.com/stdlib-js/stdlib/commit/c1da2d5a424afe0fe98ed5b91c119850d1f0b6f0) - **refactor:** reduce code duplication _(by Athan Reines)_
+-   [`64592e5`](https://github.com/stdlib-js/stdlib/commit/64592e5433563c9b028393e16757ffd8efcc2f0a) - **refactor:** reduce code duplication _(by Athan Reines)_
 -   [`082d2e9`](https://github.com/stdlib-js/stdlib/commit/082d2e98bb97b40f3ae8bbb1965728fe58747df1) - **feat:** add boolean dtype support to `strided/base/binary-addon-dispatch` [(#2526)](https://github.com/stdlib-js/stdlib/pull/2526) _(by Jaysukh Makvana)_
 -   [`599f5e4`](https://github.com/stdlib-js/stdlib/commit/599f5e4435bf9ae550a80162851521095b2410fc) - **feat:** add boolean dtype support to `strided/base/binary` [(#2525)](https://github.com/stdlib-js/stdlib/pull/2525) _(by Jaysukh Makvana, Athan Reines)_
 -   [`dc36936`](https://github.com/stdlib-js/stdlib/commit/dc369364ee617f8f62b40d951a0f0d34f795da6e) - **feat:** add boolean dtype support to `strided/base/mskunary` [(#2520)](https://github.com/stdlib-js/stdlib/pull/2520) _(by Jaysukh Makvana)_
