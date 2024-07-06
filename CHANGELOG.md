@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`082d2e9`](https://github.com/stdlib-js/stdlib/commit/082d2e98bb97b40f3ae8bbb1965728fe58747df1) - add boolean dtype support to `strided/base/binary-addon-dispatch` [(#2526)](https://github.com/stdlib-js/stdlib/pull/2526)
 -   [`599f5e4`](https://github.com/stdlib-js/stdlib/commit/599f5e4435bf9ae550a80162851521095b2410fc) - add boolean dtype support to `strided/base/binary` [(#2525)](https://github.com/stdlib-js/stdlib/pull/2525)
 -   [`ccaf9fe`](https://github.com/stdlib-js/stdlib/commit/ccaf9fe07622dcbb1816e8678a8de685c075b4e6) - update namespace TypeScript declarations [(#2490)](https://github.com/stdlib-js/stdlib/pull/2490)
 -   [`cc63b8b`](https://github.com/stdlib-js/stdlib/commit/cc63b8b462d786b370c07c7c68aad6a4b491c900) - add `reinterpretBoolean` to namespace
@@ -368,6 +369,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`082d2e9`](https://github.com/stdlib-js/stdlib/commit/082d2e98bb97b40f3ae8bbb1965728fe58747df1) - **feat:** add boolean dtype support to `strided/base/binary-addon-dispatch` [(#2526)](https://github.com/stdlib-js/stdlib/pull/2526) _(by Jaysukh Makvana)_
 -   [`599f5e4`](https://github.com/stdlib-js/stdlib/commit/599f5e4435bf9ae550a80162851521095b2410fc) - **feat:** add boolean dtype support to `strided/base/binary` [(#2525)](https://github.com/stdlib-js/stdlib/pull/2525) _(by Jaysukh Makvana, Athan Reines)_
 -   [`dc36936`](https://github.com/stdlib-js/stdlib/commit/dc369364ee617f8f62b40d951a0f0d34f795da6e) - **feat:** add boolean dtype support to `strided/base/mskunary` [(#2520)](https://github.com/stdlib-js/stdlib/pull/2520) _(by Jaysukh Makvana)_
 -   [`441d61c`](https://github.com/stdlib-js/stdlib/commit/441d61c7abef39ebb7bd9b2ce99a2300aa27cbfd) - **feat:** add boolean dtype support to `strided/base/unary` [(#2519)](https://github.com/stdlib-js/stdlib/pull/2519) _(by Jaysukh Makvana)_
