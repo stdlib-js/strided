@@ -103,6 +103,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="strided-base-mskunary-addon-dispatch-unreleased">
+
+#### [@stdlib/strided/base/mskunary-addon-dispatch](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/mskunary-addon-dispatch)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`f5ee96c`](https://github.com/stdlib-js/stdlib/commit/f5ee96c41495ce92c5d75ed0a2934ae9f92cf46c) - add boolean dtype support to `strided/base/mskunary-addon-dispatch` [(#2523)](https://github.com/stdlib-js/stdlib/pull/2523)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="strided-base-nullary-unreleased">
 
 #### [@stdlib/strided/base/nullary](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/nullary)
@@ -325,6 +347,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`f5ee96c`](https://github.com/stdlib-js/stdlib/commit/f5ee96c41495ce92c5d75ed0a2934ae9f92cf46c) - **feat:** add boolean dtype support to `strided/base/mskunary-addon-dispatch` [(#2523)](https://github.com/stdlib-js/stdlib/pull/2523) _(by Jaysukh Makvana)_
 -   [`867c4e2`](https://github.com/stdlib-js/stdlib/commit/867c4e221e2320d37c0f99dd47e19ab523c56c56) - **feat:** add boolean dtype support to `strided/base/unary-addon-dispatch` [(#2522)](https://github.com/stdlib-js/stdlib/pull/2522) _(by Jaysukh Makvana)_
 -   [`8831e32`](https://github.com/stdlib-js/stdlib/commit/8831e321bcf7a46141f66a9756f67dcc8d277ccc) - **feat:** add boolean dtype support to `strided/base/nullary-addon-dispatch` [(#2521)](https://github.com/stdlib-js/stdlib/pull/2521) _(by Jaysukh Makvana)_
 -   [`4d3d36e`](https://github.com/stdlib-js/stdlib/commit/4d3d36e8b492c8df66a1fdbdb71ff7093d95aa9a) - **feat:** add boolean dtype support to `strided/base/nullary` [(#2513)](https://github.com/stdlib-js/stdlib/pull/2513) _(by Jaysukh Makvana, Athan Reines)_
