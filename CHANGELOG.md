@@ -369,6 +369,12 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`07f85a1`](https://github.com/stdlib-js/stdlib/commit/07f85a1a76b4c043770509482d223a0895d65ae4) - **refactor:** reduce code duplication _(by Athan Reines)_
+-   [`3656b32`](https://github.com/stdlib-js/stdlib/commit/3656b32bde500f96319833f3d4f80bfc18099ff1) - **refactor:** reduce code duplication _(by Athan Reines)_
+-   [`bb1d8a0`](https://github.com/stdlib-js/stdlib/commit/bb1d8a06bb865dbac2fb8c9a6e69a5c9c46e1a05) - **refactor:** reduce code duplication _(by Athan Reines)_
+-   [`cfcce81`](https://github.com/stdlib-js/stdlib/commit/cfcce813757c18dd4e58eb612d594efbba3023e3) - **refactor:** reduce code duplication _(by Athan Reines)_
+-   [`e47b1be`](https://github.com/stdlib-js/stdlib/commit/e47b1be3a80eb9a7ab1fa9f421a133a580ce4366) - **refactor:** reduce code duplication _(by Athan Reines)_
+-   [`95cf265`](https://github.com/stdlib-js/stdlib/commit/95cf2652a5c8938b7b682e562d29c0540f3f33ba) - **refactor:** reduce code duplication _(by Athan Reines)_
 -   [`0d4ef60`](https://github.com/stdlib-js/stdlib/commit/0d4ef609d7df182136e5421b5340d92c466afb7c) - **refactor:** reduce code duplication _(by Athan Reines)_
 -   [`741144c`](https://github.com/stdlib-js/stdlib/commit/741144c09dec958375c7d6e16e46cc08707e7506) - **refactor:** reduce code duplication _(by Athan Reines)_
 -   [`1600510`](https://github.com/stdlib-js/stdlib/commit/1600510d9214b9a33dc4dffa26762c78a1fa88e2) - **refactor:** reduce code duplication _(by Athan Reines)_
