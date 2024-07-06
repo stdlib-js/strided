@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`599f5e4`](https://github.com/stdlib-js/stdlib/commit/599f5e4435bf9ae550a80162851521095b2410fc) - add boolean dtype support to `strided/base/binary` [(#2525)](https://github.com/stdlib-js/stdlib/pull/2525)
 -   [`ccaf9fe`](https://github.com/stdlib-js/stdlib/commit/ccaf9fe07622dcbb1816e8678a8de685c075b4e6) - update namespace TypeScript declarations [(#2490)](https://github.com/stdlib-js/stdlib/pull/2490)
 -   [`cc63b8b`](https://github.com/stdlib-js/stdlib/commit/cc63b8b462d786b370c07c7c68aad6a4b491c900) - add `reinterpretBoolean` to namespace
 -   [`adba03d`](https://github.com/stdlib-js/stdlib/commit/adba03dafef68163b55f1578802dc7ba87fbceb8) - add `stride2offset` to namespace
@@ -367,6 +368,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`599f5e4`](https://github.com/stdlib-js/stdlib/commit/599f5e4435bf9ae550a80162851521095b2410fc) - **feat:** add boolean dtype support to `strided/base/binary` [(#2525)](https://github.com/stdlib-js/stdlib/pull/2525) _(by Jaysukh Makvana, Athan Reines)_
 -   [`dc36936`](https://github.com/stdlib-js/stdlib/commit/dc369364ee617f8f62b40d951a0f0d34f795da6e) - **feat:** add boolean dtype support to `strided/base/mskunary` [(#2520)](https://github.com/stdlib-js/stdlib/pull/2520) _(by Jaysukh Makvana)_
 -   [`441d61c`](https://github.com/stdlib-js/stdlib/commit/441d61c7abef39ebb7bd9b2ce99a2300aa27cbfd) - **feat:** add boolean dtype support to `strided/base/unary` [(#2519)](https://github.com/stdlib-js/stdlib/pull/2519) _(by Jaysukh Makvana)_
 -   [`f5ee96c`](https://github.com/stdlib-js/stdlib/commit/f5ee96c41495ce92c5d75ed0a2934ae9f92cf46c) - **feat:** add boolean dtype support to `strided/base/mskunary-addon-dispatch` [(#2523)](https://github.com/stdlib-js/stdlib/pull/2523) _(by Jaysukh Makvana)_
