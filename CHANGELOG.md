@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-05)
+## Unreleased (2024-07-06)
 
 <section class="packages">
 
@@ -128,6 +128,28 @@
 </section>
 
 <!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="strided-base-nullary-addon-dispatch-unreleased">
+
+#### [@stdlib/strided/base/nullary-addon-dispatch](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/nullary-addon-dispatch)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8831e32`](https://github.com/stdlib-js/stdlib/commit/8831e321bcf7a46141f66a9756f67dcc8d277ccc) - add boolean dtype support to `strided/base/nullary-addon-dispatch` [(#2521)](https://github.com/stdlib-js/stdlib/pull/2521)
+
+</section>
+
+<!-- /.features -->
 
 </details>
 
@@ -281,6 +303,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`8831e32`](https://github.com/stdlib-js/stdlib/commit/8831e321bcf7a46141f66a9756f67dcc8d277ccc) - **feat:** add boolean dtype support to `strided/base/nullary-addon-dispatch` [(#2521)](https://github.com/stdlib-js/stdlib/pull/2521) _(by Jaysukh Makvana)_
 -   [`4d3d36e`](https://github.com/stdlib-js/stdlib/commit/4d3d36e8b492c8df66a1fdbdb71ff7093d95aa9a) - **feat:** add boolean dtype support to `strided/base/nullary` [(#2513)](https://github.com/stdlib-js/stdlib/pull/2513) _(by Jaysukh Makvana, Athan Reines)_
 -   [`f1b5bc9`](https://github.com/stdlib-js/stdlib/commit/f1b5bc9416184b49492ffb07dbff9a5ee27313c1) - **feat:** add boolean dtype support to `strided/dtypes` [(#2508)](https://github.com/stdlib-js/stdlib/pull/2508) _(by Jaysukh Makvana, Athan Reines)_
 -   [`ccaf9fe`](https://github.com/stdlib-js/stdlib/commit/ccaf9fe07622dcbb1816e8678a8de685c075b4e6) - **feat:** update namespace TypeScript declarations [(#2490)](https://github.com/stdlib-js/stdlib/pull/2490) _(by stdlib-bot, Athan Reines)_
