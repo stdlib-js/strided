@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-06)
+## Unreleased (2024-07-07)
 
 <section class="packages">
 
@@ -354,10 +354,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Jaysukh Makvana
+-   Philipp Burckhardt
 
 </section>
 
@@ -369,6 +370,8 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`1f39c86`](https://github.com/stdlib-js/stdlib/commit/1f39c864924bf3d3cf4b5d8d39010e634416b66d) - **docs:** fix example _(by Athan Reines)_
+-   [`4708d70`](https://github.com/stdlib-js/stdlib/commit/4708d704db87214af36a82e77072e3aade8c29fd) - **docs:** update namespace table of contents [(#2532)](2532) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`7b973eb`](https://github.com/stdlib-js/stdlib/commit/7b973eb5ce98a21ce6cb62021f9cb3090d7d5524) - **refactor:** reduce code duplication _(by Athan Reines)_
 -   [`aeb7b51`](https://github.com/stdlib-js/stdlib/commit/aeb7b514c9b48c1ddbfb84dfd269b65838ec38c8) - **refactor:** reduce code duplication _(by Athan Reines)_
 -   [`6249bfd`](https://github.com/stdlib-js/stdlib/commit/6249bfd06ccb8fcd57117473bed9e6f63f203fb9) - **refactor:** reduce code duplication _(by Athan Reines)_
