@@ -2,6 +2,16 @@
 
 > Package changelog.
 
+<section class="release" id="v0.3.1">
+
+## 0.3.1 (2024-08-18)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.0">
 
 ## 0.3.0 (2024-08-17)
@@ -10,7 +20,7 @@
 
 ### Packages
 
-<section class="package" id="strided-base-unreleased">
+<section class="package" id="strided-base-v0.3.0">
 
 #### [@stdlib/strided/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base)
 
@@ -60,7 +70,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-base-dtype-resolve-str-unreleased">
+<section class="package" id="strided-base-dtype-resolve-str-v0.3.0">
 
 #### [@stdlib/strided/base/dtype-resolve-str](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/dtype-resolve-str)
 
@@ -82,7 +92,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-base-mskunary-unreleased">
+<section class="package" id="strided-base-mskunary-v0.3.0">
 
 #### [@stdlib/strided/base/mskunary](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/mskunary)
 
@@ -114,7 +124,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-base-mskunary-addon-dispatch-unreleased">
+<section class="package" id="strided-base-mskunary-addon-dispatch-v0.3.0">
 
 #### [@stdlib/strided/base/mskunary-addon-dispatch](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/mskunary-addon-dispatch)
 
@@ -136,7 +146,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-base-nullary-unreleased">
+<section class="package" id="strided-base-nullary-v0.3.0">
 
 #### [@stdlib/strided/base/nullary](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/nullary)
 
@@ -168,7 +178,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-base-nullary-addon-dispatch-unreleased">
+<section class="package" id="strided-base-nullary-addon-dispatch-v0.3.0">
 
 #### [@stdlib/strided/base/nullary-addon-dispatch](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/nullary-addon-dispatch)
 
@@ -190,7 +200,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-base-reinterpret-boolean-unreleased">
+<section class="package" id="strided-base-reinterpret-boolean-v0.3.0">
 
 #### [@stdlib/strided/base/reinterpret-boolean](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/reinterpret-boolean)
 
@@ -212,7 +222,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-base-reinterpret-complex-unreleased">
+<section class="package" id="strided-base-reinterpret-complex-v0.3.0">
 
 #### [@stdlib/strided/base/reinterpret-complex](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/reinterpret-complex)
 
@@ -234,7 +244,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-base-stride2offset-unreleased">
+<section class="package" id="strided-base-stride2offset-v0.3.0">
 
 #### [@stdlib/strided/base/stride2offset](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/stride2offset)
 
@@ -256,7 +266,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-base-unary-unreleased">
+<section class="package" id="strided-base-unary-v0.3.0">
 
 #### [@stdlib/strided/base/unary](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/unary)
 
@@ -288,7 +298,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-base-unary-addon-dispatch-unreleased">
+<section class="package" id="strided-base-unary-addon-dispatch-v0.3.0">
 
 #### [@stdlib/strided/base/unary-addon-dispatch](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/unary-addon-dispatch)
 
@@ -310,7 +320,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-dtypes-unreleased">
+<section class="package" id="strided-dtypes-v0.3.0">
 
 #### [@stdlib/strided/dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/dtypes)
 
