@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_STRIDED_BASE_STRIDE2OFFSET_H
-#define STDLIB_STRIDED_BASE_STRIDE2OFFSET_H
+#ifndef STDLIB_STRIDED_BASE_MAX_VIEW_BUFFER_INDEX_H
+#define STDLIB_STRIDED_BASE_MAX_VIEW_BUFFER_INDEX_H
 
 #include <stdint.h>
 
@@ -29,12 +29,12 @@ extern "C" {
 #endif
 
 /**
-* Returns the index offset which specifies the location of the first indexed value in a strided array.
+* Returns the maximum accessible index based on a set of provided strided array parameters.
 */
-int64_t stdlib_strided_stride2offset( const int64_t N, const int64_t stride );
+int64_t stdlib_strided_max_view_buffer_index( const int64_t N, const int64_t stride, const int64_t offset );
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif // !STDLIB_STRIDED_BASE_STRIDE2OFFSET_H
+#endif // !STDLIB_STRIDED_BASE_MAX_VIEW_BUFFER_INDEX_H

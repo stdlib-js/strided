@@ -16,26 +16,27 @@
 * limitations under the License.
 */
 
-#include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
 #include <stdint.h>
 
 /**
-* Returns the index offset which specifies the location of the first indexed value in a strided array.
+* Returns the minimum accessible index based on a set of provided strided array parameters.
 *
 * @param N        number of indexed elements
 * @param stride   index increment
-* @return         offset
+* @param offset   starting index
+* @return         index
 *
 * @example
-* #include "stdlib/strided/base/stride2offset.h"
+* #include "stdlib/strided/base/min_view_buffer_index.h"
 * #include <stdint.h>
 *
-* int64_t offset = stdlib_strided_stride2offset( 10, -10 );
-* // returns 90
+* int64_t offset = stdlib_strided_min_view_buffer_index( 3, -2, 10 );
+* // returns 6
 */
-int64_t stdlib_strided_stride2offset( const int64_t N, const int64_t stride ) {
-	if ( stride > 0 ) {
-		return 0;
+int64_t stdlib_strided_min_view_buffer_index( const int64_t N, const int64_t stride, const int64_t offset ) {
+	if ( N > 0 && stride < 0 ) {
+		return offset + ( (N-1)*stride ); // decrements the offset
 	}
-	return ( 1 - N ) * stride;
+	return offset;
 }

@@ -16,25 +16,24 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_STRIDED_BASE_STRIDE2OFFSET_H
-#define STDLIB_STRIDED_BASE_STRIDE2OFFSET_H
-
+#include "stdlib/strided/base/max_view_buffer_index.h"
 #include <stdint.h>
+#include <stdio.h>
+#include <inttypes.h>
 
-/*
-* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
-*/
-#ifdef __cplusplus
-extern "C" {
-#endif
+int main( void ) {
+	// Specify the number of indexed elements:
+	int64_t N = 6;
 
-/**
-* Returns the index offset which specifies the location of the first indexed value in a strided array.
-*/
-int64_t stdlib_strided_stride2offset( const int64_t N, const int64_t stride );
+	// Define a stride:
+	int64_t stride = 2;
 
-#ifdef __cplusplus
+	// Define an offset:
+	int64_t offset = 100;
+
+	// Compute the maximum accessible index:
+	int64_t idx = stdlib_strided_max_view_buffer_index( N, stride, offset );
+
+	// Print the results:
+	printf( "N: %"PRId64", stride: %"PRId64", offset: %"PRId64" => idx: %"PRId64"\n", N, stride, offset, idx );
 }
-#endif
-
-#endif // !STDLIB_STRIDED_BASE_STRIDE2OFFSET_H
