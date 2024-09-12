@@ -419,6 +419,15 @@ setReadOnly( ns, 'unaryDtypeSignatures', require( './../../base/unary-dtype-sign
 setReadOnly( ns, 'unarySignatureCallbacks', require( './../../base/unary-signature-callbacks' ) );
 
 /**
+* @name writeDataView
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/write-dataview}
+*/
+setReadOnly( ns, 'writeDataView', require( './../../base/write-dataview' ) );
+
+/**
 * @name zmap
 * @memberof ns
 * @readonly
