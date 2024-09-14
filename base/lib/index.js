@@ -284,6 +284,15 @@ setReadOnly( ns, 'quaternary', require( './../../base/quaternary' ) );
 setReadOnly( ns, 'quinary', require( './../../base/quinary' ) );
 
 /**
+* @name readDataView
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/read-dataview}
+*/
+setReadOnly( ns, 'readDataView', require( './../../base/read-dataview' ) );
+
+/**
 * @name reinterpretBoolean
 * @memberof ns
 * @readonly
