@@ -374,6 +374,15 @@ setReadOnly( ns, 'smskmap2', require( './../../base/smskmap2' ) );
 setReadOnly( ns, 'stride2offset', require( './../../base/stride2offset' ) );
 
 /**
+* @name strided2object
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/strided2object}
+*/
+setReadOnly( ns, 'strided2object', require( './../../base/strided2object' ) );
+
+/**
 * @name ternary
 * @memberof ns
 * @readonly
