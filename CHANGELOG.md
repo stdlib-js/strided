@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-14)
+## Unreleased (2024-09-15)
 
 <section class="packages">
 
@@ -153,6 +153,7 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 
 <details>
 
+-   [`6485a76`](https://github.com/stdlib-js/stdlib/commit/6485a7699b2176a95159769a6e461a09185f7721) - **docs:** update examples _(by Athan Reines)_
 -   [`dea5a9b`](https://github.com/stdlib-js/stdlib/commit/dea5a9bf9264c43b6e62af90c39f038b5d4f249d) - **feat:** add `readDataView` to namespace _(by Athan Reines)_
 -   [`1584e8c`](https://github.com/stdlib-js/stdlib/commit/1584e8c0a7f196580a5d9a0fa4c64a1c06102218) - **feat:** add `strided/base/read-dataview` _(by Athan Reines)_
 -   [`6ca3c57`](https://github.com/stdlib-js/stdlib/commit/6ca3c5745b7c01e973da3d3c4e62d549e53afb9f) - **docs:** fix copy _(by Athan Reines)_
