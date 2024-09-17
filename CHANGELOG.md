@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-15)
+## Unreleased (2024-09-17)
 
 <section class="packages">
 
@@ -162,9 +162,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Philipp Burckhardt
 
 </section>
 
@@ -176,6 +177,7 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 
 <details>
 
+-   [`f387603`](https://github.com/stdlib-js/stdlib/commit/f387603e739f88a38af3263ce6ff675ad903ee8c) - **docs:** consistently use declarative instead of imperative sentences outside of intros _(by Philipp Burckhardt)_
 -   [`1b3cf97`](https://github.com/stdlib-js/stdlib/commit/1b3cf97bd73b4f48b413f68fe5f4377489cd44c8) - **feat:** add `strided2object` to namespace _(by Athan Reines)_
 -   [`6f6df5d`](https://github.com/stdlib-js/stdlib/commit/6f6df5d539a8035cb3af7b1ceec0ead1ee943bee) - **feat:** add `strided/base/strided2object` _(by Athan Reines)_
 -   [`6485a76`](https://github.com/stdlib-js/stdlib/commit/6485a7699b2176a95159769a6e461a09185f7721) - **docs:** update examples _(by Athan Reines)_
