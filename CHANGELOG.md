@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-18)
+## Unreleased (2024-09-21)
 
 <section class="packages">
 
@@ -177,6 +177,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`6e9f42e`](https://github.com/stdlib-js/stdlib/commit/6e9f42e4c912485d9896eaa16c88b70fd3688e97) - **docs:** harmonize list formatting in repl.txt and ensure starting newline _(by Philipp Burckhardt)_
 -   [`0c2eafb`](https://github.com/stdlib-js/stdlib/commit/0c2eafb772442a6b2ec4be78490c19f0a70d6235) - **docs:** fix copy and remove extraneous newline _(by Athan Reines)_
 -   [`f387603`](https://github.com/stdlib-js/stdlib/commit/f387603e739f88a38af3263ce6ff675ad903ee8c) - **docs:** consistently use declarative instead of imperative sentences outside of intros _(by Philipp Burckhardt)_
 -   [`1b3cf97`](https://github.com/stdlib-js/stdlib/commit/1b3cf97bd73b4f48b413f68fe5f4377489cd44c8) - **feat:** add `strided2object` to namespace _(by Athan Reines)_
