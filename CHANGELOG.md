@@ -2,6 +2,16 @@
 
 > Package changelog.
 
+<section class="release" id="v0.3.3">
+
+## 0.3.3 (2024-11-05)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.2">
 
 ## 0.3.2 (2024-11-05)
@@ -10,7 +20,7 @@
 
 ### Packages
 
-<section class="package" id="strided-base-unreleased">
+<section class="package" id="strided-base-v0.3.2">
 
 #### [@stdlib/strided/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base)
 
@@ -34,7 +44,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-base-max-view-buffer-index-unreleased">
+<section class="package" id="strided-base-max-view-buffer-index-v0.3.2">
 
 #### [@stdlib/strided/base/max-view-buffer-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/max-view-buffer-index)
 
@@ -56,7 +66,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-base-min-view-buffer-index-unreleased">
+<section class="package" id="strided-base-min-view-buffer-index-v0.3.2">
 
 #### [@stdlib/strided/base/min-view-buffer-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/min-view-buffer-index)
 
@@ -88,7 +98,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-base-read--unreleased">
+<section class="package" id="strided-base-read--v0.3.2">
 
 #### [@stdlib/strided/base/read-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/read-)
 
@@ -110,7 +120,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-base-strided2object-unreleased">
+<section class="package" id="strided-base-strided2object-v0.3.2">
 
 #### [@stdlib/strided/base/strided2object](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/strided2object)
 
@@ -132,7 +142,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="strided-base-write--unreleased">
+<section class="package" id="strided-base-write--v0.3.2">
 
 #### [@stdlib/strided/base/write-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/write-)
 
