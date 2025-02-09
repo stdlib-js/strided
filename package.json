@@ -49,6 +49,7 @@
     "@stdlib/bench": "github:stdlib-js/bench#main",
     "@stdlib/console": "github:stdlib-js/console#main",
     "@stdlib/fs": "github:stdlib-js/fs#main",
+    "@stdlib/number": "github:stdlib-js/number#main",
     "@stdlib/process": "github:stdlib-js/process#main",
     "@stdlib/random": "github:stdlib-js/random#main",
     "@stdlib/time": "github:stdlib-js/time#main",

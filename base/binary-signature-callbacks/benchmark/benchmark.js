@@ -26,7 +26,7 @@ var dtypes = require( './../../../dtypes' );
 var signatures = require( './../../../base/binary-dtype-signatures' );
 var cadd = require( '@stdlib/complex/float64/base/add' );
 var caddf = require( '@stdlib/complex/float32/base/add' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var pkg = require( './../package.json' ).name;
 var callbacks = require( './../lib' );
 
