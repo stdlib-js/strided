@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-04)
+## Unreleased (2025-03-13)
 
 <section class="packages">
 
@@ -66,6 +66,30 @@
 
 <!-- /.package -->
 
+<section class="package" id="strided-napi-unreleased">
+
+#### [@stdlib/strided/napi](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/napi)
+
+<details>
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#5981](https://github.com/stdlib-js/stdlib/issues/5981)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="strided-napi-smskmap-unreleased">
 
 #### [@stdlib/strided/napi/smskmap](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/napi/smskmap)
@@ -110,9 +134,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981)
 
 </section>
 
@@ -122,10 +146,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 6 people contributed to this release. Thank you to the following contributors:
 
 -   Aman Bhansali
 -   Athan Reines
+-   Gautam sharma
 -   Gururaj Gurram
 -   Philipp Burckhardt
 -   ditsu
@@ -140,6 +165,7 @@ A total of 5 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`a3351e5`](https://github.com/stdlib-js/stdlib/commit/a3351e50d47cbe46ffd0dd1723992c9933233cc4) - **chore:** resolve EditorConfig lint error  [(#5986)](https://github.com/stdlib-js/stdlib/pull/5986) _(by Gautam sharma)_
 -   [`a1e8f03`](https://github.com/stdlib-js/stdlib/commit/a1e8f03af0ee470d0783cb840878dc7cde0826c3) - **chore:** fix EditorConfig lint errors [(#5543)](https://github.com/stdlib-js/stdlib/pull/5543) _(by ditsu, Athan Reines, Philipp Burckhardt)_
 -   [`2752fe3`](https://github.com/stdlib-js/stdlib/commit/2752fe3ed80c146e8a122c1e7ed442099ba367bc) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`3ae3c5f`](https://github.com/stdlib-js/stdlib/commit/3ae3c5f79f267ecc17041b6b10d8c543f5f0686c) - **refactor:** update paths _(by Gururaj Gurram)_
