@@ -90,6 +90,30 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="strided-napi-addon-arguments-unreleased">
+
+#### [@stdlib/strided/napi/addon-arguments](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/napi/addon-arguments)
+
+<details>
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#6053](https://github.com/stdlib-js/stdlib/issues/6053)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="strided-napi-smskmap-unreleased">
 
 #### [@stdlib/strided/napi/smskmap](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/napi/smskmap)
@@ -134,9 +158,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 2 issues were closed in this release:
+A total of 3 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053)
 
 </section>
 
@@ -146,12 +170,13 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 6 people contributed to this release. Thank you to the following contributors:
+A total of 7 people contributed to this release. Thank you to the following contributors:
 
 -   Aman Bhansali
 -   Athan Reines
 -   Gautam sharma
 -   Gururaj Gurram
+-   Kaushikgtm
 -   Philipp Burckhardt
 -   ditsu
 
@@ -165,6 +190,8 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`b6a6575`](https://github.com/stdlib-js/stdlib/commit/b6a657548d4e7beacc37f26e7f49c77ae3ea2f0b) - **chore:** fix EditorConfig lint errors [(#6057)](https://github.com/stdlib-js/stdlib/pull/6057) _(by Kaushikgtm)_
+-   [`3938b26`](https://github.com/stdlib-js/stdlib/commit/3938b265e603116448c89fcaa58df70e79d40f59) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`a0ae68f`](https://github.com/stdlib-js/stdlib/commit/a0ae68f836cefaad8d976373a4e05d0acac8fcd7) - **style:** resolve lint errors in `strided/base/map-by2` [(#6093)](https://github.com/stdlib-js/stdlib/pull/6093) _(by Gururaj Gurram, Athan Reines)_
 -   [`a3351e5`](https://github.com/stdlib-js/stdlib/commit/a3351e50d47cbe46ffd0dd1723992c9933233cc4) - **chore:** resolve EditorConfig lint error  [(#5986)](https://github.com/stdlib-js/stdlib/pull/5986) _(by Gautam sharma)_
 -   [`a1e8f03`](https://github.com/stdlib-js/stdlib/commit/a1e8f03af0ee470d0783cb840878dc7cde0826c3) - **chore:** fix EditorConfig lint errors [(#5543)](https://github.com/stdlib-js/stdlib/pull/5543) _(by ditsu, Athan Reines, Philipp Burckhardt)_

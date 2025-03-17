@@ -825,7 +825,7 @@ interface Namespace {
 	*
 	* @example
 	* var signatures = require( './../../../base/mskunary-dtype-signatures' );
-	* var identity = require( '@stdlib/math/base/special/identity' );
+	* var identity = require( '@stdlib/number/float64/base/identity' );
 	* var cidentity = require( '@stdlib/math/base/special/cidentity' );
 	* var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
 	*
@@ -1622,7 +1622,7 @@ interface Namespace {
 	*
 	* @example
 	* var signatures = require( './../../../base/unary-dtype-signatures' );
-	* var identity = require( '@stdlib/math/base/special/identity' );
+	* var identity = require( '@stdlib/number/float64/base/identity' );
 	* var cidentity = require( '@stdlib/math/base/special/cidentity' );
 	* var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
 	*

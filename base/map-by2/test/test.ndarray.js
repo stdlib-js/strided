@@ -23,7 +23,7 @@
 var tape = require( 'tape' );
 var add = require( '@stdlib/number/float64/base/add' );
 var caddf = require( '@stdlib/complex/float32/base/add' );
-var identity = require( '@stdlib/math/base/special/identity' );
+var identity = require( '@stdlib/number/float64/base/identity' );
 var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
 var Float64Array = require( '@stdlib/array/float64' );
 var Float32Array = require( '@stdlib/array/float32' );

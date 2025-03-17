@@ -25,7 +25,7 @@
 *
 * @example
 * var signatures = require( '@stdlib/strided/base/mskunary-dtype-signatures' );
-* var identity = require( '@stdlib/math/base/special/identity' );
+* var identity = require( '@stdlib/number/float64/base/identity' );
 * var cidentity = require( '@stdlib/math/base/special/cidentity' );
 * var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
 * var callbacks = require( '@stdlib/strided/base/mskunary-signature-callbacks' );
