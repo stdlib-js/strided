@@ -165,6 +165,7 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`a0ae68f`](https://github.com/stdlib-js/stdlib/commit/a0ae68f836cefaad8d976373a4e05d0acac8fcd7) - **style:** resolve lint errors in `strided/base/map-by2` [(#6093)](https://github.com/stdlib-js/stdlib/pull/6093) _(by Gururaj Gurram, Athan Reines)_
 -   [`a3351e5`](https://github.com/stdlib-js/stdlib/commit/a3351e50d47cbe46ffd0dd1723992c9933233cc4) - **chore:** resolve EditorConfig lint error  [(#5986)](https://github.com/stdlib-js/stdlib/pull/5986) _(by Gautam sharma)_
 -   [`a1e8f03`](https://github.com/stdlib-js/stdlib/commit/a1e8f03af0ee470d0783cb840878dc7cde0826c3) - **chore:** fix EditorConfig lint errors [(#5543)](https://github.com/stdlib-js/stdlib/pull/5543) _(by ditsu, Athan Reines, Philipp Burckhardt)_
 -   [`2752fe3`](https://github.com/stdlib-js/stdlib/commit/2752fe3ed80c146e8a122c1e7ed442099ba367bc) - **refactor:** update paths _(by Gururaj Gurram)_
