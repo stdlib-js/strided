@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-17)
+## Unreleased (2025-03-18)
 
 <section class="packages">
 
@@ -190,6 +190,8 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`74826d6`](https://github.com/stdlib-js/stdlib/commit/74826d6d9c5c800da64c3a9821a511fef2fd0a67) - **refactor:** update paths _(by Gururaj Gurram)_
+-   [`74b15bb`](https://github.com/stdlib-js/stdlib/commit/74b15bba6c22bcdd23d61a4e8996a59c7ef0f041) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`b6a6575`](https://github.com/stdlib-js/stdlib/commit/b6a657548d4e7beacc37f26e7f49c77ae3ea2f0b) - **chore:** fix EditorConfig lint errors [(#6057)](https://github.com/stdlib-js/stdlib/pull/6057) _(by Kaushikgtm)_
 -   [`3938b26`](https://github.com/stdlib-js/stdlib/commit/3938b265e603116448c89fcaa58df70e79d40f59) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`a0ae68f`](https://github.com/stdlib-js/stdlib/commit/a0ae68f836cefaad8d976373a4e05d0acac8fcd7) - **style:** resolve lint errors in `strided/base/map-by2` [(#6093)](https://github.com/stdlib-js/stdlib/pull/6093) _(by Gururaj Gurram, Athan Reines)_
