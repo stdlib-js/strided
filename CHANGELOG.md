@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-18)
+## Unreleased (2025-03-23)
 
 <section class="packages">
 
@@ -37,6 +37,30 @@
 </section>
 
 <!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="strided-base-cmap-unreleased">
+
+#### [@stdlib/strided/base/cmap](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/cmap)
+
+<details>
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#6272](https://github.com/stdlib-js/stdlib/issues/6272)
+
+</section>
+
+<!-- /.issues -->
 
 </details>
 
@@ -158,9 +182,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 3 issues were closed in this release:
+A total of 4 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6272](https://github.com/stdlib-js/stdlib/issues/6272)
 
 </section>
 
@@ -170,8 +194,9 @@ A total of 3 issues were closed in this release:
 
 ### Contributors
 
-A total of 7 people contributed to this release. Thank you to the following contributors:
+A total of 8 people contributed to this release. Thank you to the following contributors:
 
+-   Aarya Balwadkar
 -   Aman Bhansali
 -   Athan Reines
 -   Gautam sharma
@@ -190,6 +215,8 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`b818857`](https://github.com/stdlib-js/stdlib/commit/b818857bc88d94bc93bbb119626c6c897b0c46a8) - **chore:** fix C lint errors [(#6279)](https://github.com/stdlib-js/stdlib/pull/6279) _(by Aarya Balwadkar, Athan Reines)_
+-   [`845e64a`](https://github.com/stdlib-js/stdlib/commit/845e64a2f7e12bd60729097230774569b2d4954e) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`74826d6`](https://github.com/stdlib-js/stdlib/commit/74826d6d9c5c800da64c3a9821a511fef2fd0a67) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`74b15bb`](https://github.com/stdlib-js/stdlib/commit/74b15bba6c22bcdd23d61a4e8996a59c7ef0f041) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`b6a6575`](https://github.com/stdlib-js/stdlib/commit/b6a657548d4e7beacc37f26e7f49c77ae3ea2f0b) - **chore:** fix EditorConfig lint errors [(#6057)](https://github.com/stdlib-js/stdlib/pull/6057) _(by Kaushikgtm)_
