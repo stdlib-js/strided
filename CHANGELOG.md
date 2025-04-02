@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-23)
+## Unreleased (2025-04-02)
 
 <section class="packages">
 
@@ -57,6 +57,30 @@
 This release closes the following issue:
 
 [#6272](https://github.com/stdlib-js/stdlib/issues/6272)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="strided-base-dmskmap-unreleased">
+
+#### [@stdlib/strided/base/dmskmap](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/strided/base/dmskmap)
+
+<details>
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#6132](https://github.com/stdlib-js/stdlib/issues/6132)
 
 </section>
 
@@ -182,9 +206,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 4 issues were closed in this release:
+A total of 5 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6272](https://github.com/stdlib-js/stdlib/issues/6272)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6132](https://github.com/stdlib-js/stdlib/issues/6132), [#6272](https://github.com/stdlib-js/stdlib/issues/6272)
 
 </section>
 
@@ -194,13 +218,14 @@ A total of 4 issues were closed in this release:
 
 ### Contributors
 
-A total of 8 people contributed to this release. Thank you to the following contributors:
+A total of 9 people contributed to this release. Thank you to the following contributors:
 
 -   Aarya Balwadkar
 -   Aman Bhansali
 -   Athan Reines
 -   Gautam sharma
 -   Gururaj Gurram
+-   Jay Soni
 -   Kaushikgtm
 -   Philipp Burckhardt
 -   ditsu
@@ -215,6 +240,7 @@ A total of 8 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`1c11f2e`](https://github.com/stdlib-js/stdlib/commit/1c11f2ef49301abcd6a76075fef5a412838350de) - **chore:** address C lint errors [(#6193)](https://github.com/stdlib-js/stdlib/pull/6193) _(by Jay Soni, Athan Reines, stdlib-bot)_
 -   [`b818857`](https://github.com/stdlib-js/stdlib/commit/b818857bc88d94bc93bbb119626c6c897b0c46a8) - **chore:** fix C lint errors [(#6279)](https://github.com/stdlib-js/stdlib/pull/6279) _(by Aarya Balwadkar, Athan Reines)_
 -   [`845e64a`](https://github.com/stdlib-js/stdlib/commit/845e64a2f7e12bd60729097230774569b2d4954e) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`74826d6`](https://github.com/stdlib-js/stdlib/commit/74826d6d9c5c800da64c3a9821a511fef2fd0a67) - **refactor:** update paths _(by Gururaj Gurram)_
