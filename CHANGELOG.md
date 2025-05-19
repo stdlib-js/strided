@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-29)
+## Unreleased (2025-05-19)
 
 <section class="features">
 
@@ -47,6 +47,7 @@ A total of 7 issues were closed in this release:
 
 <details>
 
+-   [`842f4f5`](https://github.com/stdlib-js/stdlib/commit/842f4f55e857d061bada353d114ba8d50171511a) - **build:** add shebang _(by Athan Reines)_
 -   [`66a381d`](https://github.com/stdlib-js/stdlib/commit/66a381d7118cf355417d811f594876cce9324667) - **chore:** fix C lint errors  [(#6866)](https://github.com/stdlib-js/stdlib/pull/6866 ) _(by Lalit Narayan Yadav)_
 -   [`5f73301`](https://github.com/stdlib-js/stdlib/commit/5f73301a8509cc423a06b02140c4e316fd02ff49) - **docs:** minor clean-up _(by Philipp Burckhardt)_
 -   [`bb44973`](https://github.com/stdlib-js/stdlib/commit/bb44973cb0acb335d968060dd427ad47fd3ed2dc) - **chore:** fix C lint error [(#6529)](https://github.com/stdlib-js/stdlib/pull/6529) _(by Anshu Kumar)_
