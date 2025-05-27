@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-24)
+## Unreleased (2025-05-27)
 
 <section class="features">
 
@@ -33,9 +33,9 @@
 
 ### Closed Issues
 
-A total of 8 issues were closed in this release:
+A total of 9 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6132](https://github.com/stdlib-js/stdlib/issues/6132), [#6272](https://github.com/stdlib-js/stdlib/issues/6272), [#6523](https://github.com/stdlib-js/stdlib/issues/6523), [#6778](https://github.com/stdlib-js/stdlib/issues/6778), [#7002](https://github.com/stdlib-js/stdlib/issues/7002)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6132](https://github.com/stdlib-js/stdlib/issues/6132), [#6272](https://github.com/stdlib-js/stdlib/issues/6272), [#6523](https://github.com/stdlib-js/stdlib/issues/6523), [#6778](https://github.com/stdlib-js/stdlib/issues/6778), [#7002](https://github.com/stdlib-js/stdlib/issues/7002), [#7084](https://github.com/stdlib-js/stdlib/issues/7084)
 
 </section>
 
@@ -47,6 +47,7 @@ A total of 8 issues were closed in this release:
 
 <details>
 
+-   [`26f5797`](https://github.com/stdlib-js/stdlib/commit/26f5797c30ac9fbdb8a5d11e3dc58ae71813ab0f) - **chore:** fix EditorConfig lint errors [(#7099)](https://github.com/stdlib-js/stdlib/pull/7099) _(by Lalit Narayan Yadav)_
 -   [`d03bb0e`](https://github.com/stdlib-js/stdlib/commit/d03bb0e424f4da2bdab8b379b39e2d29dce71793) - **chore:** fix EditorConfig lint errors [(#7015)](https://github.com/stdlib-js/stdlib/pull/7015) _(by Lalit Narayan Yadav)_
 -   [`842f4f5`](https://github.com/stdlib-js/stdlib/commit/842f4f55e857d061bada353d114ba8d50171511a) - **build:** add shebang _(by Athan Reines)_
 -   [`66a381d`](https://github.com/stdlib-js/stdlib/commit/66a381d7118cf355417d811f594876cce9324667) - **chore:** fix C lint errors  [(#6866)](https://github.com/stdlib-js/stdlib/pull/6866 ) _(by Lalit Narayan Yadav)_
