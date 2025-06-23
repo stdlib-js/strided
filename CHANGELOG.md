@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-05)
+## Unreleased (2025-06-23)
 
 <section class="features">
 
@@ -33,9 +33,9 @@
 
 ### Closed Issues
 
-A total of 10 issues were closed in this release:
+A total of 11 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6132](https://github.com/stdlib-js/stdlib/issues/6132), [#6272](https://github.com/stdlib-js/stdlib/issues/6272), [#6523](https://github.com/stdlib-js/stdlib/issues/6523), [#6778](https://github.com/stdlib-js/stdlib/issues/6778), [#7002](https://github.com/stdlib-js/stdlib/issues/7002), [#7084](https://github.com/stdlib-js/stdlib/issues/7084), [#7182](https://github.com/stdlib-js/stdlib/issues/7182)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6132](https://github.com/stdlib-js/stdlib/issues/6132), [#6272](https://github.com/stdlib-js/stdlib/issues/6272), [#6475](https://github.com/stdlib-js/stdlib/issues/6475), [#6523](https://github.com/stdlib-js/stdlib/issues/6523), [#6778](https://github.com/stdlib-js/stdlib/issues/6778), [#7002](https://github.com/stdlib-js/stdlib/issues/7002), [#7084](https://github.com/stdlib-js/stdlib/issues/7084), [#7182](https://github.com/stdlib-js/stdlib/issues/7182)
 
 </section>
 
@@ -47,6 +47,7 @@ A total of 10 issues were closed in this release:
 
 <details>
 
+-   [`8963c18`](https://github.com/stdlib-js/stdlib/commit/8963c180f6bf6020f86588a8e877ad85663dd8bc) - **chore:** fix C lint errors [(#7459)](https://github.com/stdlib-js/stdlib/pull/7459) _(by zhanggy)_
 -   [`7ca5048`](https://github.com/stdlib-js/stdlib/commit/7ca50484506f78580c9f7d175d6bbba3f3d8d785) - **chore:** fix EditorConfig lint errors [(#7211)](https://github.com/stdlib-js/stdlib/pull/7211) _(by Lalit Narayan Yadav)_
 -   [`26f5797`](https://github.com/stdlib-js/stdlib/commit/26f5797c30ac9fbdb8a5d11e3dc58ae71813ab0f) - **chore:** fix EditorConfig lint errors [(#7099)](https://github.com/stdlib-js/stdlib/pull/7099) _(by Lalit Narayan Yadav)_
 -   [`d03bb0e`](https://github.com/stdlib-js/stdlib/commit/d03bb0e424f4da2bdab8b379b39e2d29dce71793) - **chore:** fix EditorConfig lint errors [(#7015)](https://github.com/stdlib-js/stdlib/pull/7015) _(by Lalit Narayan Yadav)_
@@ -93,7 +94,7 @@ A total of 10 issues were closed in this release:
 
 ### Contributors
 
-A total of 11 people contributed to this release. Thank you to the following contributors:
+A total of 12 people contributed to this release. Thank you to the following contributors:
 
 -   Aarya Balwadkar
 -   Aman Bhansali
@@ -106,6 +107,7 @@ A total of 11 people contributed to this release. Thank you to the following con
 -   Lalit Narayan Yadav
 -   Philipp Burckhardt
 -   ditsu
+-   zhanggy
 
 </section>
 
