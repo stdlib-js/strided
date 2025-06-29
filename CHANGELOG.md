@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-23)
+## Unreleased (2025-06-29)
 
 <section class="features">
 
@@ -16,6 +16,16 @@
 </section>
 
 <!-- /.features -->
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`62fd127`](https://github.com/stdlib-js/stdlib/commit/62fd127559608e63541664d9633e085d882e8cb5) - update type definition to include `const` qualifiers
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="breaking-changes">
 
@@ -47,6 +57,7 @@ A total of 11 issues were closed in this release:
 
 <details>
 
+-   [`62fd127`](https://github.com/stdlib-js/stdlib/commit/62fd127559608e63541664d9633e085d882e8cb5) - **fix:** update type definition to include `const` qualifiers _(by Athan Reines)_
 -   [`8963c18`](https://github.com/stdlib-js/stdlib/commit/8963c180f6bf6020f86588a8e877ad85663dd8bc) - **chore:** fix C lint errors [(#7459)](https://github.com/stdlib-js/stdlib/pull/7459) _(by zhanggy)_
 -   [`7ca5048`](https://github.com/stdlib-js/stdlib/commit/7ca50484506f78580c9f7d175d6bbba3f3d8d785) - **chore:** fix EditorConfig lint errors [(#7211)](https://github.com/stdlib-js/stdlib/pull/7211) _(by Lalit Narayan Yadav)_
 -   [`26f5797`](https://github.com/stdlib-js/stdlib/commit/26f5797c30ac9fbdb8a5d11e3dc58ae71813ab0f) - **chore:** fix EditorConfig lint errors [(#7099)](https://github.com/stdlib-js/stdlib/pull/7099) _(by Lalit Narayan Yadav)_
