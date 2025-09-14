@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-25)
+## Unreleased (2025-09-14)
 
 <section class="features">
 
@@ -57,6 +57,7 @@ A total of 14 issues were closed in this release:
 
 <details>
 
+-   [`5dde2ff`](https://github.com/stdlib-js/stdlib/commit/5dde2ff115443aa143dd19022e5593e022401920) - **refactor:** use extended BLAS utility _(by Athan Reines)_
 -   [`2418246`](https://github.com/stdlib-js/stdlib/commit/241824670528518e87667d83512dab297367e43d) - **docs:** fix lint errors in example code _(by Philipp Burckhardt)_
 -   [`f344466`](https://github.com/stdlib-js/stdlib/commit/f344466c6dcfb8f52d7f3148acaadd52772938da) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
 -   [`77867ac`](https://github.com/stdlib-js/stdlib/commit/77867ac1767a186023f633dea30ddf860962aaed) - **docs:** remove trailing whitespace _(by Philipp Burckhardt)_
