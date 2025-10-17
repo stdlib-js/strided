@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-21)
+## Unreleased (2025-10-17)
 
 <section class="features">
 
@@ -43,9 +43,9 @@
 
 ### Closed Issues
 
-A total of 14 issues were closed in this release:
+A total of 15 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6132](https://github.com/stdlib-js/stdlib/issues/6132), [#6272](https://github.com/stdlib-js/stdlib/issues/6272), [#6475](https://github.com/stdlib-js/stdlib/issues/6475), [#6523](https://github.com/stdlib-js/stdlib/issues/6523), [#6778](https://github.com/stdlib-js/stdlib/issues/6778), [#7002](https://github.com/stdlib-js/stdlib/issues/7002), [#7084](https://github.com/stdlib-js/stdlib/issues/7084), [#7182](https://github.com/stdlib-js/stdlib/issues/7182), [#7735](https://github.com/stdlib-js/stdlib/issues/7735), [#7760](https://github.com/stdlib-js/stdlib/issues/7760), [#7774](https://github.com/stdlib-js/stdlib/issues/7774)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6132](https://github.com/stdlib-js/stdlib/issues/6132), [#6272](https://github.com/stdlib-js/stdlib/issues/6272), [#6475](https://github.com/stdlib-js/stdlib/issues/6475), [#6523](https://github.com/stdlib-js/stdlib/issues/6523), [#6778](https://github.com/stdlib-js/stdlib/issues/6778), [#7002](https://github.com/stdlib-js/stdlib/issues/7002), [#7084](https://github.com/stdlib-js/stdlib/issues/7084), [#7182](https://github.com/stdlib-js/stdlib/issues/7182), [#7735](https://github.com/stdlib-js/stdlib/issues/7735), [#7760](https://github.com/stdlib-js/stdlib/issues/7760), [#7774](https://github.com/stdlib-js/stdlib/issues/7774), [#8249](https://github.com/stdlib-js/stdlib/issues/8249)
 
 </section>
 
@@ -57,6 +57,7 @@ A total of 14 issues were closed in this release:
 
 <details>
 
+-   [`1260ab1`](https://github.com/stdlib-js/stdlib/commit/1260ab1675b1bf6709fc948c8c9fbdee988dd968) - **chore:** fix C lint errors [(#8252)](https://github.com/stdlib-js/stdlib/pull/8252) _(by Geo Daoyu)_
 -   [`654413c`](https://github.com/stdlib-js/stdlib/commit/654413c9b3d6c451eec0c6763a49e574212bd365) - **refactor:** update require path _(by Athan Reines)_
 -   [`5dde2ff`](https://github.com/stdlib-js/stdlib/commit/5dde2ff115443aa143dd19022e5593e022401920) - **refactor:** use extended BLAS utility _(by Athan Reines)_
 -   [`2418246`](https://github.com/stdlib-js/stdlib/commit/241824670528518e87667d83512dab297367e43d) - **docs:** fix lint errors in example code _(by Philipp Burckhardt)_
@@ -64,10 +65,10 @@ A total of 14 issues were closed in this release:
 -   [`77867ac`](https://github.com/stdlib-js/stdlib/commit/77867ac1767a186023f633dea30ddf860962aaed) - **docs:** remove trailing whitespace _(by Philipp Burckhardt)_
 -   [`504a3f1`](https://github.com/stdlib-js/stdlib/commit/504a3f1d1db20b670b48efd1c292d7efbb433b58) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
 -   [`01f0ee9`](https://github.com/stdlib-js/stdlib/commit/01f0ee99a093a96187db68fbabe0f79d972a1227) - **chore:** fix EditorConfig lint errors [(#7778)](https://github.com/stdlib-js/stdlib/pull/7778) _(by Lalit Narayan Yadav)_
--   [`9b22fea`](https://github.com/stdlib-js/stdlib/commit/9b22feadb9bb2c81315f4bd426bd025f5423d27c) - **chore:** fix C lint errors [(#7768)](https://github.com/stdlib-js/stdlib/pull/7768) _(by GeoDaoyu)_
--   [`53c6429`](https://github.com/stdlib-js/stdlib/commit/53c6429aee35e48e178bc96072a39d1d9db325f3) - **chore:** fix EditorConfig lint errors [(#7737)](https://github.com/stdlib-js/stdlib/pull/7737) _(by AryanJ18, Athan Reines)_
+-   [`9b22fea`](https://github.com/stdlib-js/stdlib/commit/9b22feadb9bb2c81315f4bd426bd025f5423d27c) - **chore:** fix C lint errors [(#7768)](https://github.com/stdlib-js/stdlib/pull/7768) _(by Geo Daoyu)_
+-   [`53c6429`](https://github.com/stdlib-js/stdlib/commit/53c6429aee35e48e178bc96072a39d1d9db325f3) - **chore:** fix EditorConfig lint errors [(#7737)](https://github.com/stdlib-js/stdlib/pull/7737) _(by Aryan J, Athan Reines)_
 -   [`62fd127`](https://github.com/stdlib-js/stdlib/commit/62fd127559608e63541664d9633e085d882e8cb5) - **fix:** update type definition to include `const` qualifiers _(by Athan Reines)_
--   [`8963c18`](https://github.com/stdlib-js/stdlib/commit/8963c180f6bf6020f86588a8e877ad85663dd8bc) - **chore:** fix C lint errors [(#7459)](https://github.com/stdlib-js/stdlib/pull/7459) _(by zhanggy)_
+-   [`8963c18`](https://github.com/stdlib-js/stdlib/commit/8963c180f6bf6020f86588a8e877ad85663dd8bc) - **chore:** fix C lint errors [(#7459)](https://github.com/stdlib-js/stdlib/pull/7459) _(by Geo Daoyu)_
 -   [`7ca5048`](https://github.com/stdlib-js/stdlib/commit/7ca50484506f78580c9f7d175d6bbba3f3d8d785) - **chore:** fix EditorConfig lint errors [(#7211)](https://github.com/stdlib-js/stdlib/pull/7211) _(by Lalit Narayan Yadav)_
 -   [`26f5797`](https://github.com/stdlib-js/stdlib/commit/26f5797c30ac9fbdb8a5d11e3dc58ae71813ab0f) - **chore:** fix EditorConfig lint errors [(#7099)](https://github.com/stdlib-js/stdlib/pull/7099) _(by Lalit Narayan Yadav)_
 -   [`d03bb0e`](https://github.com/stdlib-js/stdlib/commit/d03bb0e424f4da2bdab8b379b39e2d29dce71793) - **chore:** fix EditorConfig lint errors [(#7015)](https://github.com/stdlib-js/stdlib/pull/7015) _(by Lalit Narayan Yadav)_
@@ -80,11 +81,11 @@ A total of 14 issues were closed in this release:
 -   [`845e64a`](https://github.com/stdlib-js/stdlib/commit/845e64a2f7e12bd60729097230774569b2d4954e) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`74826d6`](https://github.com/stdlib-js/stdlib/commit/74826d6d9c5c800da64c3a9821a511fef2fd0a67) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`74b15bb`](https://github.com/stdlib-js/stdlib/commit/74b15bba6c22bcdd23d61a4e8996a59c7ef0f041) - **refactor:** update paths _(by Gururaj Gurram)_
--   [`b6a6575`](https://github.com/stdlib-js/stdlib/commit/b6a657548d4e7beacc37f26e7f49c77ae3ea2f0b) - **chore:** fix EditorConfig lint errors [(#6057)](https://github.com/stdlib-js/stdlib/pull/6057) _(by Kaushikgtm)_
+-   [`b6a6575`](https://github.com/stdlib-js/stdlib/commit/b6a657548d4e7beacc37f26e7f49c77ae3ea2f0b) - **chore:** fix EditorConfig lint errors [(#6057)](https://github.com/stdlib-js/stdlib/pull/6057) _(by Gautam Kaushik)_
 -   [`3938b26`](https://github.com/stdlib-js/stdlib/commit/3938b265e603116448c89fcaa58df70e79d40f59) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`a0ae68f`](https://github.com/stdlib-js/stdlib/commit/a0ae68f836cefaad8d976373a4e05d0acac8fcd7) - **style:** resolve lint errors in `strided/base/map-by2` [(#6093)](https://github.com/stdlib-js/stdlib/pull/6093) _(by Gururaj Gurram, Athan Reines)_
 -   [`a3351e5`](https://github.com/stdlib-js/stdlib/commit/a3351e50d47cbe46ffd0dd1723992c9933233cc4) - **chore:** resolve EditorConfig lint error  [(#5986)](https://github.com/stdlib-js/stdlib/pull/5986) _(by Gautam sharma)_
--   [`a1e8f03`](https://github.com/stdlib-js/stdlib/commit/a1e8f03af0ee470d0783cb840878dc7cde0826c3) - **chore:** fix EditorConfig lint errors [(#5543)](https://github.com/stdlib-js/stdlib/pull/5543) _(by ditsu, Athan Reines, Philipp Burckhardt)_
+-   [`a1e8f03`](https://github.com/stdlib-js/stdlib/commit/a1e8f03af0ee470d0783cb840878dc7cde0826c3) - **chore:** fix EditorConfig lint errors [(#5543)](https://github.com/stdlib-js/stdlib/pull/5543) _(by Ditsu S, Athan Reines, Philipp Burckhardt)_
 -   [`2752fe3`](https://github.com/stdlib-js/stdlib/commit/2752fe3ed80c146e8a122c1e7ed442099ba367bc) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`3ae3c5f`](https://github.com/stdlib-js/stdlib/commit/3ae3c5f79f267ecc17041b6b10d8c543f5f0686c) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`22212ac`](https://github.com/stdlib-js/stdlib/commit/22212ac4eed8f336d9798ea7c70daf0ff0f1906a) - **docs:** update related packages sections [(#5129)](https://github.com/stdlib-js/stdlib/pull/5129) _(by stdlib-bot)_
@@ -114,22 +115,21 @@ A total of 14 issues were closed in this release:
 
 ### Contributors
 
-A total of 14 people contributed to this release. Thank you to the following contributors:
+A total of 13 people contributed to this release. Thank you to the following contributors:
 
 -   Aarya Balwadkar
 -   Aman Bhansali
 -   Anshu Kumar
--   AryanJ18
+-   Aryan J
 -   Athan Reines
+-   Ditsu S
+-   Gautam Kaushik
 -   Gautam sharma
--   GeoDaoyu
+-   Geo Daoyu
 -   Gururaj Gurram
 -   Jay Soni
--   Kaushikgtm
 -   Lalit Narayan Yadav
 -   Philipp Burckhardt
--   ditsu
--   zhanggy
 
 </section>
 
