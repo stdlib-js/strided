@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-05)
+## Unreleased (2025-12-15)
 
 <section class="features">
 
@@ -57,6 +57,7 @@ A total of 16 issues were closed in this release:
 
 <details>
 
+-   [`3de4c3c`](https://github.com/stdlib-js/stdlib/commit/3de4c3c636e9aab29d8cb90a54530894b8397a8c) - **docs:** improve doctests for complex number instances in `strided/base/cmap` [(#8954)](https://github.com/stdlib-js/stdlib/pull/8954) _(by Prajjwal Bajpai)_
 -   [`4d1c412`](https://github.com/stdlib-js/stdlib/commit/4d1c412c6e983f9076b3ec7f733d81893a398a39) - **chore:** fix C lint errors [(#8392)](https://github.com/stdlib-js/stdlib/pull/8392) _(by Geo Daoyu, Athan Reines)_
 -   [`1260ab1`](https://github.com/stdlib-js/stdlib/commit/1260ab1675b1bf6709fc948c8c9fbdee988dd968) - **chore:** fix C lint errors [(#8252)](https://github.com/stdlib-js/stdlib/pull/8252) _(by Geo Daoyu)_
 -   [`654413c`](https://github.com/stdlib-js/stdlib/commit/654413c9b3d6c451eec0c6763a49e574212bd365) - **refactor:** update require path _(by Athan Reines)_
@@ -116,7 +117,7 @@ A total of 16 issues were closed in this release:
 
 ### Contributors
 
-A total of 13 people contributed to this release. Thank you to the following contributors:
+A total of 14 people contributed to this release. Thank you to the following contributors:
 
 -   Aarya Balwadkar
 -   Aman Bhansali
@@ -131,6 +132,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   Jay Soni
 -   Lalit Narayan Yadav
 -   Philipp Burckhardt
+-   Prajjwal Bajpai
 
 </section>
 
