@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-17)
+## Unreleased (2025-12-21)
 
 <section class="features">
 
@@ -57,6 +57,7 @@ A total of 16 issues were closed in this release:
 
 <details>
 
+-   [`062b80e`](https://github.com/stdlib-js/stdlib/commit/062b80e7488175ea48118c3873ea4717e7e3f702) - **docs:** improve doctests for complex number instances in `strided/base/zmap` [(#9044)](https://github.com/stdlib-js/stdlib/pull/9044) _(by Prajjwal Bajpai)_
 -   [`3de4c3c`](https://github.com/stdlib-js/stdlib/commit/3de4c3c636e9aab29d8cb90a54530894b8397a8c) - **docs:** improve doctests for complex number instances in `strided/base/cmap` [(#8954)](https://github.com/stdlib-js/stdlib/pull/8954) _(by Prajjwal Bajpai)_
 -   [`4d1c412`](https://github.com/stdlib-js/stdlib/commit/4d1c412c6e983f9076b3ec7f733d81893a398a39) - **chore:** fix C lint errors [(#8392)](https://github.com/stdlib-js/stdlib/pull/8392) _(by Geo Daoyu, Athan Reines)_
 -   [`1260ab1`](https://github.com/stdlib-js/stdlib/commit/1260ab1675b1bf6709fc948c8c9fbdee988dd968) - **chore:** fix C lint errors [(#8252)](https://github.com/stdlib-js/stdlib/pull/8252) _(by Geo Daoyu)_
