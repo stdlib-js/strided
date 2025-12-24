@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-23)
+## Unreleased (2025-12-24)
 
 <section class="features">
 
@@ -57,6 +57,7 @@ A total of 16 issues were closed in this release:
 
 <details>
 
+-   [`32d9f09`](https://github.com/stdlib-js/stdlib/commit/32d9f098fc3fe760c9d18265a0baecc7d5d26a71) - **bench:** refactor to use dynamic memory allocation in `strided/base/smskmap2` [(#9350)](https://github.com/stdlib-js/stdlib/pull/9350) _(by Omar Mohamed, Athan Reines)_
 -   [`e0690b4`](https://github.com/stdlib-js/stdlib/commit/e0690b467a4f085582197d113800f293b1264de6) - **docs:** update examples [(#9304)](https://github.com/stdlib-js/stdlib/pull/9304) _(by stdlib-bot)_
 -   [`062b80e`](https://github.com/stdlib-js/stdlib/commit/062b80e7488175ea48118c3873ea4717e7e3f702) - **docs:** improve doctests for complex number instances in `strided/base/zmap` [(#9044)](https://github.com/stdlib-js/stdlib/pull/9044) _(by Prajjwal Bajpai)_
 -   [`3de4c3c`](https://github.com/stdlib-js/stdlib/commit/3de4c3c636e9aab29d8cb90a54530894b8397a8c) - **docs:** improve doctests for complex number instances in `strided/base/cmap` [(#8954)](https://github.com/stdlib-js/stdlib/pull/8954) _(by Prajjwal Bajpai)_
@@ -119,7 +120,7 @@ A total of 16 issues were closed in this release:
 
 ### Contributors
 
-A total of 14 people contributed to this release. Thank you to the following contributors:
+A total of 15 people contributed to this release. Thank you to the following contributors:
 
 -   Aarya Balwadkar
 -   Aman Bhansali
@@ -133,6 +134,7 @@ A total of 14 people contributed to this release. Thank you to the following con
 -   Gururaj Gurram
 -   Jay Soni
 -   Lalit Narayan Yadav
+-   Omar Mohamed
 -   Philipp Burckhardt
 -   Prajjwal Bajpai
 
