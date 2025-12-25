@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-24)
+## Unreleased (2025-12-25)
 
 <section class="features">
 
@@ -57,6 +57,7 @@ A total of 16 issues were closed in this release:
 
 <details>
 
+-   [`fd0eac6`](https://github.com/stdlib-js/stdlib/commit/fd0eac6ed49c2faabf74cdf31d133f4ac4b40a3c) - **bench:** refactor to use dynamic memory allocation in `strided/base/smap` [(#9353)](https://github.com/stdlib-js/stdlib/pull/9353) _(by Omar Mohamed)_
 -   [`cb25fd3`](https://github.com/stdlib-js/stdlib/commit/cb25fd3db4f30a7fc4ab5fe9bb4acf12d648004b) - **bench:** refactor to use dynamic memory allocation in `strided/base/smskmap` [(#9351)](https://github.com/stdlib-js/stdlib/pull/9351) _(by Omar Mohamed, Athan Reines)_
 -   [`9704456`](https://github.com/stdlib-js/stdlib/commit/9704456ed43d8b88841b651e78b19a032329afb6) - **bench:** refactor to use dynamic memory allocation in `strided/base/smap2` [(#9352)](https://github.com/stdlib-js/stdlib/pull/9352) _(by Omar Mohamed)_
 -   [`32d9f09`](https://github.com/stdlib-js/stdlib/commit/32d9f098fc3fe760c9d18265a0baecc7d5d26a71) - **bench:** refactor to use dynamic memory allocation in `strided/base/smskmap2` [(#9350)](https://github.com/stdlib-js/stdlib/pull/9350) _(by Omar Mohamed, Athan Reines)_
