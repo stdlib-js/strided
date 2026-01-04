@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-25)
+## Unreleased (2026-01-04)
 
 <section class="features">
 
@@ -57,6 +57,7 @@ A total of 16 issues were closed in this release:
 
 <details>
 
+-   [`46c47ec`](https://github.com/stdlib-js/stdlib/commit/46c47ec0c92f9a3608290ef8a6ca5cf0e9258866) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`2473d1e`](https://github.com/stdlib-js/stdlib/commit/2473d1e0f513461c583c8eb3f7a256367b10f650) - **bench:** refactor to use dynamic memory allocation in `strided/base/dmskmap2` [(#9354)](https://github.com/stdlib-js/stdlib/pull/9354) _(by Omar Mohamed, Athan Reines)_
 -   [`4cc58f5`](https://github.com/stdlib-js/stdlib/commit/4cc58f579440482d2b141089dede856ee00c3f36) - **bench:** refactor to use dynamic memory allocation in `strided/base/dmskmap` [(#9355)](https://github.com/stdlib-js/stdlib/pull/9355) _(by Omar Mohamed, Athan Reines)_
 -   [`fd0eac6`](https://github.com/stdlib-js/stdlib/commit/fd0eac6ed49c2faabf74cdf31d133f4ac4b40a3c) - **bench:** refactor to use dynamic memory allocation in `strided/base/smap` [(#9353)](https://github.com/stdlib-js/stdlib/pull/9353) _(by Omar Mohamed)_
@@ -125,7 +126,7 @@ A total of 16 issues were closed in this release:
 
 ### Contributors
 
-A total of 15 people contributed to this release. Thank you to the following contributors:
+A total of 16 people contributed to this release. Thank you to the following contributors:
 
 -   Aarya Balwadkar
 -   Aman Bhansali
@@ -139,6 +140,7 @@ A total of 15 people contributed to this release. Thank you to the following con
 -   Gururaj Gurram
 -   Jay Soni
 -   Lalit Narayan Yadav
+-   Neeraj Pathak
 -   Omar Mohamed
 -   Philipp Burckhardt
 -   Prajjwal Bajpai

@@ -42,6 +42,7 @@
     "@stdlib/complex": "github:stdlib-js/complex#main",
     "@stdlib/math": "github:stdlib-js/math#main",
     "@stdlib/ndarray": "github:stdlib-js/ndarray#main",
+    "@stdlib/object": "github:stdlib-js/object#main",
     "@stdlib/string": "github:stdlib-js/string#main",
     "@stdlib/types": "github:stdlib-js/types#main",
     "@stdlib/utils": "github:stdlib-js/utils#main"
