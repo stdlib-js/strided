@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-04)
+## Unreleased (2026-01-16)
 
 <section class="features">
 
@@ -57,6 +57,7 @@ A total of 16 issues were closed in this release:
 
 <details>
 
+-   [`0472076`](https://github.com/stdlib-js/stdlib/commit/04720767c484e6277ad9411dff3dc5a116c31378) - **docs:** remove duplicated words in documentation and comments _(by Philipp Burckhardt)_
 -   [`46c47ec`](https://github.com/stdlib-js/stdlib/commit/46c47ec0c92f9a3608290ef8a6ca5cf0e9258866) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`2473d1e`](https://github.com/stdlib-js/stdlib/commit/2473d1e0f513461c583c8eb3f7a256367b10f650) - **bench:** refactor to use dynamic memory allocation in `strided/base/dmskmap2` [(#9354)](https://github.com/stdlib-js/stdlib/pull/9354) _(by Omar Mohamed, Athan Reines)_
 -   [`4cc58f5`](https://github.com/stdlib-js/stdlib/commit/4cc58f579440482d2b141089dede856ee00c3f36) - **bench:** refactor to use dynamic memory allocation in `strided/base/dmskmap` [(#9355)](https://github.com/stdlib-js/stdlib/pull/9355) _(by Omar Mohamed, Athan Reines)_
