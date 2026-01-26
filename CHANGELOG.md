@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-16)
+## Unreleased (2026-01-26)
 
 <section class="features">
 
@@ -43,9 +43,9 @@
 
 ### Closed Issues
 
-A total of 16 issues were closed in this release:
+A total of 17 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6132](https://github.com/stdlib-js/stdlib/issues/6132), [#6272](https://github.com/stdlib-js/stdlib/issues/6272), [#6475](https://github.com/stdlib-js/stdlib/issues/6475), [#6523](https://github.com/stdlib-js/stdlib/issues/6523), [#6778](https://github.com/stdlib-js/stdlib/issues/6778), [#7002](https://github.com/stdlib-js/stdlib/issues/7002), [#7084](https://github.com/stdlib-js/stdlib/issues/7084), [#7182](https://github.com/stdlib-js/stdlib/issues/7182), [#7735](https://github.com/stdlib-js/stdlib/issues/7735), [#7760](https://github.com/stdlib-js/stdlib/issues/7760), [#7774](https://github.com/stdlib-js/stdlib/issues/7774), [#8249](https://github.com/stdlib-js/stdlib/issues/8249), [#8391](https://github.com/stdlib-js/stdlib/issues/8391)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6132](https://github.com/stdlib-js/stdlib/issues/6132), [#6272](https://github.com/stdlib-js/stdlib/issues/6272), [#6475](https://github.com/stdlib-js/stdlib/issues/6475), [#6523](https://github.com/stdlib-js/stdlib/issues/6523), [#6778](https://github.com/stdlib-js/stdlib/issues/6778), [#7002](https://github.com/stdlib-js/stdlib/issues/7002), [#7084](https://github.com/stdlib-js/stdlib/issues/7084), [#7182](https://github.com/stdlib-js/stdlib/issues/7182), [#7735](https://github.com/stdlib-js/stdlib/issues/7735), [#7760](https://github.com/stdlib-js/stdlib/issues/7760), [#7774](https://github.com/stdlib-js/stdlib/issues/7774), [#8249](https://github.com/stdlib-js/stdlib/issues/8249), [#8391](https://github.com/stdlib-js/stdlib/issues/8391), [#9812](https://github.com/stdlib-js/stdlib/issues/9812)
 
 </section>
 
@@ -57,6 +57,7 @@ A total of 16 issues were closed in this release:
 
 <details>
 
+-   [`225a1d9`](https://github.com/stdlib-js/stdlib/commit/225a1d993e50804e3ae39f5effe14508bc253015) - **chore:** fix JavaScript lint errors [(#9813)](https://github.com/stdlib-js/stdlib/pull/9813) _(by nnyouung, Athan Reines)_
 -   [`0472076`](https://github.com/stdlib-js/stdlib/commit/04720767c484e6277ad9411dff3dc5a116c31378) - **docs:** remove duplicated words in documentation and comments _(by Philipp Burckhardt)_
 -   [`46c47ec`](https://github.com/stdlib-js/stdlib/commit/46c47ec0c92f9a3608290ef8a6ca5cf0e9258866) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`2473d1e`](https://github.com/stdlib-js/stdlib/commit/2473d1e0f513461c583c8eb3f7a256367b10f650) - **bench:** refactor to use dynamic memory allocation in `strided/base/dmskmap2` [(#9354)](https://github.com/stdlib-js/stdlib/pull/9354) _(by Omar Mohamed, Athan Reines)_
@@ -127,7 +128,7 @@ A total of 16 issues were closed in this release:
 
 ### Contributors
 
-A total of 16 people contributed to this release. Thank you to the following contributors:
+A total of 17 people contributed to this release. Thank you to the following contributors:
 
 -   Aarya Balwadkar
 -   Aman Bhansali
@@ -145,6 +146,7 @@ A total of 16 people contributed to this release. Thank you to the following con
 -   Omar Mohamed
 -   Philipp Burckhardt
 -   Prajjwal Bajpai
+-   nnyouung
 
 </section>
 
