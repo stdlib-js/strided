@@ -43,9 +43,9 @@
 
 ### Closed Issues
 
-A total of 17 issues were closed in this release:
+A total of 18 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6132](https://github.com/stdlib-js/stdlib/issues/6132), [#6272](https://github.com/stdlib-js/stdlib/issues/6272), [#6475](https://github.com/stdlib-js/stdlib/issues/6475), [#6523](https://github.com/stdlib-js/stdlib/issues/6523), [#6778](https://github.com/stdlib-js/stdlib/issues/6778), [#7002](https://github.com/stdlib-js/stdlib/issues/7002), [#7084](https://github.com/stdlib-js/stdlib/issues/7084), [#7182](https://github.com/stdlib-js/stdlib/issues/7182), [#7735](https://github.com/stdlib-js/stdlib/issues/7735), [#7760](https://github.com/stdlib-js/stdlib/issues/7760), [#7774](https://github.com/stdlib-js/stdlib/issues/7774), [#8249](https://github.com/stdlib-js/stdlib/issues/8249), [#8391](https://github.com/stdlib-js/stdlib/issues/8391), [#9812](https://github.com/stdlib-js/stdlib/issues/9812)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6132](https://github.com/stdlib-js/stdlib/issues/6132), [#6272](https://github.com/stdlib-js/stdlib/issues/6272), [#6475](https://github.com/stdlib-js/stdlib/issues/6475), [#6523](https://github.com/stdlib-js/stdlib/issues/6523), [#6778](https://github.com/stdlib-js/stdlib/issues/6778), [#7002](https://github.com/stdlib-js/stdlib/issues/7002), [#7084](https://github.com/stdlib-js/stdlib/issues/7084), [#7182](https://github.com/stdlib-js/stdlib/issues/7182), [#7735](https://github.com/stdlib-js/stdlib/issues/7735), [#7760](https://github.com/stdlib-js/stdlib/issues/7760), [#7774](https://github.com/stdlib-js/stdlib/issues/7774), [#8249](https://github.com/stdlib-js/stdlib/issues/8249), [#8391](https://github.com/stdlib-js/stdlib/issues/8391), [#9812](https://github.com/stdlib-js/stdlib/issues/9812), [#10417](https://github.com/stdlib-js/stdlib/issues/10417)
 
 </section>
 
@@ -57,6 +57,7 @@ A total of 17 issues were closed in this release:
 
 <details>
 
+-   [`786e059`](https://github.com/stdlib-js/stdlib/commit/786e0590341f600854e001e75285b7a6afdb7319) - **chore:** fix C lint errors [(#10418)](https://github.com/stdlib-js/stdlib/pull/10418) _(by Geo Daoyu)_
 -   [`a65cb70`](https://github.com/stdlib-js/stdlib/commit/a65cb70770257d5d69d35aa6b6b2d76879f33dfc) - **bench:** refactor to use string interpolation in `strided/base/binary-addon-dispatch` [(#10519)](https://github.com/stdlib-js/stdlib/pull/10519) _(by Vishal Gaikwad)_
 -   [`2b0c8cd`](https://github.com/stdlib-js/stdlib/commit/2b0c8cd4d13f0f5d4fd5b9f464e40b5e239cd7c8) - **bench:** refactor to use string interpolation in `strided/dispatch` [(#10520)](https://github.com/stdlib-js/stdlib/pull/10520) _(by Vishal Gaikwad)_
 -   [`e71e7b6`](https://github.com/stdlib-js/stdlib/commit/e71e7b60f251ecec8e5591f4b9580e5b133da2b5) - **bench:** refactor to use string interpolation in `strided/dispatch-by` [(#10522)](https://github.com/stdlib-js/stdlib/pull/10522) _(by Vishal Gaikwad)_
