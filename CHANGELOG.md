@@ -57,6 +57,7 @@ A total of 18 issues were closed in this release:
 
 <details>
 
+-   [`c3789be`](https://github.com/stdlib-js/stdlib/commit/c3789bef602f59a085b2dd60fe691357e323da99) - **docs:** fix example _(by Athan Reines)_
 -   [`786e059`](https://github.com/stdlib-js/stdlib/commit/786e0590341f600854e001e75285b7a6afdb7319) - **chore:** fix C lint errors [(#10418)](https://github.com/stdlib-js/stdlib/pull/10418) _(by Geo Daoyu)_
 -   [`a65cb70`](https://github.com/stdlib-js/stdlib/commit/a65cb70770257d5d69d35aa6b6b2d76879f33dfc) - **bench:** refactor to use string interpolation in `strided/base/binary-addon-dispatch` [(#10519)](https://github.com/stdlib-js/stdlib/pull/10519) _(by Vishal Gaikwad)_
 -   [`2b0c8cd`](https://github.com/stdlib-js/stdlib/commit/2b0c8cd4d13f0f5d4fd5b9f464e40b5e239cd7c8) - **bench:** refactor to use string interpolation in `strided/dispatch` [(#10520)](https://github.com/stdlib-js/stdlib/pull/10520) _(by Vishal Gaikwad)_

@@ -41,8 +41,8 @@
 * }
 *
 * const float X[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f };
-* float Z[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f };
-* const float Y[] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
+* const float Y[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f };
+* float Z[] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
 *
 * const int64_t N = 6;
 *
