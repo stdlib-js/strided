@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-02-28)
+## Unreleased (2026-03-02)
 
 <section class="features">
 
@@ -57,6 +57,7 @@ A total of 18 issues were closed in this release:
 
 <details>
 
+-   [`dfbed82`](https://github.com/stdlib-js/stdlib/commit/dfbed82e3f09510158b709dad9b0ad73f90beac0) - **bench:** refactor to use string interpolation in `strided/base/binary` [(#10515)](https://github.com/stdlib-js/stdlib/pull/10515) _(by Vishal Gaikwad)_
 -   [`1a62e75`](https://github.com/stdlib-js/stdlib/commit/1a62e75a0677036eccaa0485fe3a6ff5462428d5) - **bench:** use string interpolation in `strided/base/binary-signature-callbacks` [(#10581)](https://github.com/stdlib-js/stdlib/pull/10581) _(by Vishal Gaikwad)_
 -   [`c3789be`](https://github.com/stdlib-js/stdlib/commit/c3789bef602f59a085b2dd60fe691357e323da99) - **docs:** fix example _(by Athan Reines)_
 -   [`786e059`](https://github.com/stdlib-js/stdlib/commit/786e0590341f600854e001e75285b7a6afdb7319) - **chore:** fix C lint errors [(#10418)](https://github.com/stdlib-js/stdlib/pull/10418) _(by Geo Daoyu)_
