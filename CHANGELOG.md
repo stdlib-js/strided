@@ -57,6 +57,7 @@ A total of 18 issues were closed in this release:
 
 <details>
 
+-   [`16607df`](https://github.com/stdlib-js/stdlib/commit/16607dfe75708434e77ea1ed8531bff8ebbe3a0c) - **bench:** refactor to use string interpolation in `strided/base/cmap` [(#10609)](https://github.com/stdlib-js/stdlib/pull/10609) _(by Vishal Gaikwad)_
 -   [`dfbed82`](https://github.com/stdlib-js/stdlib/commit/dfbed82e3f09510158b709dad9b0ad73f90beac0) - **bench:** refactor to use string interpolation in `strided/base/binary` [(#10515)](https://github.com/stdlib-js/stdlib/pull/10515) _(by Vishal Gaikwad)_
 -   [`1a62e75`](https://github.com/stdlib-js/stdlib/commit/1a62e75a0677036eccaa0485fe3a6ff5462428d5) - **bench:** use string interpolation in `strided/base/binary-signature-callbacks` [(#10581)](https://github.com/stdlib-js/stdlib/pull/10581) _(by Vishal Gaikwad)_
 -   [`c3789be`](https://github.com/stdlib-js/stdlib/commit/c3789bef602f59a085b2dd60fe691357e323da99) - **docs:** fix example _(by Athan Reines)_
