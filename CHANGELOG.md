@@ -57,6 +57,7 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`35566af`](https://github.com/stdlib-js/stdlib/commit/35566af0add64775e60422fd16e50e1bec3947e7) - **docs:** fix C examples in READMEs [(#11229)](https://github.com/stdlib-js/stdlib/pull/11229) _(by anee3, Athan Reines)_
 -   [`6c00f92`](https://github.com/stdlib-js/stdlib/commit/6c00f921a490322381a5d490412686d6441535fd) - **chore:** fix C lint errors [(#11279)](https://github.com/stdlib-js/stdlib/pull/11279) _(by Geo Daoyu)_
 -   [`3fce7ca`](https://github.com/stdlib-js/stdlib/commit/3fce7cabbff413b740fab27fa38db053445905ec) - **chore:** fix C lint errors [(#11236)](https://github.com/stdlib-js/stdlib/pull/11236) _(by Geo Daoyu)_
 -   [`16607df`](https://github.com/stdlib-js/stdlib/commit/16607dfe75708434e77ea1ed8531bff8ebbe3a0c) - **bench:** refactor to use string interpolation in `strided/base/cmap` [(#10609)](https://github.com/stdlib-js/stdlib/pull/10609) _(by Vishal Gaikwad)_
@@ -138,7 +139,7 @@ A total of 20 issues were closed in this release:
 
 ### Contributors
 
-A total of 18 people contributed to this release. Thank you to the following contributors:
+A total of 19 people contributed to this release. Thank you to the following contributors:
 
 -   Aarya Balwadkar
 -   Aman Bhansali
@@ -157,6 +158,7 @@ A total of 18 people contributed to this release. Thank you to the following con
 -   Philipp Burckhardt
 -   Prajjwal Bajpai
 -   Vishal Gaikwad
+-   anee3
 -   nnyouung
 
 </section>
