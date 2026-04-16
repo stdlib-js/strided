@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-10)
+## Unreleased (2026-04-16)
 
 <section class="features">
 
@@ -43,9 +43,9 @@
 
 ### Closed Issues
 
-A total of 20 issues were closed in this release:
+A total of 21 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6132](https://github.com/stdlib-js/stdlib/issues/6132), [#6272](https://github.com/stdlib-js/stdlib/issues/6272), [#6475](https://github.com/stdlib-js/stdlib/issues/6475), [#6523](https://github.com/stdlib-js/stdlib/issues/6523), [#6778](https://github.com/stdlib-js/stdlib/issues/6778), [#7002](https://github.com/stdlib-js/stdlib/issues/7002), [#7084](https://github.com/stdlib-js/stdlib/issues/7084), [#7182](https://github.com/stdlib-js/stdlib/issues/7182), [#7735](https://github.com/stdlib-js/stdlib/issues/7735), [#7760](https://github.com/stdlib-js/stdlib/issues/7760), [#7774](https://github.com/stdlib-js/stdlib/issues/7774), [#8249](https://github.com/stdlib-js/stdlib/issues/8249), [#8391](https://github.com/stdlib-js/stdlib/issues/8391), [#9812](https://github.com/stdlib-js/stdlib/issues/9812), [#10417](https://github.com/stdlib-js/stdlib/issues/10417), [#11210](https://github.com/stdlib-js/stdlib/issues/11210), [#11274](https://github.com/stdlib-js/stdlib/issues/11274)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6132](https://github.com/stdlib-js/stdlib/issues/6132), [#6272](https://github.com/stdlib-js/stdlib/issues/6272), [#6475](https://github.com/stdlib-js/stdlib/issues/6475), [#6523](https://github.com/stdlib-js/stdlib/issues/6523), [#6778](https://github.com/stdlib-js/stdlib/issues/6778), [#7002](https://github.com/stdlib-js/stdlib/issues/7002), [#7084](https://github.com/stdlib-js/stdlib/issues/7084), [#7182](https://github.com/stdlib-js/stdlib/issues/7182), [#7735](https://github.com/stdlib-js/stdlib/issues/7735), [#7760](https://github.com/stdlib-js/stdlib/issues/7760), [#7774](https://github.com/stdlib-js/stdlib/issues/7774), [#8249](https://github.com/stdlib-js/stdlib/issues/8249), [#8391](https://github.com/stdlib-js/stdlib/issues/8391), [#9812](https://github.com/stdlib-js/stdlib/issues/9812), [#10417](https://github.com/stdlib-js/stdlib/issues/10417), [#11210](https://github.com/stdlib-js/stdlib/issues/11210), [#11274](https://github.com/stdlib-js/stdlib/issues/11274), [#11462](https://github.com/stdlib-js/stdlib/issues/11462)
 
 </section>
 
@@ -57,6 +57,7 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`026810c`](https://github.com/stdlib-js/stdlib/commit/026810c255b43023236852a7fbff49b1c3c98206) - **chore:** fix C lint errors [(#11463)](https://github.com/stdlib-js/stdlib/pull/11463) _(by Geo Daoyu, Athan Reines)_
 -   [`35566af`](https://github.com/stdlib-js/stdlib/commit/35566af0add64775e60422fd16e50e1bec3947e7) - **docs:** fix C examples in READMEs [(#11229)](https://github.com/stdlib-js/stdlib/pull/11229) _(by anee3, Athan Reines)_
 -   [`6c00f92`](https://github.com/stdlib-js/stdlib/commit/6c00f921a490322381a5d490412686d6441535fd) - **chore:** fix C lint errors [(#11279)](https://github.com/stdlib-js/stdlib/pull/11279) _(by Geo Daoyu)_
 -   [`3fce7ca`](https://github.com/stdlib-js/stdlib/commit/3fce7cabbff413b740fab27fa38db053445905ec) - **chore:** fix C lint errors [(#11236)](https://github.com/stdlib-js/stdlib/pull/11236) _(by Geo Daoyu)_
