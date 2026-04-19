@@ -57,6 +57,7 @@ A total of 21 issues were closed in this release:
 
 <details>
 
+-   [`a7a9c99`](https://github.com/stdlib-js/stdlib/commit/a7a9c996c179dcdbfc6468281bc6323d53d6f51f) - **bench:** refactor to use string interpolation in `@stdlib/strided/base` [(#11451)](https://github.com/stdlib-js/stdlib/pull/11451) _(by Uday Kakade, Karan Anand)_
 -   [`f7304bd`](https://github.com/stdlib-js/stdlib/commit/f7304bd6d7ffd88df213dff3b3ca5d380443dcfc) - **bench:** refactor to use string interpolation in `@stdlib/strided/base` [(#11449)](https://github.com/stdlib-js/stdlib/pull/11449) _(by Uday Kakade, Karan Anand)_
 -   [`647a947`](https://github.com/stdlib-js/stdlib/commit/647a9477f5e26eb473784078c5bf6cd91fee8503) - **bench:** refactor to use dynamic memory allocation in `strided/base/dmap` [(#11566)](https://github.com/stdlib-js/stdlib/pull/11566) _(by Karan Anand)_
 -   [`fffff98`](https://github.com/stdlib-js/stdlib/commit/fffff98bdfb14bca5458ff90f607a17ce5269e19) - **bench:** refactor to use dynamic memory allocation in `strided/base/dmap2` [(#11567)](https://github.com/stdlib-js/stdlib/pull/11567) _(by Karan Anand)_
