@@ -57,6 +57,7 @@ A total of 21 issues were closed in this release:
 
 <details>
 
+-   [`f7304bd`](https://github.com/stdlib-js/stdlib/commit/f7304bd6d7ffd88df213dff3b3ca5d380443dcfc) - **bench:** refactor to use string interpolation in `@stdlib/strided/base` [(#11449)](https://github.com/stdlib-js/stdlib/pull/11449) _(by Uday Kakade, Karan Anand)_
 -   [`647a947`](https://github.com/stdlib-js/stdlib/commit/647a9477f5e26eb473784078c5bf6cd91fee8503) - **bench:** refactor to use dynamic memory allocation in `strided/base/dmap` [(#11566)](https://github.com/stdlib-js/stdlib/pull/11566) _(by Karan Anand)_
 -   [`fffff98`](https://github.com/stdlib-js/stdlib/commit/fffff98bdfb14bca5458ff90f607a17ce5269e19) - **bench:** refactor to use dynamic memory allocation in `strided/base/dmap2` [(#11567)](https://github.com/stdlib-js/stdlib/pull/11567) _(by Karan Anand)_
 -   [`4ef4f29`](https://github.com/stdlib-js/stdlib/commit/4ef4f293d6a8855f8c156de4ce6ba114d915ac2c) - **bench:** refactor to use dynamic memory allocation in `strided/base/zmap` [(#11568)](https://github.com/stdlib-js/stdlib/pull/11568) _(by Karan Anand)_
@@ -143,7 +144,7 @@ A total of 21 issues were closed in this release:
 
 ### Contributors
 
-A total of 20 people contributed to this release. Thank you to the following contributors:
+A total of 21 people contributed to this release. Thank you to the following contributors:
 
 -   Aarya Balwadkar
 -   Aman Bhansali
@@ -162,6 +163,7 @@ A total of 20 people contributed to this release. Thank you to the following con
 -   Omar Mohamed
 -   Philipp Burckhardt
 -   Prajjwal Bajpai
+-   Uday Kakade
 -   Vishal Gaikwad
 -   anee3
 -   nnyouung
