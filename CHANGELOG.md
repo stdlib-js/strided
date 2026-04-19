@@ -57,6 +57,7 @@ A total of 21 issues were closed in this release:
 
 <details>
 
+-   [`fffff98`](https://github.com/stdlib-js/stdlib/commit/fffff98bdfb14bca5458ff90f607a17ce5269e19) - **bench:** refactor to use dynamic memory allocation in `strided/base/dmap2` [(#11567)](https://github.com/stdlib-js/stdlib/pull/11567) _(by Karan Anand)_
 -   [`4ef4f29`](https://github.com/stdlib-js/stdlib/commit/4ef4f293d6a8855f8c156de4ce6ba114d915ac2c) - **bench:** refactor to use dynamic memory allocation in `strided/base/zmap` [(#11568)](https://github.com/stdlib-js/stdlib/pull/11568) _(by Karan Anand)_
 -   [`026810c`](https://github.com/stdlib-js/stdlib/commit/026810c255b43023236852a7fbff49b1c3c98206) - **chore:** fix C lint errors [(#11463)](https://github.com/stdlib-js/stdlib/pull/11463) _(by Geo Daoyu, Athan Reines)_
 -   [`35566af`](https://github.com/stdlib-js/stdlib/commit/35566af0add64775e60422fd16e50e1bec3947e7) - **docs:** fix C examples in READMEs [(#11229)](https://github.com/stdlib-js/stdlib/pull/11229) _(by anee3, Athan Reines)_
