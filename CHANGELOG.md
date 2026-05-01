@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-19)
+## Unreleased (2026-05-01)
 
 <section class="features">
 
@@ -43,9 +43,9 @@
 
 ### Closed Issues
 
-A total of 21 issues were closed in this release:
+A total of 22 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6132](https://github.com/stdlib-js/stdlib/issues/6132), [#6272](https://github.com/stdlib-js/stdlib/issues/6272), [#6475](https://github.com/stdlib-js/stdlib/issues/6475), [#6523](https://github.com/stdlib-js/stdlib/issues/6523), [#6778](https://github.com/stdlib-js/stdlib/issues/6778), [#7002](https://github.com/stdlib-js/stdlib/issues/7002), [#7084](https://github.com/stdlib-js/stdlib/issues/7084), [#7182](https://github.com/stdlib-js/stdlib/issues/7182), [#7735](https://github.com/stdlib-js/stdlib/issues/7735), [#7760](https://github.com/stdlib-js/stdlib/issues/7760), [#7774](https://github.com/stdlib-js/stdlib/issues/7774), [#8249](https://github.com/stdlib-js/stdlib/issues/8249), [#8391](https://github.com/stdlib-js/stdlib/issues/8391), [#9812](https://github.com/stdlib-js/stdlib/issues/9812), [#10417](https://github.com/stdlib-js/stdlib/issues/10417), [#11210](https://github.com/stdlib-js/stdlib/issues/11210), [#11274](https://github.com/stdlib-js/stdlib/issues/11274), [#11462](https://github.com/stdlib-js/stdlib/issues/11462)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5981](https://github.com/stdlib-js/stdlib/issues/5981), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6132](https://github.com/stdlib-js/stdlib/issues/6132), [#6272](https://github.com/stdlib-js/stdlib/issues/6272), [#6475](https://github.com/stdlib-js/stdlib/issues/6475), [#6523](https://github.com/stdlib-js/stdlib/issues/6523), [#6778](https://github.com/stdlib-js/stdlib/issues/6778), [#7002](https://github.com/stdlib-js/stdlib/issues/7002), [#7084](https://github.com/stdlib-js/stdlib/issues/7084), [#7182](https://github.com/stdlib-js/stdlib/issues/7182), [#7735](https://github.com/stdlib-js/stdlib/issues/7735), [#7760](https://github.com/stdlib-js/stdlib/issues/7760), [#7774](https://github.com/stdlib-js/stdlib/issues/7774), [#8249](https://github.com/stdlib-js/stdlib/issues/8249), [#8391](https://github.com/stdlib-js/stdlib/issues/8391), [#9812](https://github.com/stdlib-js/stdlib/issues/9812), [#10417](https://github.com/stdlib-js/stdlib/issues/10417), [#11210](https://github.com/stdlib-js/stdlib/issues/11210), [#11274](https://github.com/stdlib-js/stdlib/issues/11274), [#11462](https://github.com/stdlib-js/stdlib/issues/11462), [#11852](https://github.com/stdlib-js/stdlib/issues/11852)
 
 </section>
 
@@ -57,6 +57,7 @@ A total of 21 issues were closed in this release:
 
 <details>
 
+-   [`c7a6b5c`](https://github.com/stdlib-js/stdlib/commit/c7a6b5c8415f4a1a0da6d3a08ef6dffd93d21590) - **chore:** fix JavaScript lint errors [(#11865)](https://github.com/stdlib-js/stdlib/pull/11865) _(by Clinton Phillips)_
 -   [`a7a9c99`](https://github.com/stdlib-js/stdlib/commit/a7a9c996c179dcdbfc6468281bc6323d53d6f51f) - **bench:** refactor to use string interpolation in `@stdlib/strided/base` [(#11451)](https://github.com/stdlib-js/stdlib/pull/11451) _(by Uday Kakade, Karan Anand)_
 -   [`f7304bd`](https://github.com/stdlib-js/stdlib/commit/f7304bd6d7ffd88df213dff3b3ca5d380443dcfc) - **bench:** refactor to use string interpolation in `@stdlib/strided/base` [(#11449)](https://github.com/stdlib-js/stdlib/pull/11449) _(by Uday Kakade, Karan Anand)_
 -   [`647a947`](https://github.com/stdlib-js/stdlib/commit/647a9477f5e26eb473784078c5bf6cd91fee8503) - **bench:** refactor to use dynamic memory allocation in `strided/base/dmap` [(#11566)](https://github.com/stdlib-js/stdlib/pull/11566) _(by Karan Anand)_
@@ -145,13 +146,14 @@ A total of 21 issues were closed in this release:
 
 ### Contributors
 
-A total of 21 people contributed to this release. Thank you to the following contributors:
+A total of 22 people contributed to this release. Thank you to the following contributors:
 
 -   Aarya Balwadkar
 -   Aman Bhansali
 -   Anshu Kumar
 -   Aryan J
 -   Athan Reines
+-   Clinton Phillips
 -   Ditsu S
 -   Gautam Kaushik
 -   Gautam sharma
