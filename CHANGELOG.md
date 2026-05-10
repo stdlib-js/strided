@@ -57,6 +57,7 @@ A total of 22 issues were closed in this release:
 
 <details>
 
+-   [`8e870bf`](https://github.com/stdlib-js/stdlib/commit/8e870bf7e5459a7a2c781004e35c559972b52d39) - **docs:** use correct `real`/`imag` import in `strided/base/cmap` [(#12057)](https://github.com/stdlib-js/stdlib/pull/12057) _(by Karan Anand)_
 -   [`f092cb7`](https://github.com/stdlib-js/stdlib/commit/f092cb78b79b7dc3d0adb56b5d0dc621ae117bbe) - **bench:** fix `real` import in `strided/napi/cmap` [(#12058)](https://github.com/stdlib-js/stdlib/pull/12058) _(by Karan Anand)_
 -   [`9a829b3`](https://github.com/stdlib-js/stdlib/commit/9a829b3090c6d1662462f32bf494bce378b3f955) - **test:** fix `Complex64` import in `strided/base/binary` [(#12041)](https://github.com/stdlib-js/stdlib/pull/12041) _(by Karan Anand)_
 -   [`3a68571`](https://github.com/stdlib-js/stdlib/commit/3a68571c9986c75439da1e4ca96055bef4b892ad) - **docs:** improve doctests for complex number typed arrays in `strided` [(#12032)](https://github.com/stdlib-js/stdlib/pull/12032) _(by Karan Anand)_
