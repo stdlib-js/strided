@@ -57,6 +57,7 @@ A total of 22 issues were closed in this release:
 
 <details>
 
+-   [`9a829b3`](https://github.com/stdlib-js/stdlib/commit/9a829b3090c6d1662462f32bf494bce378b3f955) - **test:** fix `Complex64` import in `strided/base/binary` [(#12041)](https://github.com/stdlib-js/stdlib/pull/12041) _(by Karan Anand)_
 -   [`3a68571`](https://github.com/stdlib-js/stdlib/commit/3a68571c9986c75439da1e4ca96055bef4b892ad) - **docs:** improve doctests for complex number typed arrays in `strided` [(#12032)](https://github.com/stdlib-js/stdlib/pull/12032) _(by Karan Anand)_
 -   [`c7a6b5c`](https://github.com/stdlib-js/stdlib/commit/c7a6b5c8415f4a1a0da6d3a08ef6dffd93d21590) - **chore:** fix JavaScript lint errors [(#11865)](https://github.com/stdlib-js/stdlib/pull/11865) _(by Clinton Phillips)_
 -   [`a7a9c99`](https://github.com/stdlib-js/stdlib/commit/a7a9c996c179dcdbfc6468281bc6323d53d6f51f) - **bench:** refactor to use string interpolation in `@stdlib/strided/base` [(#11451)](https://github.com/stdlib-js/stdlib/pull/11451) _(by Uday Kakade, Karan Anand)_
