@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-10)
+## Unreleased (2026-05-12)
 
 <section class="features">
 
 ### Features
 
+-   [`6ea601b`](https://github.com/stdlib-js/stdlib/commit/6ea601bc4135b0439a63eae106cff3414ec920f5) - add `strided/base/reinterpret-float16` [(#11932)](https://github.com/stdlib-js/stdlib/pull/11932)
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec) - update namespace TypeScript declarations [(#3190)](https://github.com/stdlib-js/stdlib/pull/3190)
 -   [`c442b93`](https://github.com/stdlib-js/stdlib/commit/c442b93d2ed3af2a2f50402b4b0dc87e9090f596) - add `blas/base/drotm-wasm` [(#3021)](https://github.com/stdlib-js/stdlib/pull/3021)
 
@@ -57,6 +58,7 @@ A total of 22 issues were closed in this release:
 
 <details>
 
+-   [`6ea601b`](https://github.com/stdlib-js/stdlib/commit/6ea601bc4135b0439a63eae106cff3414ec920f5) - **feat:** add `strided/base/reinterpret-float16` [(#11932)](https://github.com/stdlib-js/stdlib/pull/11932) _(by Gururaj Gurram)_
 -   [`8f410a3`](https://github.com/stdlib-js/stdlib/commit/8f410a3a753afc40f7e5b6bf0431e8cf70154865) - **test:** use correct `float32` imports in `strided/base` [(#12059)](https://github.com/stdlib-js/stdlib/pull/12059) _(by Karan Anand)_
 -   [`8e870bf`](https://github.com/stdlib-js/stdlib/commit/8e870bf7e5459a7a2c781004e35c559972b52d39) - **docs:** use correct `real`/`imag` import in `strided/base/cmap` [(#12057)](https://github.com/stdlib-js/stdlib/pull/12057) _(by Karan Anand)_
 -   [`f092cb7`](https://github.com/stdlib-js/stdlib/commit/f092cb78b79b7dc3d0adb56b5d0dc621ae117bbe) - **bench:** fix `real` import in `strided/napi/cmap` [(#12058)](https://github.com/stdlib-js/stdlib/pull/12058) _(by Karan Anand)_
