@@ -59,6 +59,7 @@ A total of 22 issues were closed in this release:
 
 <details>
 
+-   [`4728aa8`](https://github.com/stdlib-js/stdlib/commit/4728aa8f65605d893ac1ad71c0ddeeaa7bb4597b) - **docs:** collapse double spaces in `strided/napi/{binary,smskmap,unary}` [(#12118)](https://github.com/stdlib-js/stdlib/pull/12118) _(by Philipp Burckhardt)_
 -   [`ed4312c`](https://github.com/stdlib-js/stdlib/commit/ed4312c3a3ef001cdfb062efcfbddeade9396973) - **docs:** update namespace table of contents [(#12124)](https://github.com/stdlib-js/stdlib/pull/12124) _(by stdlib-bot)_
 -   [`10db754`](https://github.com/stdlib-js/stdlib/commit/10db7544d5d16543c9481218723efb391ceccdf5) - **feat:** add `reinterpretFloat16` to namespace _(by Athan Reines)_
 -   [`6ea601b`](https://github.com/stdlib-js/stdlib/commit/6ea601bc4135b0439a63eae106cff3414ec920f5) - **feat:** add `strided/base/reinterpret-float16` [(#11932)](https://github.com/stdlib-js/stdlib/pull/11932) _(by Gururaj Gurram)_
