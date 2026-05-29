@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-17)
+## Unreleased (2026-05-29)
 
 <section class="features">
 
@@ -59,6 +59,7 @@ A total of 22 issues were closed in this release:
 
 <details>
 
+-   [`0a24f0b`](https://github.com/stdlib-js/stdlib/commit/0a24f0b4cc1cf82c352a98d077cbd96d4144adb0) - **docs:** update related packages sections [(#12338)](https://github.com/stdlib-js/stdlib/pull/12338) _(by stdlib-bot)_
 -   [`7b1cb99`](https://github.com/stdlib-js/stdlib/commit/7b1cb991f5525a57cfa7254bb7682060a6d85c7b) - **chore:** use `format` for error messages in strided build scripts [(#12178)](https://github.com/stdlib-js/stdlib/pull/12178) _(by Philipp Burckhardt)_
 -   [`4728aa8`](https://github.com/stdlib-js/stdlib/commit/4728aa8f65605d893ac1ad71c0ddeeaa7bb4597b) - **docs:** collapse double spaces in `strided/napi/{binary,smskmap,unary}` [(#12118)](https://github.com/stdlib-js/stdlib/pull/12118) _(by Philipp Burckhardt)_
 -   [`ed4312c`](https://github.com/stdlib-js/stdlib/commit/ed4312c3a3ef001cdfb062efcfbddeade9396973) - **docs:** update namespace table of contents [(#12124)](https://github.com/stdlib-js/stdlib/pull/12124) _(by stdlib-bot)_
