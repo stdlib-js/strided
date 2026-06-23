@@ -2,6 +2,50 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-06-23)
+
+<section class="features">
+
+### Features
+
+-   [`a466c65`](https://github.com/stdlib-js/stdlib/commit/a466c658346e704ee865ddd2e6990434216d0a5c) - add `float16` dtype support
+
+</section>
+
+<!-- /.features -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`a466c65`](https://github.com/stdlib-js/stdlib/commit/a466c658346e704ee865ddd2e6990434216d0a5c) - **feat:** add `float16` dtype support _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.4.1">
 
 ## 0.4.1 (2026-06-05)
