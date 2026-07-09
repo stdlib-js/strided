@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-27)
+## Unreleased (2026-07-09)
 
 <section class="features">
 
@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`49456e6`](https://github.com/stdlib-js/stdlib/commit/49456e6bc2452bb4190c487f39860ed5fee3f80d) - **bench:** use `isnanf` in `strided/napi/smap` [(#13385)](https://github.com/stdlib-js/stdlib/pull/13385) _(by Philipp Burckhardt)_
 -   [`ae0704c`](https://github.com/stdlib-js/stdlib/commit/ae0704c8acf3023469ab02686154e26193a601cd) - **docs:** fix typo `PREMABLE` to `PREAMBLE` [(#13130)](https://github.com/stdlib-js/stdlib/pull/13130) _(by anee3)_
 -   [`e6cc42b`](https://github.com/stdlib-js/stdlib/commit/e6cc42bab0268753252236d0e7511c97443754cc) - **fix:** correct typo in enum name and fix C examples [(#13088)](https://github.com/stdlib-js/stdlib/pull/13088) _(by anee3)_
 -   [`a466c65`](https://github.com/stdlib-js/stdlib/commit/a466c658346e704ee865ddd2e6990434216d0a5c) - **feat:** add `float16` dtype support _(by Athan Reines)_
@@ -46,9 +47,10 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Philipp Burckhardt
 -   anee3
 
 </section>
