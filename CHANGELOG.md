@@ -44,6 +44,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`b953edd`](https://github.com/stdlib-js/stdlib/commit/b953edd95d0ca1b521d0abbd2c2719d099ff7807) - **refactor:** use `constants/float64/nan` and clean-up [(#13585)](https://github.com/stdlib-js/stdlib/pull/13585) _(by Philipp Burckhardt)_
 -   [`482a842`](https://github.com/stdlib-js/stdlib/commit/482a84253af42d8c6b04078e4e83baaa346ec97e) - **chore:** fix JavaScript lint errors [(#13582)](https://github.com/stdlib-js/stdlib/pull/13582) _(by Ujjwal Verma)_
 -   [`945328a`](https://github.com/stdlib-js/stdlib/commit/945328aa14e710f4b828b8fa303173c660c77817) - **chore:** clean-up [(#13390)](https://github.com/stdlib-js/stdlib/pull/13390) _(by Philipp Burckhardt)_
 -   [`49456e6`](https://github.com/stdlib-js/stdlib/commit/49456e6bc2452bb4190c487f39860ed5fee3f80d) - **bench:** use `isnanf` in `strided/napi/smap` [(#13385)](https://github.com/stdlib-js/stdlib/pull/13385) _(by Philipp Burckhardt)_
