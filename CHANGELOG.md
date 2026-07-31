@@ -32,7 +32,7 @@
 
 A total of 2 issues were closed in this release:
 
-[#13096](https://github.com/stdlib-js/stdlib/issues/13096), [#13741](https://github.com/stdlib-js/stdlib/pull/13741)
+[#13096](https://github.com/stdlib-js/stdlib/issues/13096), [#13733](https://github.com/stdlib-js/stdlib/issues/13733)
 
 </section>
 
@@ -44,6 +44,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`430fdea`](https://github.com/stdlib-js/stdlib/commit/430fdea947428af11c0e75dc6f6a0bd3cbd13e88) - **chore:** clean-up [(#13805)](https://github.com/stdlib-js/stdlib/pull/13805) _(by Philipp Burckhardt)_
 -   [`d5a00c3`](https://github.com/stdlib-js/stdlib/commit/d5a00c3302f2b8aef697753c513f290782feb966) - **chore:** fix C lint errors [(#13741)](https://github.com/stdlib-js/stdlib/pull/13741) _(by A Sivasubramanian Manoj, Athan Reines)_
 -   [`b953edd`](https://github.com/stdlib-js/stdlib/commit/b953edd95d0ca1b521d0abbd2c2719d099ff7807) - **refactor:** use `constants/float64/nan` and clean-up [(#13585)](https://github.com/stdlib-js/stdlib/pull/13585) _(by Philipp Burckhardt)_
 -   [`482a842`](https://github.com/stdlib-js/stdlib/commit/482a84253af42d8c6b04078e4e83baaa346ec97e) - **chore:** fix JavaScript lint errors [(#13582)](https://github.com/stdlib-js/stdlib/pull/13582) _(by Ujjwal Verma)_
