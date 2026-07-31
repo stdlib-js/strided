@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-20)
+## Unreleased (2026-07-31)
 
 <section class="features">
 
@@ -30,9 +30,9 @@
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#13096](https://github.com/stdlib-js/stdlib/issues/13096)
+[#13096](https://github.com/stdlib-js/stdlib/issues/13096), [#13741](https://github.com/stdlib-js/stdlib/pull/13741)
 
 </section>
 
@@ -44,6 +44,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`d5a00c3`](https://github.com/stdlib-js/stdlib/commit/d5a00c3302f2b8aef697753c513f290782feb966) - **chore:** fix C lint errors [(#13741)](https://github.com/stdlib-js/stdlib/pull/13741) _(by A Sivasubramanian Manoj, Athan Reines)_
 -   [`b953edd`](https://github.com/stdlib-js/stdlib/commit/b953edd95d0ca1b521d0abbd2c2719d099ff7807) - **refactor:** use `constants/float64/nan` and clean-up [(#13585)](https://github.com/stdlib-js/stdlib/pull/13585) _(by Philipp Burckhardt)_
 -   [`482a842`](https://github.com/stdlib-js/stdlib/commit/482a84253af42d8c6b04078e4e83baaa346ec97e) - **chore:** fix JavaScript lint errors [(#13582)](https://github.com/stdlib-js/stdlib/pull/13582) _(by Ujjwal Verma)_
 -   [`945328a`](https://github.com/stdlib-js/stdlib/commit/945328aa14e710f4b828b8fa303173c660c77817) - **chore:** clean-up [(#13390)](https://github.com/stdlib-js/stdlib/pull/13390) _(by Philipp Burckhardt)_
@@ -62,8 +63,9 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
+-   A Sivasubramanian Manoj
 -   Athan Reines
 -   Philipp Burckhardt
 -   Ujjwal Verma
