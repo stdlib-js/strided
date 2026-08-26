@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-21)
+## Unreleased (2026-08-26)
 
 <section class="features">
 
 ### Features
 
+-   [`8de5aad`](https://github.com/stdlib-js/stdlib/commit/8de5aad6f1ec1b3745525504c4c554dee2a74554) - add `reinterpretUint64` to namespace
+-   [`1e52dfc`](https://github.com/stdlib-js/stdlib/commit/1e52dfcc0e8eb882a4281c19b7e6af0cf8656fe3) - add `strided/base/reinterpret-uint64` [(#14219)](https://github.com/stdlib-js/stdlib/pull/14219)
 -   [`a466c65`](https://github.com/stdlib-js/stdlib/commit/a466c658346e704ee865ddd2e6990434216d0a5c) - add `float16` dtype support
 
 </section>
@@ -44,6 +46,8 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`8de5aad`](https://github.com/stdlib-js/stdlib/commit/8de5aad6f1ec1b3745525504c4c554dee2a74554) - **feat:** add `reinterpretUint64` to namespace _(by Athan Reines)_
+-   [`1e52dfc`](https://github.com/stdlib-js/stdlib/commit/1e52dfcc0e8eb882a4281c19b7e6af0cf8656fe3) - **feat:** add `strided/base/reinterpret-uint64` [(#14219)](https://github.com/stdlib-js/stdlib/pull/14219) _(by Divit Jain, Athan Reines)_
 -   [`c5d553b`](https://github.com/stdlib-js/stdlib/commit/c5d553b67e4bd6497dc2b99ee8787b54b1e3e761) - **docs:** update namespace table of contents [(#14465)](https://github.com/stdlib-js/stdlib/pull/14465) _(by stdlib-bot)_
 -   [`4e9f433`](https://github.com/stdlib-js/stdlib/commit/4e9f43371087df5af34e71934212e4fad93d6945) - **docs:** fix descriptions [(#14436)](https://github.com/stdlib-js/stdlib/pull/14436) _(by Philipp Burckhardt)_
 -   [`91c2fae`](https://github.com/stdlib-js/stdlib/commit/91c2fae9c872e69410f67d10374e65173c67c38d) - **chore:** clean-up [(#14054)](https://github.com/stdlib-js/stdlib/pull/14054) _(by Philipp Burckhardt)_
@@ -68,10 +72,11 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 6 people contributed to this release. Thank you to the following contributors:
 
 -   A Sivasubramanian Manoj
 -   Athan Reines
+-   Divit Jain
 -   Philipp Burckhardt
 -   Ujjwal Verma
 -   anee3
