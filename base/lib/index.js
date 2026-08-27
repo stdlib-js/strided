@@ -338,6 +338,15 @@ setReadOnly( ns, 'reinterpretComplex128', require( './../../base/reinterpret-com
 setReadOnly( ns, 'reinterpretFloat16', require( './../../base/reinterpret-float16' ) );
 
 /**
+* @name reinterpretInt64
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/strided/base/reinterpret-int64}
+*/
+setReadOnly( ns, 'reinterpretInt64', require( './../../base/reinterpret-int64' ) );
+
+/**
 * @name reinterpretUint64
 * @memberof ns
 * @readonly

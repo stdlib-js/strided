@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,38 +16,32 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="@stdlib/types"/>
 
-var Uint32Array = require( '@stdlib/array/uint32' );
-
-
-// MAIN //
+import { Int64Array } from '@stdlib/types/array';
 
 /**
-* Reinterprets a `Uint64Array` as a `Uint32Array` of interleaved high and low words.
+* Reinterprets a `Int64Array` as a `Uint32Array` of interleaved high and low words.
 *
-* @param {Uint64Array} x - input array
-* @param {NonNegativeInteger} offset - starting index
-* @returns {Uint32Array} `Uint32Array` view
+* @param x - input array
+* @param offset - starting index
+* @returns `Uint32Array` view
 *
 * @example
-* var Uint64Array = require( '@stdlib/array/uint64' );
+* var Int64Array = require( '@stdlib/array/complex128' );
 *
-* var x = new Uint64Array( 10 );
+* var x = new Int64Array( 10 );
 *
 * var out = reinterpret( x, 0 );
 * // returns <Uint32Array>
 *
 * var bool = ( out.buffer === x.buffer );
-* // returns true
 */
-function reinterpret( x, offset ) {
-	return new Uint32Array( x.buffer, x.byteOffset+(x.BYTES_PER_ELEMENT*offset), 2*(x.length-offset) ); // eslint-disable-line max-len
-}
+declare function reinterpret( x: Int64Array, offset: number ): Uint32Array;
 
 
 // EXPORTS //
 
-module.exports = reinterpret;
+export = reinterpret;

@@ -18,24 +18,16 @@
 
 'use strict';
 
-// MODULES //
-
-var Uint32Array = require( '@stdlib/array/uint32' );
-
-
-// MAIN //
-
 /**
-* Reinterprets a `Uint64Array` as a `Uint32Array` of interleaved high and low words.
+* Reinterpret a `Int64Array` as a `Uint32Array` of interleaved high and low words.
 *
-* @param {Uint64Array} x - input array
-* @param {NonNegativeInteger} offset - starting index
-* @returns {Uint32Array} `Uint32Array` view
+* @module @stdlib/strided/base/reinterpret-int64
 *
 * @example
-* var Uint64Array = require( '@stdlib/array/uint64' );
+* var Int64Array = require( '@stdlib/array/int64' );
+* var reinterpret = require( '@stdlib/strided/base/reinterpret-int64' );
 *
-* var x = new Uint64Array( 10 );
+* var x = new Int64Array( 10 );
 *
 * var out = reinterpret( x, 0 );
 * // returns <Uint32Array>
@@ -43,11 +35,12 @@ var Uint32Array = require( '@stdlib/array/uint32' );
 * var bool = ( out.buffer === x.buffer );
 * // returns true
 */
-function reinterpret( x, offset ) {
-	return new Uint32Array( x.buffer, x.byteOffset+(x.BYTES_PER_ELEMENT*offset), 2*(x.length-offset) ); // eslint-disable-line max-len
-}
+
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-module.exports = reinterpret;
+module.exports = main;

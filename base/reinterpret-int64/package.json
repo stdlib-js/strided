@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/strided/base/reinterpret-uint64",
+  "name": "@stdlib/strided/base/reinterpret-int64",
   "version": "0.0.0",
-  "description": "Reinterpret a Uint64Array as a Uint32Array of interleaved high and low words.",
+  "description": "Reinterpret a Int64Array as a Uint32Array of interleaved high and low words.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -53,9 +53,9 @@
     "base",
     "strided",
     "array",
-    "unsigned",
+    "signed",
     "integer",
-    "uint64",
+    "int64",
     "uint32",
     "reinterpret",
     "cast",

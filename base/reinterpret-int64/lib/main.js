@@ -26,16 +26,16 @@ var Uint32Array = require( '@stdlib/array/uint32' );
 // MAIN //
 
 /**
-* Reinterprets a `Uint64Array` as a `Uint32Array` of interleaved high and low words.
+* Reinterprets a `Int64Array` as a `Uint32Array` of interleaved high and low words.
 *
-* @param {Uint64Array} x - input array
+* @param {Int64Array} x - input array
 * @param {NonNegativeInteger} offset - starting index
 * @returns {Uint32Array} `Uint32Array` view
 *
 * @example
-* var Uint64Array = require( '@stdlib/array/uint64' );
+* var Int64Array = require( '@stdlib/array/int64' );
 *
-* var x = new Uint64Array( 10 );
+* var x = new Int64Array( 10 );
 *
 * var out = reinterpret( x, 0 );
 * // returns <Uint32Array>

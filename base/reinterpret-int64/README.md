@@ -20,7 +20,7 @@ limitations under the License.
 
 # reinterpret
 
-> Reinterpret a [`Uint64Array`][@stdlib/array/uint64] as a [`Uint32Array`][@stdlib/array/uint32] of interleaved high and low words.
+> Reinterpret a [`Int64Array`][@stdlib/array/int64] as a [`Uint32Array`][@stdlib/array/uint32] of interleaved high and low words.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,17 +37,17 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var reinterpret = require( '@stdlib/strided/base/reinterpret-uint64' );
+var reinterpret = require( '@stdlib/strided/base/reinterpret-int64' );
 ```
 
 #### reinterpret( x, offset )
 
-Returns a [`Uint32Array`][@stdlib/array/uint32] view of a [`Uint64Array`][@stdlib/array/uint64].
+Returns a [`Uint32Array`][@stdlib/array/uint32] view of a [`Int64Array`][@stdlib/array/int64].
 
 ```javascript
-var Uint64Array = require( '@stdlib/array/uint64' );
+var Int64Array = require( '@stdlib/array/int64' );
 
-var x = new Uint64Array( 10 );
+var x = new Int64Array( 10 );
 
 var view = reinterpret( x, 0 );
 // returns <Uint32Array>
@@ -59,12 +59,12 @@ var len = view.length;
 // returns 20
 ```
 
-The `offset` argument specifies the starting index of the returned [`Uint32Array`][@stdlib/array/uint32] view relative to the [`Uint64Array`][@stdlib/array/uint64].
+The `offset` argument specifies the starting index of the returned [`Uint32Array`][@stdlib/array/uint32] view relative to the [`Int64Array`][@stdlib/array/int64].
 
 ```javascript
-var Uint64Array = require( '@stdlib/array/uint64' );
+var Int64Array = require( '@stdlib/array/int64' );
 
-var x = new Uint64Array( [ 1, 2, 3, 4, 0, 5, 6, 7 ] );
+var x = new Int64Array( [ 1, 2, 3, 4, 0, 5, 6, 7 ] );
 
 var view = reinterpret( x, 4 );
 // returns <Uint32Array>
@@ -104,12 +104,12 @@ var lo = view[ 1 ];
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Uint64Array = require( '@stdlib/array/uint64' );
-var reinterpret = require( '@stdlib/strided/base/reinterpret-uint64' );
+var Int64Array = require( '@stdlib/array/int64' );
+var reinterpret = require( '@stdlib/strided/base/reinterpret-int64' );
 
-// Define a 64-bit unsigned integer array:
-var x = new Uint64Array( [ 1, 2, 3, 4, 5, 6, 7, 8 ] );
-// returns <Uint64Array>
+// Define a 64-bit signed integer array:
+var x = new Int64Array( [ 1, 2, 3, 4, 5, 6, 7, 8 ] );
+// returns <Int64Array>
 
 // Reinterpret as a `uint32` array:
 var view = reinterpret( x, 0 );
@@ -118,7 +118,7 @@ var view = reinterpret( x, 0 );
 // Set view elements:
 view[ 0 ] = 0;
 view[ 1 ] = 0;
-// x => <Uint64Array>[ 0n, 2n, 3n, 4n, 5n, 6n, 7n, 8n ]
+// x => <Int64Array>[ 0n, 2n, 3n, 4n, 5n, 6n, 7n, 8n ]
 ```
 
 </section>
@@ -145,7 +145,7 @@ view[ 1 ] = 0;
 
 <section class="links">
 
-[@stdlib/array/uint64]: https://github.com/stdlib-js/array-uint64
+[@stdlib/array/int64]: https://github.com/stdlib-js/array-int64
 
 [@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 

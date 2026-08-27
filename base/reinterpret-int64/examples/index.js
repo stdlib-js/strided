@@ -18,29 +18,23 @@
 
 'use strict';
 
-/**
-* Reinterpret a `Uint64Array` as a `Uint32Array` of interleaved high and low words.
-*
-* @module @stdlib/strided/base/reinterpret-uint64
-*
-* @example
-* var Uint64Array = require( '@stdlib/array/uint64' );
-* var reinterpret = require( '@stdlib/strided/base/reinterpret-uint64' );
-*
-* var x = new Uint64Array( 10 );
-*
-* var out = reinterpret( x, 0 );
-* // returns <Uint32Array>
-*
-* var bool = ( out.buffer === x.buffer );
-* // returns true
-*/
+var Int64Array = require( '@stdlib/array/int64' );
+var reinterpret = require( './../lib' );
 
-// MODULES //
+// Define a 64-bit signed integer array:
+var x = new Int64Array( [ 1, 2, 3, 4, 5, 6, 7, 8 ] );
+// returns <Int64Array>
 
-var main = require( './main.js' );
+// Reinterpret as a `uint32` array:
+var view = reinterpret( x, 0 );
+// returns <Uint32Array>
 
+// Set view elements:
+view[ 0 ] = 0;
+view[ 1 ] = 0;
 
-// EXPORTS //
+// Get the first element of the 64-bit signed integer array:
+var u = x.get( 0 );
+// returns <Int64>[ 0n ]
 
-module.exports = main;
+console.log( u.toString() );
