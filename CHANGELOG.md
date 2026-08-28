@@ -48,6 +48,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`22b2e6d`](https://github.com/stdlib-js/stdlib/commit/22b2e6dc688cb91401d670414db583c12bc19715) - **docs:** fix require path _(by Athan Reines)_
 -   [`c0a29a3`](https://github.com/stdlib-js/stdlib/commit/c0a29a3d62d69bcd2f42b11ea716e78723324001) - **docs:** fix example require path in `strided/base/reinterpret-int64` [(#14719)](https://github.com/stdlib-js/stdlib/pull/14719) _(by Philipp Burckhardt)_
 -   [`60897b1`](https://github.com/stdlib-js/stdlib/commit/60897b161fcdb3a8724facbac31a15137cb73f0a) - **feat:** add `reinterpretInt64` to namespace _(by Athan Reines)_
 -   [`92db74a`](https://github.com/stdlib-js/stdlib/commit/92db74aab6e087ea7801ba271f4e0310c9e85665) - **feat:** add `strided/base/reinterpret-int64` _(by Athan Reines)_
